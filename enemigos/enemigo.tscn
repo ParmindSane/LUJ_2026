@@ -66,6 +66,8 @@ loop = false
 script = ExtResource("1_2ehgw")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=248271774]
+collision_layer = 256
+collision_mask = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1237433419]
 shape = SubResource("CircleShape2D_qe4n8")
@@ -73,3 +75,16 @@ shape = SubResource("CircleShape2D_qe4n8")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=772477933]
 sprite_frames = SubResource("SpriteFrames_qe4n8")
 animation = &"AVANZAR_IZQUIERDA"
+
+[node name="Label" type="Label" parent="." unique_id=1981769931]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "X"

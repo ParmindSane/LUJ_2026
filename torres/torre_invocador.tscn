@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dxobyxtiwflsi"]
+
+[ext_resource type="PackedScene" uid="uid://cecf3hxjpal8n" path="res://torres/torre.tscn" id="1_ry6bw"]
+[ext_resource type="Script" uid="uid://dumsep3ugrsrg" path="res://torres/torre_invocador.gd" id="2_kgttl"]
+[ext_resource type="PackedScene" uid="uid://7euqgbciyn4g" path="res://torres/torre_invocador_soldado.tscn" id="3_32p6t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_32p6t"]
+
+[node name="Invocador" unique_id=1565077132 instance=ExtResource("1_ry6bw")]
+script = ExtResource("2_kgttl")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=1037154666]
+shape = SubResource("CircleShape2D_32p6t")
+
+[node name="ColorRect" parent="." index="1" unique_id=1023997331]
+color = Color(0, 1, 0.01666665, 1)
+
+[node name="Soldado" parent="." index="3" unique_id=1271620097 instance=ExtResource("3_32p6t")]

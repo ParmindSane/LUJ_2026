@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cecf3hxjpal8n"]
+
+[ext_resource type="Script" uid="uid://cslnys85t8qgy" path="res://torres/torre.gd" id="1_xxpgf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4jwhw"]
+radius = 40.0
+
+[node name="Torre" type="Area2D" unique_id=1565077132]
+collision_mask = 256
+script = ExtResource("1_xxpgf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1037154666]
+shape = SubResource("CircleShape2D_4jwhw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1023997331]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Timer" type="Timer" parent="." unique_id=706880896]

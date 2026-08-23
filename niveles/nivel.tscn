@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cf55mwny83pis"]
 
 [ext_resource type="PackedScene" uid="uid://dy6ate5xm4dhn" path="res://enemigos/enemigo.tscn" id="1_7pk3x"]
+[ext_resource type="PackedScene" uid="uid://8flhx28787wo" path="res://torres/torre_proyectil.tscn" id="2_fworp"]
 
 [sub_resource type="Curve2D" id="Curve2D_qe4n8"]
 _data = {
@@ -16,5 +17,9 @@ curve = SubResource("Curve2D_qe4n8")
 [node name="Enemigo" parent="Path2D" unique_id=2125227132 instance=ExtResource("1_7pk3x")]
 position = Vector2(336, 401)
 rotation = 0.008771705
-velocidad = 1.0
+velocidad = 1.5
+metadata/_edit_group_ = true
+
+[node name="LanzaProyectil" parent="." unique_id=1565077132 instance=ExtResource("2_fworp")]
+position = Vector2(448, 343)
 metadata/_edit_group_ = true

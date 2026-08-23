@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://7euqgbciyn4g"]
+
+[ext_resource type="Script" uid="uid://cg8fthbdlthrx" path="res://torres/torre_invocador_soldado.gd" id="1_1le13"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
+
+[node name="Soldado" type="Area2D" unique_id=1271620097]
+script = ExtResource("1_1le13")
+vidaInicial = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=480820577]
+shape = SubResource("CircleShape2D_qe4n8")

@@ -9,6 +9,9 @@ var pAng: float
 @export var velocidad: float
 var pPosition: Vector2
 
+@export var vidaInicial: float
+var vidaActual: float
+
 var sprites: AnimatedSprite2D
 var animar: String
 
@@ -16,6 +19,8 @@ func _ready():
 	progress = 0
 	estado = "AVANZAR"
 	pPosition = position
+	
+	vidaActual = vidaInicial
 	
 	sprites = $AnimatedSprite2D
 
@@ -42,6 +47,8 @@ func _process(delta):
 		animar = estado+"_"+mirando
 		if animar != sprites.animation:
 			sprites.play(animar)
+	
+	$Label.text = str(vidaActual)
 	
 	
 	pPosition = position
