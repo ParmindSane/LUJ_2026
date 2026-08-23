@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cf55mwny83pis"]
+
+[ext_resource type="PackedScene" uid="uid://dy6ate5xm4dhn" path="res://enemigos/enemigo.tscn" id="1_7pk3x"]
+
+[sub_resource type="Curve2D" id="Curve2D_qe4n8"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 336, 401, 0, 0, 0, 0, 409, 425, 0, 0, 0, 0, 441, 408, 0, 0, 0, 0, 471, 377, 0, 0, 0, 0, 428, 349, 0, 0, 0, 0, 413, 305, 0, 0, 0, 0, 334, 317, 0, 0, 0, 0, 244, 377, 0, 0, 0, 0, 272, 450, 0, 0, 0, 0, 372, 479, 0, 0, 0, 0, 512, 441)
+}
+point_count = 11
+
+[node name="Nivel" type="Node2D" unique_id=1112846435]
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1485948904]
+curve = SubResource("Curve2D_qe4n8")
+
+[node name="Enemigo" parent="Path2D" unique_id=2125227132 instance=ExtResource("1_7pk3x")]
+position = Vector2(336, 401)
+rotation = 0.008771705
+velocidad = 1.0
+metadata/_edit_group_ = true
