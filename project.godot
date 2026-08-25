@@ -17,8 +17,10 @@ config/icon="res://icon.svg"
 
 [display]
 
+window/size/mode=2
+window/size/resizable=false
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/stretch/aspect="ignore"
 
 [editor]
 
@@ -29,6 +31,7 @@ movie_writer/movie_file="E:/OBS/Grabaciones/LevelUpJam.avi"
 2d_physics/layer_1="Torre"
 2d_physics/layer_2="Soldado"
 2d_physics/layer_3="Proyectil"
+2d_physics/layer_4="Explosion"
 2d_physics/layer_9="Enemigo"
 
 [physics]

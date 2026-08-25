@@ -15,7 +15,8 @@ var vidaActual: float
 var sprites: AnimatedSprite2D
 var animar: String
 
-signal finPath(yo: )
+signal finPath(yo: PathFollow2D)
+@export var paths: Array
 
 func _ready():
 	progress = 0
@@ -34,7 +35,7 @@ func _process(delta):
 		progress += velocidad
 		
 		if progress_ratio == 1:
-			queue_free()
+			finPath.emit(self)
 	
 	if pPosition != position:
 		ang = pPosition.angle_to_point(position)

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dhfe01jw0vlio"]
+
+[ext_resource type="Script" uid="uid://d4hf38qk8iear" path="res://torres/torre_area_proyectil.gd" id="1_7vit4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
+radius = 2.79
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sau36"]
+radius = 100.0
+
+[node name="ProyectilArea" type="Area2D" unique_id=1517549423 node_paths=PackedStringArray("timer")]
+collision_layer = 4
+collision_mask = 256
+script = ExtResource("1_7vit4")
+timer = NodePath("Timer")
+velocidad = 150.0
+duracion = 1.0
+damage = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1401261794]
+shape = SubResource("CircleShape2D_qe4n8")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1497262592]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -4.25
+offset_right = 17.0
+offset_bottom = 4.25
+grow_vertical = 2
+color = Color(0, 0.61666656, 1, 1)
+
+[node name="Timer" type="Timer" parent="." unique_id=1585913602]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Explosion" type="Area2D" parent="." unique_id=1999243592]
+collision_layer = 8
+collision_mask = 256
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Explosion" unique_id=693368189]
+shape = SubResource("CircleShape2D_sau36")
+debug_color = Color(1, 0.5, 0, 0.41960785)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="Explosion" to="." method="_on_explosion_area_entered"]

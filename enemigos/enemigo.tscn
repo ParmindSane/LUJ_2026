@@ -20,13 +20,13 @@ shape = SubResource("CircleShape2D_qe4n8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=772477933]
 position = Vector2(0, -11.999999)
-scale = Vector2(0.15, 0.15)
+scale = Vector2(0.1, 0.1)
 sprite_frames = ExtResource("2_bvf6m")
-animation = &"ATACAR_ARRIBA"
-frame_progress = 0.3426982
+animation = &"AVANZAR_ABAJO"
+frame = 6
+frame_progress = 0.13560022
 
 [node name="Label" type="Label" parent="." unique_id=1981769931]
-visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0

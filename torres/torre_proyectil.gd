@@ -1,6 +1,7 @@
 extends Torre
 
 var proyectilRef = preload("res://torres/torre_proyectil_proyectil.tscn")
+
 var colShape: CollisionShape2D
 var target: Node2D
 var targets: Array[Node2D]
