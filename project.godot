@@ -29,7 +29,6 @@ movie_writer/movie_file="E:/OBS/Grabaciones/LevelUpJam.avi"
 2d_physics/layer_1="Torre"
 2d_physics/layer_2="Soldado"
 2d_physics/layer_3="Proyectil"
-2d_physics/layer_5="Core"
 2d_physics/layer_9="Enemigo"
 
 [physics]

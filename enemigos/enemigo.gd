@@ -25,6 +25,9 @@ func _ready():
 	sprites = $AnimatedSprite2D
 
 func _process(delta):
+	if vidaActual <= 0:
+		queue_free()
+	
 	if estado == "AVANZAR":
 		progress += velocidad
 		
@@ -42,7 +45,6 @@ func _process(delta):
 			mirando = "ABAJO"
 		elif ang >= a45*3 || ang <= -a45*3:
 			mirando = "IZQUIERDA"
-		print(str(ang) + ", " + mirando)
 		
 		animar = estado+"_"+mirando
 		if animar != sprites.animation:

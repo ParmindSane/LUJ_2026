@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bujpehu1ulh6k" path="res://enemigos/assets/avanzar_izquierda1.png" id="9_er6sw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
-radius = 25.0
+radius = 15.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qe4n8"]
 animations = [{
@@ -67,7 +67,7 @@ script = ExtResource("1_2ehgw")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=248271774]
 collision_layer = 256
-collision_mask = 18
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1237433419]
 shape = SubResource("CircleShape2D_qe4n8")

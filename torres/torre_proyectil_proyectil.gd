@@ -1,11 +1,19 @@
 extends Area2D
 
 var target: Node2D
+@export var timer: Timer
 
 @export var velocidad: float
+@export var duracion: float
+@export var damage: float
 
 func set_target(new_target: Node2D) -> void:
 	target = new_target
+	
+
+func _ready():
+	timer.start(duracion)
+	
 
 func _physics_process(delta: float) -> void:
 	if is_instance_valid(target):
@@ -18,3 +26,13 @@ func _physics_process(delta: float) -> void:
 	else:
 		# Delete projectile if target is destroyed or null
 		queue_free()
+	
+
+func _on_timer_timeout():
+	queue_free()
+	
+
+func _on_area_entered(area):
+	area.get_parent().vidaActual -= damage
+	queue_free()
+	

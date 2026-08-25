@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://ka0ypx17vlhc"]
+
+[ext_resource type="Script" uid="uid://cgxhateqle4bp" path="res://torres/torre_proyectil_proyectil.gd" id="1_qgr8r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
+radius = 2.79
+
+[node name="Proyectil" type="Area2D" unique_id=1517549423 node_paths=PackedStringArray("timer")]
+collision_layer = 4
+collision_mask = 256
+script = ExtResource("1_qgr8r")
+timer = NodePath("Timer")
+velocidad = 50.0
+duracion = 1.0
+damage = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1401261794]
+shape = SubResource("CircleShape2D_qe4n8")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1497262592]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.61666656, 1, 1)
+
+[node name="Timer" type="Timer" parent="." unique_id=1585913602]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

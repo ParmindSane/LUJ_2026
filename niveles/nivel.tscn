@@ -17,9 +17,11 @@ curve = SubResource("Curve2D_qe4n8")
 [node name="Enemigo" parent="Path2D" unique_id=2125227132 instance=ExtResource("1_7pk3x")]
 position = Vector2(336, 401)
 rotation = 0.008771705
-velocidad = 1.5
+velocidad = 1.0
+vidaInicial = 2.0
 metadata/_edit_group_ = true
 
 [node name="LanzaProyectil" parent="." unique_id=1565077132 instance=ExtResource("2_fworp")]
 position = Vector2(448, 343)
+delay = 0.0
 metadata/_edit_group_ = true

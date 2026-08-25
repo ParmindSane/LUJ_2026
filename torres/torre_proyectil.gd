@@ -1,22 +1,48 @@
 extends Torre
 
-var proyectilRef: Area2D
+var proyectilRef = preload("res://torres/torre_proyectil_proyectil.tscn")
 var colShape: CollisionShape2D
 var target: Node2D
+var targets: Array[Node2D]
 
 func _ready():
 	target = null
 	
-	proyectilRef = $Proyectil
-	
 	colShape = $CollisionShape2D
-	area_entered.connect(spawnProyectil)
-
-func spawnProyectil(enemyArea: Area2D):
-	if target == null:
-		target = enemyArea.get_parent()
-		
-		var newProyectil = proyectilRef.duplicate()
-		newProyectil.set_target(target)
-		add_child(newProyectil)
+	area_entered.connect(addTarget)
+	area_exited.connect(forgetTarget)
 	
+
+func _process(delta):
+	if targets.size() > 0:
+		target = targets[0]
+		
+		if is_instance_valid(target) && timer.is_stopped():
+			spawnProyectil()
+	else:
+		target = null
+	
+
+func addTarget(enemyArea: Area2D):
+	var nuevoTarget = enemyArea.get_parent()
+	if targets.find(nuevoTarget) < 0:
+		targets.push_back(nuevoTarget)
+	
+func forgetTarget(enemyArea: Area2D):
+	var salido = enemyArea.get_parent()
+	targets.erase(salido)
+	
+
+func spawnProyectil():
+	var newProyectil = proyectilRef.instantiate()
+	newProyectil.set_target(target)
+	add_child(newProyectil)
+	
+	timer.start(delay)
+	print(timer.is_stopped())
+	
+
+#func _on_timer_timeout():
+	#print("Timeout")
+	#if target != null:
+		#timer.start(delay)

@@ -2,13 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://cecf3hxjpal8n" path="res://torres/torre.tscn" id="1_gpp5w"]
 [ext_resource type="Script" uid="uid://btjro2nwc6e8w" path="res://torres/torre_proyectil.gd" id="2_32tw6"]
-[ext_resource type="Script" uid="uid://cgxhateqle4bp" path="res://torres/torre_proyectil_proyectil.gd" id="3_r7yy6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gpp5w"]
 radius = 40.0
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
-radius = 2.79
 
 [node name="LanzaProyectil" unique_id=1565077132 instance=ExtResource("1_gpp5w")]
 script = ExtResource("2_32tw6")
@@ -19,25 +15,7 @@ shape = SubResource("CircleShape2D_gpp5w")
 [node name="ColorRect" parent="." index="1" unique_id=1023997331]
 color = Color(0, 0.93333316, 1, 1)
 
-[node name="Proyectil" type="Area2D" parent="." index="3" unique_id=267711565]
-collision_layer = 4
-collision_mask = 256
-script = ExtResource("3_r7yy6")
-velocidad = 10.0
+[node name="Timer" parent="." index="2" unique_id=706880896]
+one_shot = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Proyectil" index="0" unique_id=371775269]
-shape = SubResource("CircleShape2D_qe4n8")
-
-[node name="ColorRect" type="ColorRect" parent="Proyectil" index="1" unique_id=660230330]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -2.0
-offset_top = -2.0
-offset_right = 2.0
-offset_bottom = 2.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0.61666656, 1, 1)
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
