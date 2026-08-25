@@ -1,0 +1,58 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cty8y6dnnlacr"]
+
+[ext_resource type="Texture2D" uid="uid://ba7l0c6rj73jc" path="res://enemigos/assets/test/avanzar_abajo0.png" id="1_6hfvj"]
+[ext_resource type="Texture2D" uid="uid://j2w1qeturwt" path="res://enemigos/assets/test/avanzar_abajo1.png" id="2_u5pw6"]
+[ext_resource type="Texture2D" uid="uid://bi28spsucsdj" path="res://enemigos/assets/test/avanzar_arriba0.png" id="3_ap23d"]
+[ext_resource type="Texture2D" uid="uid://co6s4nn1kqcyx" path="res://enemigos/assets/test/avanzar_arriba1.png" id="4_6ir3h"]
+[ext_resource type="Texture2D" uid="uid://dc6jgnqxvk2ps" path="res://enemigos/assets/test/avanzar_derecha0.png" id="5_furk6"]
+[ext_resource type="Texture2D" uid="uid://cp0tsa0ytdchr" path="res://enemigos/assets/test/avanzar_derecha1.png" id="6_6ldhc"]
+[ext_resource type="Texture2D" uid="uid://dc0s3ai5x7vo8" path="res://enemigos/assets/test/avanzar_izquierda0.png" id="7_5xlqa"]
+[ext_resource type="Texture2D" uid="uid://bujpehu1ulh6k" path="res://enemigos/assets/test/avanzar_izquierda1.png" id="8_l2bor"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6hfvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_u5pw6")
+}],
+"loop": 1,
+"name": &"AVANZAR_ABAJO",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ap23d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6ir3h")
+}],
+"loop": 1,
+"name": &"AVANZAR_ARRIBA",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_furk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6ldhc")
+}],
+"loop": 1,
+"name": &"AVANZAR_DERECHA",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_5xlqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l2bor")
+}],
+"loop": 1,
+"name": &"AVANZAR_IZQUIERDA",
+"speed": 3.0
+}]

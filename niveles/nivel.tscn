@@ -1,27 +1,47 @@
 [gd_scene format=3 uid="uid://cf55mwny83pis"]
 
 [ext_resource type="PackedScene" uid="uid://dy6ate5xm4dhn" path="res://enemigos/enemigo.tscn" id="1_7pk3x"]
+[ext_resource type="Texture2D" uid="uid://bivh2mq7ytabq" path="res://niveles/nivel1.png" id="1_k5cxp"]
 [ext_resource type="PackedScene" uid="uid://8flhx28787wo" path="res://torres/torre_proyectil.tscn" id="2_fworp"]
+[ext_resource type="Texture2D" uid="uid://cndni83sql6rg" path="res://torres/assets/slot.png" id="4_d2sps"]
 
 [sub_resource type="Curve2D" id="Curve2D_qe4n8"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 336, 401, 0, 0, 0, 0, 409, 425, 0, 0, 0, 0, 441, 408, 0, 0, 0, 0, 471, 377, 0, 0, 0, 0, 428, 349, 0, 0, 0, 0, 413, 305, 0, 0, 0, 0, 334, 317, 0, 0, 0, 0, 244, 377, 0, 0, 0, 0, 272, 450, 0, 0, 0, 0, 372, 479, 0, 0, 0, 0, 512, 441)
+"points": PackedVector2Array(0, 0, 0, 0, 585, 670, 0, 0, 0, 0, 585, 566, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -24, 107)
 }
-point_count = 11
+point_count = 9
 
 [node name="Nivel" type="Node2D" unique_id=1112846435]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1492440787]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_k5cxp")
+expand_mode = 1
 
 [node name="Path2D" type="Path2D" parent="." unique_id=1485948904]
 curve = SubResource("Curve2D_qe4n8")
 
 [node name="Enemigo" parent="Path2D" unique_id=2125227132 instance=ExtResource("1_7pk3x")]
-position = Vector2(336, 401)
+position = Vector2(585, 670)
 rotation = 0.008771705
 velocidad = 1.0
 vidaInicial = 2.0
 metadata/_edit_group_ = true
 
+[node name="Enemigo2" parent="Path2D" unique_id=1821539514 instance=ExtResource("1_7pk3x")]
+position = Vector2(585, 670)
+rotation = 0.008771705
+velocidad = 1.25
+vidaInicial = 2.0
+metadata/_edit_group_ = true
+
 [node name="LanzaProyectil" parent="." unique_id=1565077132 instance=ExtResource("2_fworp")]
-position = Vector2(448, 343)
+position = Vector2(622, 455)
 delay = 0.0
 metadata/_edit_group_ = true
+
+[node name="Slot" type="Sprite2D" parent="." unique_id=130009411]
+position = Vector2(426, 462)
+scale = Vector2(0.30664077, 0.30664077)
+texture = ExtResource("4_d2sps")

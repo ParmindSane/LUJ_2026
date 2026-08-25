@@ -10,7 +10,7 @@ collision_layer = 4
 collision_mask = 256
 script = ExtResource("1_qgr8r")
 timer = NodePath("Timer")
-velocidad = 50.0
+velocidad = 150.0
 duracion = 1.0
 damage = 1.0
 
@@ -18,16 +18,12 @@ damage = 1.0
 shape = SubResource("CircleShape2D_qe4n8")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1497262592]
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 4
 anchor_top = 0.5
-anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -5.0
-offset_top = -5.0
-offset_right = 5.0
-offset_bottom = 5.0
-grow_horizontal = 2
+offset_top = -4.25
+offset_right = 17.0
+offset_bottom = 4.25
 grow_vertical = 2
 color = Color(0, 0.61666656, 1, 1)
 

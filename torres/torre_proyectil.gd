@@ -36,13 +36,7 @@ func forgetTarget(enemyArea: Area2D):
 func spawnProyectil():
 	var newProyectil = proyectilRef.instantiate()
 	newProyectil.set_target(target)
-	add_child(newProyectil)
+	spawnpoint.add_child(newProyectil)
 	
 	timer.start(delay)
-	print(timer.is_stopped())
 	
-
-#func _on_timer_timeout():
-	#print("Timeout")
-	#if target != null:
-		#timer.start(delay)

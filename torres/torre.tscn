@@ -3,13 +3,14 @@
 [ext_resource type="Script" uid="uid://cslnys85t8qgy" path="res://torres/torre.gd" id="1_xxpgf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jwhw"]
-radius = 40.0
+radius = 120.0
 
-[node name="Torre" type="Area2D" unique_id=1565077132 node_paths=PackedStringArray("timer")]
+[node name="Torre" type="Area2D" unique_id=1565077132 node_paths=PackedStringArray("timer", "spawnpoint")]
 collision_mask = 256
 script = ExtResource("1_xxpgf")
 delay = 1.0
 timer = NodePath("Timer")
+spawnpoint = NodePath("SpawnPoint")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1037154666]
 shape = SubResource("CircleShape2D_4jwhw")
@@ -28,6 +29,6 @@ grow_vertical = 0
 
 [node name="Timer" type="Timer" parent="." unique_id=706880896]
 
-[node name="PuntoDeDisparo" type="Node2D" parent="." unique_id=1373959747]
+[node name="SpawnPoint" type="Node2D" parent="." unique_id=1373959747]
 position = Vector2(0, -40)
 metadata/_edit_group_ = true
