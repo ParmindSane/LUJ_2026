@@ -15,11 +15,8 @@ func _ready():
 	
 
 func _process(delta):
+	targets = targets.filter(func(t): return is_instance_valid(t))
 	if targets.size() > 0:
-		for t in targets:
-			if !is_instance_valid(t):
-				targets.erase(t)
-				
 		target = targets[0]
 		
 		if is_instance_valid(target) && timer.is_stopped():

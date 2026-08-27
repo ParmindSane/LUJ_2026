@@ -12,12 +12,17 @@ var pPosition: Vector2
 @export var vidaInicial: float
 var vidaActual: float
 
+var peleandoCon: Node2D
+var venganDeAUno: Array[Node2D]
+@export var soldadoDamage: float
+@export var finalDamage: float
+
 var sprites: AnimatedSprite2D
 var animar: String
 @export var animaciones: SpriteFrames
 
 signal finPath(yo: PathFollow2D)
-@export var paths: Array
+var paths: Array
 
 func _ready():
 	progress = 0
@@ -40,15 +45,27 @@ func _process(delta):
 		if progress_ratio == 1:
 			finPath.emit(self)
 	
-	if pPosition != position:
-		ang = pPosition.angle_to_point(position)
-		
-		var a90 = 0.5*PI
-		if ang < -a90 || ang >= a90:
-			sprites.flip_h = true
-		else:
-			sprites.flip_h = false
+		if pPosition != position:
+			ang = pPosition.angle_to_point(position)
+			
+			var a90 = 0.5*PI
+			if ang < -a90 || ang >= a90:
+				sprites.flip_h = true
+			else:
+				sprites.flip_h = false
 	
+	venganDeAUno = venganDeAUno.filter(func(s): return is_instance_valid(s))
+	if venganDeAUno.size() > 0:
+		peleandoCon = venganDeAUno[0]
+		
+		if is_instance_valid(peleandoCon):
+			estado = "ATACAR"
+			if global_position.x > peleandoCon.global_position.x:
+				sprites.flip_h = true
+			else:
+				sprites.flip_h = false
+	else:
+		estado = "AVANZAR"
 	
 	if estado != sprites.animation:
 		sprites.play(estado)
@@ -58,4 +75,13 @@ func _process(delta):
 	
 	pPosition = position
 	pAng = ang
+	
+
+func setRival(s: Node2D):
+	venganDeAUno.push_back(s)
+	
+
+func _on_animated_sprite_2d_animation_looped():
+	if estado == "ATACAR" && is_instance_valid(peleandoCon):
+		peleandoCon.vidaActual -= soldadoDamage
 	

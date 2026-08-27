@@ -37,3 +37,8 @@ offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "X"
+
+[node name="Timer" type="Timer" parent="." unique_id=1150165994]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]

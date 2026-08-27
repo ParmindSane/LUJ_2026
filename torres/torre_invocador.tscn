@@ -23,15 +23,3 @@ autostart = true
 
 [node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
 position = Vector2(0, 0)
-
-[node name="waitPoint1" type="Node2D" parent="SpawnPoint" index="0" unique_id=1660154651]
-position = Vector2(-47, 8)
-metadata/_edit_group_ = true
-
-[node name="waitPoint2" type="Node2D" parent="SpawnPoint" index="1" unique_id=1431520505]
-position = Vector2(-6, 36)
-metadata/_edit_group_ = true
-
-[node name="waitPoint3" type="Node2D" parent="SpawnPoint" index="2" unique_id=1021965694]
-position = Vector2(41, 14)
-metadata/_edit_group_ = true
