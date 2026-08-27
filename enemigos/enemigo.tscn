@@ -29,8 +29,6 @@ position = Vector2(0, -11.999999)
 scale = Vector2(0.1, 0.1)
 sprite_frames = ExtResource("3_dnjyr")
 animation = &"AVANZAR"
-frame = 22
-frame_progress = 0.7432563
 
 [node name="Label" type="Label" parent="." unique_id=1981769931]
 anchors_preset = 7

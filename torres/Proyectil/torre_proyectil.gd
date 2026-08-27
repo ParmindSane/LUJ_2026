@@ -36,4 +36,9 @@ func spawnProyectil():
 	spawnpoint.add_child(newProyectil)
 	
 	timer.start(delay)
+	sprites.play("ATACAR")
+	
+
+func _on_animated_sprite_2d_animation_finished():
+	sprites.play("IDLE")
 	

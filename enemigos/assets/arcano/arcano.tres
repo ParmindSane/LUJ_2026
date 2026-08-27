@@ -1,0 +1,352 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://53gsirh7uxxr"]
+
+[ext_resource type="Texture2D" uid="uid://dby2ryt0lp3se" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_00.png" id="1_2fwe1"]
+[ext_resource type="Texture2D" uid="uid://qqid0mbs1f44" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_01.png" id="2_ll824"]
+[ext_resource type="Texture2D" uid="uid://b7p5sxxgw35ri" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_02.png" id="3_1rsj6"]
+[ext_resource type="Texture2D" uid="uid://dccqipk8pnkd1" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_03.png" id="4_w1f1i"]
+[ext_resource type="Texture2D" uid="uid://b07htaqtddeen" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_04.png" id="5_qdpvl"]
+[ext_resource type="Texture2D" uid="uid://b005eg8i875j0" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_05.png" id="6_4fbkm"]
+[ext_resource type="Texture2D" uid="uid://cj2nuqc1v5rnm" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_06.png" id="7_xim5x"]
+[ext_resource type="Texture2D" uid="uid://dntp0o7wbku0r" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_07.png" id="8_e6dew"]
+[ext_resource type="Texture2D" uid="uid://0say16bjasho" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_08.png" id="9_ejtco"]
+[ext_resource type="Texture2D" uid="uid://drbh38ii2pf24" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_09.png" id="10_vi7rw"]
+[ext_resource type="Texture2D" uid="uid://dd02sl66wg2k0" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_10.png" id="11_o0wsi"]
+[ext_resource type="Texture2D" uid="uid://dvvxbsdr25cdv" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_11.png" id="12_d0qoi"]
+[ext_resource type="Texture2D" uid="uid://l33ds52xvik" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_12.png" id="13_0av2u"]
+[ext_resource type="Texture2D" uid="uid://btwpewkue1xdd" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_13.png" id="14_x4510"]
+[ext_resource type="Texture2D" uid="uid://b5uyriyox0vj" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_14.png" id="15_axoc8"]
+[ext_resource type="Texture2D" uid="uid://krg1ly3bxe60" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_15.png" id="16_trv51"]
+[ext_resource type="Texture2D" uid="uid://3hyq8o6624g8" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_16.png" id="17_ffnw7"]
+[ext_resource type="Texture2D" uid="uid://cp3cqa1woi1sv" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_17.png" id="18_4u7ka"]
+[ext_resource type="Texture2D" uid="uid://cav50fg060miu" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_18.png" id="19_g863m"]
+[ext_resource type="Texture2D" uid="uid://b6yxux25y7vq6" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_19.png" id="20_tyw72"]
+[ext_resource type="Texture2D" uid="uid://6xv4v57qw1tn" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_20.png" id="21_6fj5g"]
+[ext_resource type="Texture2D" uid="uid://dnmy3wd0btud0" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_21.png" id="22_xe1j6"]
+[ext_resource type="Texture2D" uid="uid://du65fdtnm381j" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_22.png" id="23_fj6d7"]
+[ext_resource type="Texture2D" uid="uid://xb3pgh3ndn2w" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_23.png" id="24_jx8fn"]
+[ext_resource type="Texture2D" uid="uid://b1p6u8p17n3k6" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_24.png" id="25_7bl43"]
+[ext_resource type="Texture2D" uid="uid://b4div3iwiburk" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_25.png" id="26_4xk87"]
+[ext_resource type="Texture2D" uid="uid://bah0v84pbt46r" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_26.png" id="27_k0gjg"]
+[ext_resource type="Texture2D" uid="uid://cwfqu5ifcrayt" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_27.png" id="28_fkce8"]
+[ext_resource type="Texture2D" uid="uid://3hqwqxdue7cu" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_28.png" id="29_nyjbk"]
+[ext_resource type="Texture2D" uid="uid://cr0n86wtawgtb" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_29.png" id="30_obw5f"]
+[ext_resource type="Texture2D" uid="uid://bunvyrkqv1cp8" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_30.png" id="31_0k7rf"]
+[ext_resource type="Texture2D" uid="uid://bok71cdsgc24e" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_31.png" id="32_3g0si"]
+[ext_resource type="Texture2D" uid="uid://da6vtiq1frfqr" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_32.png" id="33_i34if"]
+[ext_resource type="Texture2D" uid="uid://dd82ic7ca8dja" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_33.png" id="34_bmrlt"]
+[ext_resource type="Texture2D" uid="uid://fm8naymwcp02" path="res://enemigos/assets/arcano/maestria-arcana-attacking/Armature_newAnimation_34.png" id="35_qjka2"]
+[ext_resource type="Texture2D" uid="uid://dcf5eg54iaum" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_00.png" id="36_j1gft"]
+[ext_resource type="Texture2D" uid="uid://63yl2j3va1dh" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_01.png" id="37_md56l"]
+[ext_resource type="Texture2D" uid="uid://deyunfup3pnia" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_02.png" id="38_r853u"]
+[ext_resource type="Texture2D" uid="uid://ra8lqrwt12vy" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_03.png" id="39_mrywr"]
+[ext_resource type="Texture2D" uid="uid://bvb16a6egejkc" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_04.png" id="40_ejcsb"]
+[ext_resource type="Texture2D" uid="uid://dg3cm44a8qi2a" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_05.png" id="41_q57oj"]
+[ext_resource type="Texture2D" uid="uid://c84lxepjngvc5" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_06.png" id="42_j3j7h"]
+[ext_resource type="Texture2D" uid="uid://c6elx0p6wjuva" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_07.png" id="43_eygso"]
+[ext_resource type="Texture2D" uid="uid://t2vg7i4mky3t" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_08.png" id="44_oxegb"]
+[ext_resource type="Texture2D" uid="uid://bab7gahs0tq8p" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_09.png" id="45_y4at3"]
+[ext_resource type="Texture2D" uid="uid://c7r547e11q5cg" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_10.png" id="46_ivjad"]
+[ext_resource type="Texture2D" uid="uid://dbjpt7k2c4wjh" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_11.png" id="47_dhrv3"]
+[ext_resource type="Texture2D" uid="uid://bh6b4w2jjd4y5" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_12.png" id="48_xfeik"]
+[ext_resource type="Texture2D" uid="uid://cjpj20m5mgl8a" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_13.png" id="49_4c6cv"]
+[ext_resource type="Texture2D" uid="uid://dakrnrus3g208" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_14.png" id="50_gsqo7"]
+[ext_resource type="Texture2D" uid="uid://ciyrsuu8kcltk" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_15.png" id="51_nclur"]
+[ext_resource type="Texture2D" uid="uid://b40rsx1bdtlp4" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_16.png" id="52_ehcgh"]
+[ext_resource type="Texture2D" uid="uid://b6agr6a8u33j1" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_17.png" id="53_ncarr"]
+[ext_resource type="Texture2D" uid="uid://dlx65mt75ftvp" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_18.png" id="54_q1yvv"]
+[ext_resource type="Texture2D" uid="uid://1y8x3jx51yyw" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_19.png" id="55_60es4"]
+[ext_resource type="Texture2D" uid="uid://brkcskt6pa1ac" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_20.png" id="56_87y2y"]
+[ext_resource type="Texture2D" uid="uid://bh6f05w25thoj" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_21.png" id="57_w3xle"]
+[ext_resource type="Texture2D" uid="uid://cowq7fteqaq4c" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_22.png" id="58_i2gll"]
+[ext_resource type="Texture2D" uid="uid://0t2u8xmedx7d" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_23.png" id="59_tfvdm"]
+[ext_resource type="Texture2D" uid="uid://dncv6ayrofqdt" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_24.png" id="60_lk36o"]
+[ext_resource type="Texture2D" uid="uid://g78mkp16y8ww" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_25.png" id="61_0g4wq"]
+[ext_resource type="Texture2D" uid="uid://c6w4nhm5ik8m0" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_26.png" id="62_smnhd"]
+[ext_resource type="Texture2D" uid="uid://dns162y4qmqso" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_27.png" id="63_obrdj"]
+[ext_resource type="Texture2D" uid="uid://iyppaxmocdhf" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_28.png" id="64_pwv3g"]
+[ext_resource type="Texture2D" uid="uid://2v07ipbptc28" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_29.png" id="65_bb3kx"]
+[ext_resource type="Texture2D" uid="uid://brbwlbbgcg8xp" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_30.png" id="66_w1fu4"]
+[ext_resource type="Texture2D" uid="uid://bk6fn1it7gpkc" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_31.png" id="67_ujrkq"]
+[ext_resource type="Texture2D" uid="uid://drak5h25knkg7" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_32.png" id="68_b1ipn"]
+[ext_resource type="Texture2D" uid="uid://28c55oj8iikb" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_33.png" id="69_0wfls"]
+[ext_resource type="Texture2D" uid="uid://bh6flcpcmo5cf" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_34.png" id="70_lhcgq"]
+[ext_resource type="Texture2D" uid="uid://bkhlbknoerq1e" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_35.png" id="71_dhisn"]
+[ext_resource type="Texture2D" uid="uid://ck3u1j7n0qor3" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_36.png" id="72_swtva"]
+[ext_resource type="Texture2D" uid="uid://dspnfn5leuadh" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_37.png" id="73_n17gx"]
+[ext_resource type="Texture2D" uid="uid://ckleyjhy8ay3t" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_38.png" id="74_n543g"]
+[ext_resource type="Texture2D" uid="uid://ccpkhaptrwjer" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_39.png" id="75_28tm2"]
+[ext_resource type="Texture2D" uid="uid://d1qtn25qabpju" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_40.png" id="76_hurur"]
+[ext_resource type="Texture2D" uid="uid://dm4kdrxo2m0s0" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_41.png" id="77_3w85p"]
+[ext_resource type="Texture2D" uid="uid://c8tmcx161hppc" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_42.png" id="78_j5mgo"]
+[ext_resource type="Texture2D" uid="uid://k4uyuascxgsm" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_43.png" id="79_5buaa"]
+[ext_resource type="Texture2D" uid="uid://u348n5qdinim" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_44.png" id="80_1e3ks"]
+[ext_resource type="Texture2D" uid="uid://d145rnxvpc5c7" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_45.png" id="81_vadut"]
+[ext_resource type="Texture2D" uid="uid://h2qviqw14bv4" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_46.png" id="82_u0vpu"]
+[ext_resource type="Texture2D" uid="uid://03hjwxl7xbro" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_47.png" id="83_p3anr"]
+[ext_resource type="Texture2D" uid="uid://6mbycsj2o7fs" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_48.png" id="84_kadgl"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2fwe1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ll824")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1rsj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w1f1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qdpvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4fbkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xim5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e6dew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ejtco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vi7rw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o0wsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d0qoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0av2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_x4510")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_axoc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_trv51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ffnw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4u7ka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_g863m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_tyw72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6fj5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xe1j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_fj6d7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_jx8fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_7bl43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4xk87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_k0gjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_fkce8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_nyjbk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_obw5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_0k7rf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_3g0si")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_i34if")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_bmrlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_qjka2")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_j1gft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_md56l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_r853u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_mrywr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ejcsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_q57oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_j3j7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_eygso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_oxegb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_y4at3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ivjad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_dhrv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_xfeik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_4c6cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_gsqo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_nclur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ehcgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ncarr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_q1yvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_60es4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_87y2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_w3xle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_i2gll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_tfvdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_lk36o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_0g4wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_smnhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_obrdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_pwv3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_bb3kx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_w1fu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_ujrkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_b1ipn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_0wfls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_lhcgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_dhisn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_swtva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_n17gx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_n543g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_28tm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_hurur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_3w85p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_j5mgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_5buaa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_1e3ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_vadut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_u0vpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_p3anr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_kadgl")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

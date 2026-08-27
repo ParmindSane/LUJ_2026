@@ -2,28 +2,45 @@
 
 [ext_resource type="PackedScene" uid="uid://cecf3hxjpal8n" path="res://torres/torre.tscn" id="1_gpp5w"]
 [ext_resource type="Script" uid="uid://btjro2nwc6e8w" path="res://torres/Proyectil/torre_proyectil.gd" id="2_32tw6"]
-[ext_resource type="Texture2D" uid="uid://dweol8nb4ucr7" path="res://torres/assets/torre.png" id="3_r7yy6"]
+[ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="3_go2wq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gpp5w"]
 radius = 120.0
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_ckf0l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_go2wq")
+}],
+"loop": 0,
+"name": &"ATACAR",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_go2wq")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="LanzaProyectil" unique_id=1565077132 instance=ExtResource("1_gpp5w")]
 script = ExtResource("2_32tw6")
 
-[node name="CollisionShape2D" parent="." index="0" unique_id=1037154666]
-shape = SubResource("CircleShape2D_gpp5w")
-
-[node name="TorreProyectil" type="Sprite2D" parent="." index="1" unique_id=1741042730]
-position = Vector2(0, -19)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("3_r7yy6")
-
-[node name="ColorRect" parent="." index="2" unique_id=1023997331]
-visible = false
-color = Color(0, 0.93333316, 1, 1)
-
-[node name="Timer" parent="." index="3" unique_id=706880896]
+[node name="Timer" parent="." index="0" unique_id=706880896]
 one_shot = true
 
-[node name="SpawnPoint" parent="." index="4" unique_id=1373959747]
-position = Vector2(11, -36)
+[node name="CollisionShape2D" parent="." index="1" unique_id=1037154666]
+shape = SubResource("CircleShape2D_gpp5w")
+
+[node name="AnimatedSprite2D" parent="." index="2" unique_id=2065084869]
+sprite_frames = SubResource("SpriteFrames_ckf0l")
+animation = &"ATACAR"
+autoplay = "default"
+
+[node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
+position = Vector2(16, -43)
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

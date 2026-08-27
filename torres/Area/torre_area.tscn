@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://b7gfwdoldarnn" path="res://torres/Area/tower2-aniamtion/action3.png" id="6_06jsq"]
 [ext_resource type="Texture2D" uid="uid://dmnpwk5537ojw" path="res://torres/Area/tower2-aniamtion/action4.png" id="7_3pwm3"]
 [ext_resource type="Texture2D" uid="uid://c0co8g60l6e83" path="res://torres/Area/tower2-aniamtion/action5.png" id="8_fkgl3"]
-[ext_resource type="Texture2D" uid="uid://brquy7pnu0yo2" path="res://torres/Area/tower2-aniamtion/idle.png" id="9_ln0bf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gpp5w"]
 radius = 120.0
@@ -16,6 +15,9 @@ radius = 120.0
 [sub_resource type="SpriteFrames" id="SpriteFrames_2us3v"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_fkgl3")
+}, {
 "duration": 1.0,
 "texture": ExtResource("3_6na2p")
 }, {
@@ -30,17 +32,14 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_3pwm3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_fkgl3")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"ATACAR",
 "speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_ln0bf")
+"texture": ExtResource("7_3pwm3")
 }],
 "loop": 1,
 "name": &"IDLE",
@@ -58,9 +57,12 @@ one_shot = true
 shape = SubResource("CircleShape2D_gpp5w")
 debug_color = Color(1, 0.35000002, 0, 0.41960785)
 
-[node name="TorreProyectil" parent="." index="2" unique_id=2065084869]
+[node name="AnimatedSprite2D" parent="." index="2" unique_id=2065084869]
 sprite_frames = SubResource("SpriteFrames_2us3v")
-animation = &"IDLE"
+animation = &"ATACAR"
+autoplay = "IDLE"
 
 [node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
-position = Vector2(11, -36)
+position = Vector2(-19, -54)
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
