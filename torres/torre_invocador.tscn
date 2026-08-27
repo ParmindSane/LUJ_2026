@@ -2,17 +2,36 @@
 
 [ext_resource type="PackedScene" uid="uid://cecf3hxjpal8n" path="res://torres/torre.tscn" id="1_ry6bw"]
 [ext_resource type="Script" uid="uid://dumsep3ugrsrg" path="res://torres/torre_invocador.gd" id="2_kgttl"]
-[ext_resource type="PackedScene" uid="uid://7euqgbciyn4g" path="res://torres/torre_invocador_soldado.tscn" id="3_32p6t"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_32p6t"]
+radius = 100.0
 
 [node name="Invocador" unique_id=1565077132 instance=ExtResource("1_ry6bw")]
 script = ExtResource("2_kgttl")
+cantidadSoldados = 3
 
 [node name="CollisionShape2D" parent="." index="0" unique_id=1037154666]
 shape = SubResource("CircleShape2D_32p6t")
+debug_color = Color(0.51, 0.51, 0.51, 0.41960785)
 
 [node name="ColorRect" parent="." index="1" unique_id=1023997331]
 color = Color(0, 1, 0.01666665, 1)
 
-[node name="Soldado" parent="." index="3" unique_id=1271620097 instance=ExtResource("3_32p6t")]
+[node name="Timer" parent="." index="2" unique_id=706880896]
+one_shot = true
+autostart = true
+
+[node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
+position = Vector2(0, 0)
+
+[node name="waitPoint1" type="Node2D" parent="SpawnPoint" index="0" unique_id=1660154651]
+position = Vector2(-47, 8)
+metadata/_edit_group_ = true
+
+[node name="waitPoint2" type="Node2D" parent="SpawnPoint" index="1" unique_id=1431520505]
+position = Vector2(-6, 36)
+metadata/_edit_group_ = true
+
+[node name="waitPoint3" type="Node2D" parent="SpawnPoint" index="2" unique_id=1021965694]
+position = Vector2(41, 14)
+metadata/_edit_group_ = true

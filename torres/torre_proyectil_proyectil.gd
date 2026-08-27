@@ -15,7 +15,7 @@ func _ready():
 	timer.start(duracion)
 	
 
-func _physics_process(delta: float) -> void:
+func _process(delta):
 	if is_instance_valid(target):
 		# Find direction vector from projectile to enemy
 		var direction = (target.global_position - global_position).normalized()

@@ -6,6 +6,8 @@ class_name Torre
 
 @export var spawnpoint: Node2D
 
+@export var prioridadVoladores: bool
+
 func _ready():
 	pass
 	

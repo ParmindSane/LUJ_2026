@@ -1,7 +1,7 @@
 extends PathFollow2D
 
 var estado: String
-var mirando: String
+@export var volador: bool
 
 var ang: float
 var pAng: float
@@ -14,6 +14,7 @@ var vidaActual: float
 
 var sprites: AnimatedSprite2D
 var animar: String
+@export var animaciones: SpriteFrames
 
 signal finPath(yo: PathFollow2D)
 @export var paths: Array
@@ -26,10 +27,12 @@ func _ready():
 	vidaActual = vidaInicial
 	
 	sprites = $AnimatedSprite2D
+	sprites.sprite_frames = animaciones
 
 func _process(delta):
 	if vidaActual <= 0:
 		queue_free()
+#		¿APARECE TIRADO UNOS SEGUNDOS CUANDO MUERE?
 	
 	if estado == "AVANZAR":
 		progress += velocidad
@@ -39,22 +42,17 @@ func _process(delta):
 	
 	if pPosition != position:
 		ang = pPosition.angle_to_point(position)
-
-		var a45 = 0.25*PI
-		if ang > -a45*3 && ang < -a45:
-			mirando = "ARRIBA"
-		elif ang >= -a45 && ang <= a45:
-			mirando = "DERECHA"
-			sprites.flip_h = false
-		elif ang > a45 && ang < a45*3:
-			mirando = "ABAJO"
-		elif ang >= a45*3 || ang <= -a45*3:
-			mirando = "IZQUIERDA"
-			sprites.flip_h = true
 		
-		animar = estado+"_"+mirando
-		if animar != sprites.animation:
-			sprites.play(animar)
+		var a90 = 0.5*PI
+		if ang < -a90 || ang >= a90:
+			sprites.flip_h = true
+		else:
+			sprites.flip_h = false
+	
+	
+	if estado != sprites.animation:
+		sprites.play(estado)
+#			¿REPRODUCIR SPRITE ACOSTADO PARA SOMBRA?
 	
 	$Label.text = str(vidaActual)
 	

@@ -10,6 +10,7 @@ radius = 15.0
 rotates = false
 loop = false
 script = ExtResource("1_2ehgw")
+animaciones = ExtResource("2_bvf6m")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=248271774]
 collision_layer = 256
@@ -22,9 +23,7 @@ shape = SubResource("CircleShape2D_qe4n8")
 position = Vector2(0, -11.999999)
 scale = Vector2(0.1, 0.1)
 sprite_frames = ExtResource("2_bvf6m")
-animation = &"AVANZAR_ABAJO"
-frame = 6
-frame_progress = 0.13560022
+animation = &"ATACAR"
 
 [node name="Label" type="Label" parent="." unique_id=1981769931]
 anchors_preset = 7
