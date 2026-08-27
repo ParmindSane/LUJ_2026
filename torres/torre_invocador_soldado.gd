@@ -9,7 +9,9 @@ var pAng: float
 var target: Node2D
 var pTarget: Node2D
 
-@export var damage: float
+@export var ataque: float
+@export var ataqueDelay: float
+var timer: Timer
 
 @export var vidaInicial: float
 var vidaActual: float
@@ -23,6 +25,8 @@ func _ready():
 	
 	sprites = $AnimatedSprite2D
 	
+	timer = $Timer
+	
 	var random = RandomNumberGenerator.new()
 	var margin = 15
 	position += Vector2(random.randf_range(-margin,margin), random.randf_range(0,margin))
@@ -32,7 +36,9 @@ func _process(delta):
 	if vidaActual <= 0:
 		queue_free()
 	
-	#print(str(self) + " va a "+ str(target))
+	if pTarget != target:
+		timer.stop()
+	
 	if is_instance_valid(target):
 		if estado != "ATACAR":
 			estado = "AVANZAR"
@@ -68,10 +74,10 @@ func _on_area_entered(area):
 	if area.get_parent() == target:
 		target.setRival(self)
 		estado = "ATACAR"
+		timer.start(ataqueDelay)
 	
 
-func _on_animated_sprite_2d_animation_looped():
-	if estado == "ATACAR":
-		if is_instance_valid(target):
-			target.vidaActual -= damage
+func _on_timer_timeout():
+	if estado == "ATACAR" && is_instance_valid(target):
+		target.vidaActual -= ataque
 	

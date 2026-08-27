@@ -14,8 +14,10 @@ var vidaActual: float
 
 var peleandoCon: Node2D
 var venganDeAUno: Array[Node2D]
-@export var soldadoDamage: float
-@export var finalDamage: float
+@export var ataqueASoldado: float
+@export var ataqueDelay: float
+@export var ataqueACore: float
+var timer: Timer
 
 var sprites: AnimatedSprite2D
 var animar: String
@@ -33,6 +35,8 @@ func _ready():
 	
 	sprites = $AnimatedSprite2D
 	sprites.sprite_frames = animaciones
+	
+	timer = $Timer
 
 func _process(delta):
 	if vidaActual <= 0:
@@ -59,11 +63,15 @@ func _process(delta):
 		peleandoCon = venganDeAUno[0]
 		
 		if is_instance_valid(peleandoCon):
-			estado = "ATACAR"
+			if estado != "ATACAR":
+				timer.start(ataqueDelay)
+				estado = "ATACAR"
 			if global_position.x > peleandoCon.global_position.x:
 				sprites.flip_h = true
 			else:
 				sprites.flip_h = false
+		else:
+			timer.stop()
 	else:
 		estado = "AVANZAR"
 	
@@ -81,7 +89,7 @@ func setRival(s: Node2D):
 	venganDeAUno.push_back(s)
 	
 
-func _on_animated_sprite_2d_animation_looped():
+func _on_timer_timeout():
 	if estado == "ATACAR" && is_instance_valid(peleandoCon):
-		peleandoCon.vidaActual -= soldadoDamage
+		peleandoCon.vidaActual -= ataqueASoldado
 	

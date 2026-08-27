@@ -12,7 +12,7 @@ cantidadSoldados = 3
 
 [node name="CollisionShape2D" parent="." index="0" unique_id=1037154666]
 shape = SubResource("CircleShape2D_32p6t")
-debug_color = Color(0.51, 0.51, 0.51, 0.41960785)
+debug_color = Color(0.03500005, 0.7, 0, 0.41960785)
 
 [node name="ColorRect" parent="." index="1" unique_id=1023997331]
 color = Color(0, 1, 0.01666665, 1)

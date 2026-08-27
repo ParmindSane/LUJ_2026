@@ -816,7 +816,8 @@ collision_layer = 2
 collision_mask = 256
 script = ExtResource("1_1le13")
 velocidad = 60.0
-damage = 1.0
+ataque = 1.0
+ataqueDelay = 1.0
 vidaInicial = 5.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=480820577]
@@ -838,3 +839,4 @@ offset_bottom = 23.0
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
