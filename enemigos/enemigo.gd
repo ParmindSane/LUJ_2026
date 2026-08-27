@@ -70,12 +70,11 @@ func _process(delta):
 				sprites.flip_h = true
 			else:
 				sprites.flip_h = false
-		else:
-			timer.stop()
 	else:
 		estado = "AVANZAR"
+		timer.stop()
 	
-	if estado != sprites.animation:
+	if estado != sprites.animation || !sprites.is_playing():
 		sprites.play(estado)
 #			¿REPRODUCIR SPRITE ACOSTADO PARA SOMBRA?
 	

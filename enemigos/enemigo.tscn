@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dy6ate5xm4dhn"]
 
 [ext_resource type="Script" uid="uid://pr2axr2t24od" path="res://enemigos/enemigo.gd" id="1_2ehgw"]
-[ext_resource type="SpriteFrames" uid="uid://bauyf1ekfphp2" path="res://enemigos/assets/zombi/zombi.tres" id="2_bvf6m"]
+[ext_resource type="SpriteFrames" uid="uid://bauyf1ekfphp2" path="res://enemigos/assets/zombi/zombi.tres" id="3_dnjyr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
 radius = 15.0
@@ -15,7 +15,7 @@ vidaInicial = 2.0
 ataqueASoldado = 2.0
 ataqueDelay = 1.0
 ataqueACore = 1.0
-animaciones = ExtResource("2_bvf6m")
+animaciones = ExtResource("3_dnjyr")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=248271774]
 collision_layer = 256
@@ -27,8 +27,10 @@ shape = SubResource("CircleShape2D_qe4n8")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=772477933]
 position = Vector2(0, -11.999999)
 scale = Vector2(0.1, 0.1)
-sprite_frames = ExtResource("2_bvf6m")
-animation = &"ATACAR"
+sprite_frames = ExtResource("3_dnjyr")
+animation = &"AVANZAR"
+frame = 22
+frame_progress = 0.7432563
 
 [node name="Label" type="Label" parent="." unique_id=1981769931]
 anchors_preset = 7

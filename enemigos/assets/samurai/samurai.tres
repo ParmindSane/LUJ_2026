@@ -1,0 +1,156 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://descljoblq7k7"]
+
+[ext_resource type="Texture2D" uid="uid://brauri8h5710f" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_00.png" id="1_4lax2"]
+[ext_resource type="Texture2D" uid="uid://dfoa8kcbr1vfp" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_01.png" id="2_w3ucl"]
+[ext_resource type="Texture2D" uid="uid://cnd3o8g72j2j2" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_02.png" id="3_57rb3"]
+[ext_resource type="Texture2D" uid="uid://611iapofmqwg" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_03.png" id="4_gp4mn"]
+[ext_resource type="Texture2D" uid="uid://dq4e8tnwpt053" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_04.png" id="5_3p2le"]
+[ext_resource type="Texture2D" uid="uid://b4pyagm6hnyhc" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_05.png" id="6_762fj"]
+[ext_resource type="Texture2D" uid="uid://bguft6jke2v3l" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_06.png" id="7_qsmm1"]
+[ext_resource type="Texture2D" uid="uid://biutdd0br8bcr" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_07.png" id="8_rpfvb"]
+[ext_resource type="Texture2D" uid="uid://cfgmv6d1u7d6" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_08.png" id="9_h08t5"]
+[ext_resource type="Texture2D" uid="uid://2ite3n64lywp" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_09.png" id="10_r66o8"]
+[ext_resource type="Texture2D" uid="uid://dilq5noid6raf" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_10.png" id="11_1xst7"]
+[ext_resource type="Texture2D" uid="uid://y6aflhsehg41" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_11.png" id="12_bs588"]
+[ext_resource type="Texture2D" uid="uid://ccfwou3r24lpg" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_12.png" id="13_vixip"]
+[ext_resource type="Texture2D" uid="uid://dbbs2knws3l2i" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_13.png" id="14_udtyr"]
+[ext_resource type="Texture2D" uid="uid://c33mfuf58h1yy" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_14.png" id="15_pyc33"]
+[ext_resource type="Texture2D" uid="uid://c7aarj72ks0sx" path="res://enemigos/assets/samurai/filo-sereno-attacking/Armature_forma-cambiante-attacking_15.png" id="16_cyl7s"]
+[ext_resource type="Texture2D" uid="uid://vh4putkpvx6i" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_00.png" id="17_1wgkv"]
+[ext_resource type="Texture2D" uid="uid://425lm387dri4" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_01.png" id="18_bh6vu"]
+[ext_resource type="Texture2D" uid="uid://wv2nmrukdlvh" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_02.png" id="19_1s8g4"]
+[ext_resource type="Texture2D" uid="uid://ssfwitaddcts" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_03.png" id="20_yr2v6"]
+[ext_resource type="Texture2D" uid="uid://dehol7ybiyjna" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_04.png" id="21_88oee"]
+[ext_resource type="Texture2D" uid="uid://cg8rbl1s3cexi" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_05.png" id="22_nahea"]
+[ext_resource type="Texture2D" uid="uid://3k0ihm5rpjiq" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_06.png" id="23_7qjd3"]
+[ext_resource type="Texture2D" uid="uid://b5hf25umnitor" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_07.png" id="24_3mycv"]
+[ext_resource type="Texture2D" uid="uid://d1psc8wrixv0r" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_08.png" id="25_oqieq"]
+[ext_resource type="Texture2D" uid="uid://jff8vpumj32e" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_09.png" id="26_5f2xh"]
+[ext_resource type="Texture2D" uid="uid://jao5b8t5hx6b" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_10.png" id="27_gsy6w"]
+[ext_resource type="Texture2D" uid="uid://cg6umjhvsbuom" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_11.png" id="28_2ofc6"]
+[ext_resource type="Texture2D" uid="uid://c28oasgmhfxxu" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_12.png" id="29_hiq1h"]
+[ext_resource type="Texture2D" uid="uid://c2l3n5wsnoert" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_13.png" id="30_bjoco"]
+[ext_resource type="Texture2D" uid="uid://b2fpcofgfc11o" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_14.png" id="31_83r8v"]
+[ext_resource type="Texture2D" uid="uid://d2mllvh3x2aq" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_15.png" id="32_v7nw5"]
+[ext_resource type="Texture2D" uid="uid://dopcat0g5ac3e" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_16.png" id="33_7hy70"]
+[ext_resource type="Texture2D" uid="uid://dtkl7bvc5xxrr" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_17.png" id="34_1btkr"]
+[ext_resource type="Texture2D" uid="uid://b3021deixqmh7" path="res://enemigos/assets/samurai/filo-sereno-running/Armature_forma-cambiante-walking_18.png" id="35_5l3nl"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4lax2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w3ucl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_57rb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gp4mn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3p2le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_762fj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qsmm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rpfvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h08t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_r66o8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1xst7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bs588")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vixip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_udtyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pyc33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cyl7s")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_1wgkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bh6vu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_1s8g4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yr2v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_88oee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_nahea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_7qjd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_3mycv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_oqieq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_5f2xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gsy6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2ofc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hiq1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_bjoco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_83r8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_v7nw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_7hy70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_1btkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_5l3nl")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

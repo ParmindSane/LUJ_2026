@@ -1,0 +1,296 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b7dn6tt68x07l"]
+
+[ext_resource type="Texture2D" uid="uid://clvhqbibuelfl" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_00.png" id="1_52agl"]
+[ext_resource type="Texture2D" uid="uid://6km6jqx8r7kg" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_01.png" id="2_hbidn"]
+[ext_resource type="Texture2D" uid="uid://dxcg78j3sm3wo" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_02.png" id="3_vg6xn"]
+[ext_resource type="Texture2D" uid="uid://ch7s5v8l3v2yr" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_03.png" id="4_pgvbq"]
+[ext_resource type="Texture2D" uid="uid://cnevhkb8i1c01" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_04.png" id="5_vqf5y"]
+[ext_resource type="Texture2D" uid="uid://7i43hikui0dx" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_05.png" id="6_tl53o"]
+[ext_resource type="Texture2D" uid="uid://cgahmaxqg0kf4" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_06.png" id="7_ge2du"]
+[ext_resource type="Texture2D" uid="uid://0bu5xtj2so2d" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_07.png" id="8_fq58t"]
+[ext_resource type="Texture2D" uid="uid://wrqj1eduxefx" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_08.png" id="9_lma7d"]
+[ext_resource type="Texture2D" uid="uid://b1tiuixijbclo" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_09.png" id="10_4nspr"]
+[ext_resource type="Texture2D" uid="uid://dfefvqyspvg1k" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_10.png" id="11_c2sg0"]
+[ext_resource type="Texture2D" uid="uid://7ibag5qf7af8" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_11.png" id="12_a8er2"]
+[ext_resource type="Texture2D" uid="uid://dhwgtydcqchf6" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_12.png" id="13_wk80d"]
+[ext_resource type="Texture2D" uid="uid://dw1g8su6jlqtd" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_13.png" id="14_v7fcg"]
+[ext_resource type="Texture2D" uid="uid://ck8oqxc4i0rfn" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_14.png" id="15_hykmo"]
+[ext_resource type="Texture2D" uid="uid://8skh1kat3jg8" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_15.png" id="16_k80h2"]
+[ext_resource type="Texture2D" uid="uid://cwaqi132dfl6k" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_16.png" id="17_vflvv"]
+[ext_resource type="Texture2D" uid="uid://cvcxk3jvqyxnv" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_17.png" id="18_0fetf"]
+[ext_resource type="Texture2D" uid="uid://bjt1oel0200ox" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_18.png" id="19_jdvp8"]
+[ext_resource type="Texture2D" uid="uid://cbo6jc236rvhk" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_19.png" id="20_qra3r"]
+[ext_resource type="Texture2D" uid="uid://b77h7pu8rdtql" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_20.png" id="21_6rcs8"]
+[ext_resource type="Texture2D" uid="uid://c880661pbpk40" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_21.png" id="22_peqbn"]
+[ext_resource type="Texture2D" uid="uid://cq0lepvp2npd1" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_22.png" id="23_bcy4f"]
+[ext_resource type="Texture2D" uid="uid://tkj77v2beunj" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_23.png" id="24_e7apd"]
+[ext_resource type="Texture2D" uid="uid://djbbk35paff4s" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_24.png" id="25_luhym"]
+[ext_resource type="Texture2D" uid="uid://bl2l1um7xo0rx" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_25.png" id="26_k75wo"]
+[ext_resource type="Texture2D" uid="uid://bcmbr8syfley3" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_26.png" id="27_n3ueq"]
+[ext_resource type="Texture2D" uid="uid://d0fwpk0igqn77" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_27.png" id="28_5ko8a"]
+[ext_resource type="Texture2D" uid="uid://cgtsjinl5rk5e" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_28.png" id="29_0oj7m"]
+[ext_resource type="Texture2D" uid="uid://da77jiq3h81y2" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_29.png" id="30_hr2ow"]
+[ext_resource type="Texture2D" uid="uid://ccn7wffbmpqf8" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_30.png" id="31_7lay8"]
+[ext_resource type="Texture2D" uid="uid://bvgh1mrfhaams" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_31.png" id="32_3qsv2"]
+[ext_resource type="Texture2D" uid="uid://g425orviotd7" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_32.png" id="33_5srgi"]
+[ext_resource type="Texture2D" uid="uid://xvw8hdnr66q1" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_33.png" id="34_j4w4m"]
+[ext_resource type="Texture2D" uid="uid://blq5dbl13y26a" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_34.png" id="35_0mw1m"]
+[ext_resource type="Texture2D" uid="uid://cn117721cpcjm" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_35.png" id="36_ci4ma"]
+[ext_resource type="Texture2D" uid="uid://bau33oodsh4i8" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_36.png" id="37_j5t6e"]
+[ext_resource type="Texture2D" uid="uid://djup4bscycq65" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_37.png" id="38_gv14q"]
+[ext_resource type="Texture2D" uid="uid://c4un0flhrbhek" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_38.png" id="39_1typn"]
+[ext_resource type="Texture2D" uid="uid://bgslrf2utnmt7" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_39.png" id="40_x3tay"]
+[ext_resource type="Texture2D" uid="uid://cufnv2fkeapsb" path="res://enemigos/assets/acero/juramento-acero-attacking/Armature_forma-cambiante-attacking_40.png" id="41_ot6rk"]
+[ext_resource type="Texture2D" uid="uid://r2avyhai0vbg" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_00.png" id="42_x3ahk"]
+[ext_resource type="Texture2D" uid="uid://uuj8bbt1env5" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_01.png" id="43_lw6xv"]
+[ext_resource type="Texture2D" uid="uid://cyh3gop1frctf" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_02.png" id="44_drbjj"]
+[ext_resource type="Texture2D" uid="uid://sg5vmi2uhxtm" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_03.png" id="45_5nu0y"]
+[ext_resource type="Texture2D" uid="uid://dsvptut5oiw4e" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_04.png" id="46_c2ffh"]
+[ext_resource type="Texture2D" uid="uid://bfpg01lresu31" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_05.png" id="47_wba6r"]
+[ext_resource type="Texture2D" uid="uid://cgc87e8aqwr02" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_06.png" id="48_npxmy"]
+[ext_resource type="Texture2D" uid="uid://bcnl8k6u7w4q3" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_07.png" id="49_iwob7"]
+[ext_resource type="Texture2D" uid="uid://dtpu08gbj1q2o" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_08.png" id="50_qpmlp"]
+[ext_resource type="Texture2D" uid="uid://dot1q1yci5sie" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_09.png" id="51_k0qfn"]
+[ext_resource type="Texture2D" uid="uid://cej85vp8pqj3r" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_10.png" id="52_7yimx"]
+[ext_resource type="Texture2D" uid="uid://ds6gjlwej1sma" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_11.png" id="53_rdmnd"]
+[ext_resource type="Texture2D" uid="uid://cdxrhxw2cncbg" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_12.png" id="54_angr0"]
+[ext_resource type="Texture2D" uid="uid://mwb1qoyx3hd0" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_13.png" id="55_7k0r0"]
+[ext_resource type="Texture2D" uid="uid://dlbxbihqb61vs" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_14.png" id="56_cw6gr"]
+[ext_resource type="Texture2D" uid="uid://j5hbjad72t41" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_15.png" id="57_x3bhm"]
+[ext_resource type="Texture2D" uid="uid://uqxnqge0wald" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_16.png" id="58_q73ls"]
+[ext_resource type="Texture2D" uid="uid://m1tlydmxt2rm" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_17.png" id="59_s0m4f"]
+[ext_resource type="Texture2D" uid="uid://ca0td67bmy1af" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_18.png" id="60_o65do"]
+[ext_resource type="Texture2D" uid="uid://b0eux4gbfws7j" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_19.png" id="61_taj2n"]
+[ext_resource type="Texture2D" uid="uid://d0dbvgg35kgdx" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_20.png" id="62_fnmwm"]
+[ext_resource type="Texture2D" uid="uid://cee2720h5umyk" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_21.png" id="63_dyphc"]
+[ext_resource type="Texture2D" uid="uid://der1eqadhum1k" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_22.png" id="64_7nqm7"]
+[ext_resource type="Texture2D" uid="uid://dw8rjsr5twrwo" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_23.png" id="65_3bv3k"]
+[ext_resource type="Texture2D" uid="uid://ccogvdx0dtx1x" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_24.png" id="66_qah8e"]
+[ext_resource type="Texture2D" uid="uid://d2cqaeiwcv2ep" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_25.png" id="67_bdtpi"]
+[ext_resource type="Texture2D" uid="uid://cmf06npol2fri" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_26.png" id="68_aitpk"]
+[ext_resource type="Texture2D" uid="uid://b5pc85a1a6fdq" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_27.png" id="69_l602n"]
+[ext_resource type="Texture2D" uid="uid://ctkwfoso3yocb" path="res://enemigos/assets/acero/juramento-acero-running/Armature_forma-cambiante-walking_28.png" id="70_e18yt"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_52agl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hbidn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vg6xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pgvbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vqf5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tl53o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ge2du")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fq58t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lma7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4nspr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_c2sg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_a8er2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wk80d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_v7fcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hykmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k80h2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vflvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0fetf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jdvp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qra3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6rcs8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_peqbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_bcy4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_e7apd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_luhym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_k75wo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_n3ueq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_5ko8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0oj7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_hr2ow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_7lay8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_3qsv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_5srgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_j4w4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_0mw1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ci4ma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_j5t6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_gv14q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_1typn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_x3tay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ot6rk")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_x3ahk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_lw6xv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_drbjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_5nu0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_c2ffh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_wba6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_npxmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_iwob7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_qpmlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_k0qfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_7yimx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_rdmnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_angr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_7k0r0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_cw6gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_x3bhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_q73ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_s0m4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_o65do")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_taj2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_fnmwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_dyphc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_7nqm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_3bv3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_qah8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_bdtpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_aitpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_l602n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_e18yt")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

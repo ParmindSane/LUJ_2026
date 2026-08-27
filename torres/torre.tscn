@@ -5,30 +5,19 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jwhw"]
 radius = 120.0
 
-[node name="Torre" type="Area2D" unique_id=1565077132 node_paths=PackedStringArray("timer", "spawnpoint")]
+[node name="Torre" type="Area2D" unique_id=1565077132]
 collision_mask = 256
 script = ExtResource("1_xxpgf")
 delay = 1.0
-timer = NodePath("Timer")
-spawnpoint = NodePath("SpawnPoint")
+
+[node name="Timer" type="Timer" parent="." unique_id=706880896]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1037154666]
 shape = SubResource("CircleShape2D_4jwhw")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1023997331]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = -40.0
-offset_right = 20.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="Timer" type="Timer" parent="." unique_id=706880896]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2065084869]
+position = Vector2(0, -19)
+scale = Vector2(0.3, 0.3)
 
 [node name="SpawnPoint" type="Node2D" parent="." unique_id=1373959747]
-position = Vector2(0, -40)
 metadata/_edit_group_ = true
