@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://d3yqy4dhsfivc"]
+
+[ext_resource type="PackedScene" uid="uid://cecf3hxjpal8n" path="res://torres/torre.tscn" id="1_2us3v"]
+[ext_resource type="Script" uid="uid://sksngdx0md3i" path="res://torres/Area/torre_area.gd" id="2_2us3v"]
+[ext_resource type="Texture2D" uid="uid://dx1awr71fvajy" path="res://torres/Area/tower2-aniamtion/action0.png" id="3_6na2p"]
+[ext_resource type="Texture2D" uid="uid://cg7umohy6jasn" path="res://torres/Area/tower2-aniamtion/action1.png" id="4_jh7wc"]
+[ext_resource type="Texture2D" uid="uid://d2uqausbhumnx" path="res://torres/Area/tower2-aniamtion/action2.png" id="5_ossf7"]
+[ext_resource type="Texture2D" uid="uid://b7gfwdoldarnn" path="res://torres/Area/tower2-aniamtion/action3.png" id="6_06jsq"]
+[ext_resource type="Texture2D" uid="uid://dmnpwk5537ojw" path="res://torres/Area/tower2-aniamtion/action4.png" id="7_3pwm3"]
+[ext_resource type="Texture2D" uid="uid://c0co8g60l6e83" path="res://torres/Area/tower2-aniamtion/action5.png" id="8_fkgl3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gpp5w"]
+radius = 120.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2us3v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_fkgl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6na2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jh7wc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ossf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_06jsq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3pwm3")
+}],
+"loop": 0,
+"name": &"ATACAR",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_3pwm3")
+}],
+"loop": 1,
+"name": &"IDLE",
+"speed": 5.0
+}]
+
+[node name="LanzaArea" unique_id=1565077132 instance=ExtResource("1_2us3v")]
+script = ExtResource("2_2us3v")
+delay = 0.0
+
+[node name="Timer" parent="." index="0" unique_id=706880896]
+one_shot = true
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1037154666]
+shape = SubResource("CircleShape2D_gpp5w")
+debug_color = Color(1, 0.35000002, 0, 0.41960785)
+
+[node name="AnimatedSprite2D" parent="." index="2" unique_id=2065084869]
+sprite_frames = SubResource("SpriteFrames_2us3v")
+animation = &"ATACAR"
+autoplay = "IDLE"
+
+[node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
+position = Vector2(-19, -54)
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

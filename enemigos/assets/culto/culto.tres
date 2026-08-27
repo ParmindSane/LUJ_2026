@@ -1,0 +1,272 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bl8sg8bu6wr16"]
+
+[ext_resource type="Texture2D" uid="uid://c31awqr18tok8" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_00.png" id="1_1eqkv"]
+[ext_resource type="Texture2D" uid="uid://d0178ltlpitsa" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_01.png" id="2_xfdtk"]
+[ext_resource type="Texture2D" uid="uid://fx34y0rnt1xa" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_02.png" id="3_708qo"]
+[ext_resource type="Texture2D" uid="uid://dej2upuuwxfb0" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_03.png" id="4_dwp0u"]
+[ext_resource type="Texture2D" uid="uid://c48akwy4xghq5" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_04.png" id="5_6eynb"]
+[ext_resource type="Texture2D" uid="uid://crnyj8ykaktl7" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_05.png" id="6_0fd8u"]
+[ext_resource type="Texture2D" uid="uid://bk8cs5npjryn" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_06.png" id="7_uv476"]
+[ext_resource type="Texture2D" uid="uid://dr6l0njsilotl" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_07.png" id="8_hpvpm"]
+[ext_resource type="Texture2D" uid="uid://bcf7enwnvcj5d" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_08.png" id="9_tpyvw"]
+[ext_resource type="Texture2D" uid="uid://dl1td81731trk" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_09.png" id="10_m10yd"]
+[ext_resource type="Texture2D" uid="uid://cytvun11lba7g" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_10.png" id="11_kph0b"]
+[ext_resource type="Texture2D" uid="uid://d2xhxllr2gtbn" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_11.png" id="12_ejbba"]
+[ext_resource type="Texture2D" uid="uid://davfh6f5mj7hs" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_12.png" id="13_r31p4"]
+[ext_resource type="Texture2D" uid="uid://qnwe6uqamd6y" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_13.png" id="14_rbh4s"]
+[ext_resource type="Texture2D" uid="uid://oku2dmhaoth0" path="res://enemigos/assets/culto/culto-del-umbral-attacking/Armature_newAnimation_14.png" id="15_vyntt"]
+[ext_resource type="Texture2D" uid="uid://yb028l03lris" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_00.png" id="16_f5h5x"]
+[ext_resource type="Texture2D" uid="uid://bmpqi5loh582m" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_01.png" id="17_826w0"]
+[ext_resource type="Texture2D" uid="uid://y4j5kpc2dfut" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_02.png" id="18_h2olb"]
+[ext_resource type="Texture2D" uid="uid://dcivfxnaum1og" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_03.png" id="19_xcvs8"]
+[ext_resource type="Texture2D" uid="uid://djm3cm8fkiq6r" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_04.png" id="20_mpgqc"]
+[ext_resource type="Texture2D" uid="uid://8ot8424oe2a3" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_05.png" id="21_uu8rm"]
+[ext_resource type="Texture2D" uid="uid://bvd8qaf5ytmtr" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_06.png" id="22_jcyqu"]
+[ext_resource type="Texture2D" uid="uid://dqpge80awn5h0" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_07.png" id="23_gkm6u"]
+[ext_resource type="Texture2D" uid="uid://sfnqak3jnxmy" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_08.png" id="24_ojsgu"]
+[ext_resource type="Texture2D" uid="uid://dpk5glxv7142n" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_09.png" id="25_gctag"]
+[ext_resource type="Texture2D" uid="uid://d2k61h16xlilp" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_10.png" id="26_qrdps"]
+[ext_resource type="Texture2D" uid="uid://bddqu8fgdw6jy" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_11.png" id="27_f51nt"]
+[ext_resource type="Texture2D" uid="uid://b04f6vp3osen1" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_12.png" id="28_30ica"]
+[ext_resource type="Texture2D" uid="uid://u63jy16aehl2" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_13.png" id="29_srl4t"]
+[ext_resource type="Texture2D" uid="uid://bnbxwrxpou8e5" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_14.png" id="30_1iqx4"]
+[ext_resource type="Texture2D" uid="uid://d0jvxoanvoy04" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_15.png" id="31_b3u5y"]
+[ext_resource type="Texture2D" uid="uid://sw0y8spvepiv" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_16.png" id="32_wagfn"]
+[ext_resource type="Texture2D" uid="uid://cx28237ystppt" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_17.png" id="33_7ai7q"]
+[ext_resource type="Texture2D" uid="uid://hdnapa1gf8dv" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_18.png" id="34_lt7sr"]
+[ext_resource type="Texture2D" uid="uid://l7h6nhi4a4sr" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_19.png" id="35_s8nid"]
+[ext_resource type="Texture2D" uid="uid://c43xt1ig8q83r" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_20.png" id="36_2qplm"]
+[ext_resource type="Texture2D" uid="uid://cccuisorgo646" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_21.png" id="37_r80dt"]
+[ext_resource type="Texture2D" uid="uid://rl1h5ihmb750" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_22.png" id="38_oy7qy"]
+[ext_resource type="Texture2D" uid="uid://eslo3psj6mtc" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_23.png" id="39_be168"]
+[ext_resource type="Texture2D" uid="uid://cc3l1hcfmq4np" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_24.png" id="40_sit4m"]
+[ext_resource type="Texture2D" uid="uid://c0n0ncy6g8lgo" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_25.png" id="41_qkbjf"]
+[ext_resource type="Texture2D" uid="uid://bo4m5h631tj5f" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_26.png" id="42_rrb1a"]
+[ext_resource type="Texture2D" uid="uid://dhbsbmsk7vohg" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_27.png" id="43_p7xlu"]
+[ext_resource type="Texture2D" uid="uid://cvqe6tidn6vd0" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_28.png" id="44_wxeys"]
+[ext_resource type="Texture2D" uid="uid://c65ft6o4p3jj7" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_29.png" id="45_qgt70"]
+[ext_resource type="Texture2D" uid="uid://hg3we078dmc2" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_30.png" id="46_pq7yv"]
+[ext_resource type="Texture2D" uid="uid://cbl67qyhkautv" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_31.png" id="47_1evem"]
+[ext_resource type="Texture2D" uid="uid://c4k5pr1fhjthn" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_32.png" id="48_cfyuk"]
+[ext_resource type="Texture2D" uid="uid://ccsc4j7xh2sl4" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_33.png" id="49_28ih6"]
+[ext_resource type="Texture2D" uid="uid://d0ymotm0hkcx7" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_34.png" id="50_nxjjb"]
+[ext_resource type="Texture2D" uid="uid://demk2uw0w26lu" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_35.png" id="51_gevok"]
+[ext_resource type="Texture2D" uid="uid://bd7q2r150nbx" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_36.png" id="52_16s3b"]
+[ext_resource type="Texture2D" uid="uid://g6ypv4p0s2ug" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_37.png" id="53_rtqe6"]
+[ext_resource type="Texture2D" uid="uid://dpe7xr3wg2vkq" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_38.png" id="54_c2nqd"]
+[ext_resource type="Texture2D" uid="uid://cr12kfke3lqaf" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_39.png" id="55_flsud"]
+[ext_resource type="Texture2D" uid="uid://c3h5sexmji71j" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_40.png" id="56_0mcn2"]
+[ext_resource type="Texture2D" uid="uid://ba2e4sonun4h0" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_41.png" id="57_l3hhp"]
+[ext_resource type="Texture2D" uid="uid://dik7atl8txg2f" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_42.png" id="58_4nvjl"]
+[ext_resource type="Texture2D" uid="uid://c1d5xucvib0d8" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_43.png" id="59_dtqpm"]
+[ext_resource type="Texture2D" uid="uid://blnqn2tfelh4r" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_44.png" id="60_s2atx"]
+[ext_resource type="Texture2D" uid="uid://b1fipv2nc8be2" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_45.png" id="61_qg3t7"]
+[ext_resource type="Texture2D" uid="uid://botlp2ax45kwg" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_46.png" id="62_dcw7p"]
+[ext_resource type="Texture2D" uid="uid://c8rh52k8ns7db" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_47.png" id="63_fl718"]
+[ext_resource type="Texture2D" uid="uid://dsg7sgqeoe5ew" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_48.png" id="64_t7qvd"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1eqkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xfdtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_708qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dwp0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6eynb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0fd8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uv476")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hpvpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tpyvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_m10yd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kph0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ejbba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_r31p4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rbh4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vyntt")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_f5h5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_826w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_h2olb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xcvs8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mpgqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_uu8rm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_jcyqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_gkm6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ojsgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_gctag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_qrdps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_f51nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_30ica")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_srl4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_1iqx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_b3u5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_wagfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_7ai7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_lt7sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_s8nid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_2qplm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_r80dt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_oy7qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_be168")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_sit4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_qkbjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_rrb1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_p7xlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_wxeys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_qgt70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_pq7yv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_1evem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_cfyuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_28ih6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_nxjjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_gevok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_16s3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_rtqe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_c2nqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_flsud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_0mcn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_l3hhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_4nvjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_dtqpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_s2atx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_qg3t7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_dcw7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_fl718")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_t7qvd")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

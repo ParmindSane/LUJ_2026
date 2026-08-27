@@ -1,75 +1,49 @@
 [gd_scene format=3 uid="uid://dy6ate5xm4dhn"]
 
 [ext_resource type="Script" uid="uid://pr2axr2t24od" path="res://enemigos/enemigo.gd" id="1_2ehgw"]
-[ext_resource type="Texture2D" uid="uid://ba7l0c6rj73jc" path="res://enemigos/assets/avanzar_abajo0.png" id="2_0p6eo"]
-[ext_resource type="Texture2D" uid="uid://j2w1qeturwt" path="res://enemigos/assets/avanzar_abajo1.png" id="3_2yvtj"]
-[ext_resource type="Texture2D" uid="uid://bi28spsucsdj" path="res://enemigos/assets/avanzar_arriba0.png" id="4_ysyd8"]
-[ext_resource type="Texture2D" uid="uid://co6s4nn1kqcyx" path="res://enemigos/assets/avanzar_arriba1.png" id="5_gg1r0"]
-[ext_resource type="Texture2D" uid="uid://dc6jgnqxvk2ps" path="res://enemigos/assets/avanzar_derecha0.png" id="6_psl2x"]
-[ext_resource type="Texture2D" uid="uid://cp0tsa0ytdchr" path="res://enemigos/assets/avanzar_derecha1.png" id="7_4qigy"]
-[ext_resource type="Texture2D" uid="uid://dc0s3ai5x7vo8" path="res://enemigos/assets/avanzar_izquierda0.png" id="8_od7qp"]
-[ext_resource type="Texture2D" uid="uid://bujpehu1ulh6k" path="res://enemigos/assets/avanzar_izquierda1.png" id="9_er6sw"]
+[ext_resource type="SpriteFrames" uid="uid://bauyf1ekfphp2" path="res://enemigos/assets/zombi/zombi.tres" id="3_dnjyr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
-radius = 25.0
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_qe4n8"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_0p6eo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_2yvtj")
-}],
-"loop": 1,
-"name": &"AVANZAR_ABAJO",
-"speed": 3.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_ysyd8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_gg1r0")
-}],
-"loop": 1,
-"name": &"AVANZAR_ARRIBA",
-"speed": 3.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_psl2x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_4qigy")
-}],
-"loop": 1,
-"name": &"AVANZAR_DERECHA",
-"speed": 3.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_od7qp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_er6sw")
-}],
-"loop": 1,
-"name": &"AVANZAR_IZQUIERDA",
-"speed": 3.0
-}]
+radius = 15.0
 
 [node name="Enemigo" type="PathFollow2D" unique_id=1821539514]
 rotates = false
 loop = false
 script = ExtResource("1_2ehgw")
+velocidad = 1.0
+vidaInicial = 2.0
+ataqueASoldado = 2.0
+ataqueDelay = 1.0
+ataqueACore = 1.0
+animaciones = ExtResource("3_dnjyr")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=248271774]
+collision_layer = 256
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1237433419]
 shape = SubResource("CircleShape2D_qe4n8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=772477933]
-sprite_frames = SubResource("SpriteFrames_qe4n8")
-animation = &"AVANZAR_IZQUIERDA"
+position = Vector2(0, -11.999999)
+scale = Vector2(0.1, 0.1)
+sprite_frames = ExtResource("3_dnjyr")
+animation = &"AVANZAR"
+
+[node name="Label" type="Label" parent="." unique_id=1981769931]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "X"
+
+[node name="Timer" type="Timer" parent="." unique_id=1150165994]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,264 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cfj7ibqvy4n08"]
+
+[ext_resource type="Texture2D" uid="uid://2a38nyd2opta" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_00.png" id="1_8c06i"]
+[ext_resource type="Texture2D" uid="uid://cepgikbohnyu2" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_01.png" id="2_m6y1e"]
+[ext_resource type="Texture2D" uid="uid://qsfhd36i4jt4" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_02.png" id="3_4rr3o"]
+[ext_resource type="Texture2D" uid="uid://c3s7rlbjxnc1e" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_03.png" id="4_gdr0x"]
+[ext_resource type="Texture2D" uid="uid://dexv0ny6rutcv" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_04.png" id="5_w88sc"]
+[ext_resource type="Texture2D" uid="uid://pl5jruuhh85k" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_05.png" id="6_yvut7"]
+[ext_resource type="Texture2D" uid="uid://07a4b600m01b" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_06.png" id="7_wwuqj"]
+[ext_resource type="Texture2D" uid="uid://ddhnbdqosmqxx" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_07.png" id="8_n6avu"]
+[ext_resource type="Texture2D" uid="uid://c8lva2x6hil2c" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_08.png" id="9_dqgvt"]
+[ext_resource type="Texture2D" uid="uid://cyiv2dfpgv4nl" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_09.png" id="10_w4d13"]
+[ext_resource type="Texture2D" uid="uid://dvty1ivpm7ure" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_10.png" id="11_desia"]
+[ext_resource type="Texture2D" uid="uid://dhnb1pk31w8v6" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_11.png" id="12_0vils"]
+[ext_resource type="Texture2D" uid="uid://tka5m3v2ojn2" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_12.png" id="13_jcfic"]
+[ext_resource type="Texture2D" uid="uid://ctp41tng4vc5v" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_13.png" id="14_cd7ua"]
+[ext_resource type="Texture2D" uid="uid://brqb3eiboosbp" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_14.png" id="15_f7o5e"]
+[ext_resource type="Texture2D" uid="uid://cawlt50lsq7tn" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_15.png" id="16_y1pkm"]
+[ext_resource type="Texture2D" uid="uid://bdg7v7vaweied" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_16.png" id="17_2y0ll"]
+[ext_resource type="Texture2D" uid="uid://ces4p8omb7a1r" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_17.png" id="18_kx6ik"]
+[ext_resource type="Texture2D" uid="uid://bqhs2o7qbo3h2" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_18.png" id="19_5j8tn"]
+[ext_resource type="Texture2D" uid="uid://dcnm7noubo5p1" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_19.png" id="20_0n2oj"]
+[ext_resource type="Texture2D" uid="uid://ca50tq403ffow" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_20.png" id="21_sify4"]
+[ext_resource type="Texture2D" uid="uid://cnbjghd4h2vyt" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_21.png" id="22_0dmlu"]
+[ext_resource type="Texture2D" uid="uid://hrx3vm2lp17v" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_22.png" id="23_usitg"]
+[ext_resource type="Texture2D" uid="uid://b4cevvl0dqlx3" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_23.png" id="24_c041v"]
+[ext_resource type="Texture2D" uid="uid://toax7tbsrafb" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_24.png" id="25_1rpwe"]
+[ext_resource type="Texture2D" uid="uid://dycrosbonjlna" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_25.png" id="26_k1h4b"]
+[ext_resource type="Texture2D" uid="uid://wrcremydwihi" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_26.png" id="27_dk76e"]
+[ext_resource type="Texture2D" uid="uid://lbtx6bw7ioub" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_27.png" id="28_46ihq"]
+[ext_resource type="Texture2D" uid="uid://b1bfd6kso2hs" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_28.png" id="29_objpu"]
+[ext_resource type="Texture2D" uid="uid://26su6u1ibydm" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_29.png" id="30_p45ip"]
+[ext_resource type="Texture2D" uid="uid://dnwjahgfo8mva" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_30.png" id="31_umwki"]
+[ext_resource type="Texture2D" uid="uid://doqgvguibre0p" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_31.png" id="32_va5w1"]
+[ext_resource type="Texture2D" uid="uid://ddv0q2otyjb4p" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_32.png" id="33_sdo7y"]
+[ext_resource type="Texture2D" uid="uid://cihcq1erudjc3" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_33.png" id="34_51rru"]
+[ext_resource type="Texture2D" uid="uid://cu0twh3a40f2r" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_34.png" id="35_j0tsh"]
+[ext_resource type="Texture2D" uid="uid://4i87bp7sl3h0" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_35.png" id="36_r8oqm"]
+[ext_resource type="Texture2D" uid="uid://bt2ajykkyp5pg" path="res://enemigos/assets/roble/estirpe-del-roble-attacking/Armature_estirpe-del-roble-attacking_36.png" id="37_xuj3u"]
+[ext_resource type="Texture2D" uid="uid://cyg7m5succw7l" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_00.png" id="38_sj7so"]
+[ext_resource type="Texture2D" uid="uid://bgsvgxhm4xv7i" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_01.png" id="39_l61xh"]
+[ext_resource type="Texture2D" uid="uid://f6y5062rpv5d" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_02.png" id="40_mwhwu"]
+[ext_resource type="Texture2D" uid="uid://d3x5ewek8axuo" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_03.png" id="41_fp5xk"]
+[ext_resource type="Texture2D" uid="uid://ba0o00i85x16k" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_04.png" id="42_rl1s6"]
+[ext_resource type="Texture2D" uid="uid://8lg0ip08jyso" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_05.png" id="43_og3xf"]
+[ext_resource type="Texture2D" uid="uid://cn01owp4s01e3" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_06.png" id="44_e2ywh"]
+[ext_resource type="Texture2D" uid="uid://b2d3y4dyvghc4" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_07.png" id="45_cqfw2"]
+[ext_resource type="Texture2D" uid="uid://vns75gqnph7q" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_08.png" id="46_euh48"]
+[ext_resource type="Texture2D" uid="uid://bfdbr3nsehclb" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_09.png" id="47_h302k"]
+[ext_resource type="Texture2D" uid="uid://dfryg7124ngfe" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_10.png" id="48_fu3gn"]
+[ext_resource type="Texture2D" uid="uid://bo0oe6ad4kyw2" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_11.png" id="49_si0m1"]
+[ext_resource type="Texture2D" uid="uid://bluvp5mjv2kr4" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_12.png" id="50_i5v08"]
+[ext_resource type="Texture2D" uid="uid://b2v1peyj03tc7" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_13.png" id="51_3mvfr"]
+[ext_resource type="Texture2D" uid="uid://dfbhep254v5jh" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_14.png" id="52_8dneh"]
+[ext_resource type="Texture2D" uid="uid://d3balwdnupy4f" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_15.png" id="53_20hbj"]
+[ext_resource type="Texture2D" uid="uid://bjbcevkxpbn7v" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_16.png" id="54_b1gkj"]
+[ext_resource type="Texture2D" uid="uid://s73r0mo8buei" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_17.png" id="55_2f3cv"]
+[ext_resource type="Texture2D" uid="uid://ceu156c8vdr4e" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_18.png" id="56_ejp3m"]
+[ext_resource type="Texture2D" uid="uid://pptpoxl7i0qc" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_19.png" id="57_0cxkn"]
+[ext_resource type="Texture2D" uid="uid://bwmwxqhupbas1" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_20.png" id="58_2jq8e"]
+[ext_resource type="Texture2D" uid="uid://bgrpxnauph5u0" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_21.png" id="59_t4hdx"]
+[ext_resource type="Texture2D" uid="uid://dcsifo7ec2tuw" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_22.png" id="60_esvom"]
+[ext_resource type="Texture2D" uid="uid://dtab4nxotqouw" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_23.png" id="61_nkjio"]
+[ext_resource type="Texture2D" uid="uid://krv14n1o3rcr" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_24.png" id="62_00tmi"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8c06i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m6y1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4rr3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gdr0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_w88sc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yvut7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wwuqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_n6avu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dqgvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_w4d13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_desia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0vils")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_jcfic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cd7ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f7o5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_y1pkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2y0ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_kx6ik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5j8tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0n2oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_sify4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0dmlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_usitg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_c041v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1rpwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_k1h4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_dk76e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_46ihq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_objpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_p45ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_umwki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_va5w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_sdo7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_51rru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_j0tsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_r8oqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_xuj3u")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_sj7so")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_l61xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_mwhwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_fp5xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_rl1s6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_og3xf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_e2ywh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_cqfw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_euh48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_h302k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_fu3gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_si0m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_i5v08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_3mvfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_8dneh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_20hbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_b1gkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_2f3cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_ejp3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_0cxkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_2jq8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_t4hdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_esvom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_nkjio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_00tmi")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

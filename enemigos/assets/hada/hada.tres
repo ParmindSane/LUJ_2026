@@ -1,0 +1,216 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://360ln7hcaf5s"]
+
+[ext_resource type="Texture2D" uid="uid://67qkvsrthus5" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_00.png" id="1_18qkw"]
+[ext_resource type="Texture2D" uid="uid://d0di33k7a1mqv" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_01.png" id="2_p3jm2"]
+[ext_resource type="Texture2D" uid="uid://bqoofjgd012vy" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_02.png" id="3_1akha"]
+[ext_resource type="Texture2D" uid="uid://cj2xbiwg0k0rk" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_03.png" id="4_yntaj"]
+[ext_resource type="Texture2D" uid="uid://dvm5si73x3omh" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_04.png" id="5_3witr"]
+[ext_resource type="Texture2D" uid="uid://tolnhh25b030" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_05.png" id="6_o70ag"]
+[ext_resource type="Texture2D" uid="uid://bonjsfoifhg6m" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_06.png" id="7_n5fg3"]
+[ext_resource type="Texture2D" uid="uid://fsukxc4he6ea" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_07.png" id="8_118kv"]
+[ext_resource type="Texture2D" uid="uid://na1pn2nsm31l" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_08.png" id="9_csl4a"]
+[ext_resource type="Texture2D" uid="uid://l4d3pgp1eslf" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_09.png" id="10_cdojd"]
+[ext_resource type="Texture2D" uid="uid://cig77paxallk2" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_10.png" id="11_042t3"]
+[ext_resource type="Texture2D" uid="uid://dvrnlcylbobrc" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_11.png" id="12_2ha7o"]
+[ext_resource type="Texture2D" uid="uid://b7eborixlriji" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_12.png" id="13_em4ns"]
+[ext_resource type="Texture2D" uid="uid://o4vvu5fg0owa" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_13.png" id="14_e3p6j"]
+[ext_resource type="Texture2D" uid="uid://clnug15anhv2a" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_14.png" id="15_cx7kq"]
+[ext_resource type="Texture2D" uid="uid://kx182lrlfhhx" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_15.png" id="16_w062j"]
+[ext_resource type="Texture2D" uid="uid://cmit1hd2simum" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_16.png" id="17_ebtx5"]
+[ext_resource type="Texture2D" uid="uid://bwjlqbimstdtt" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_17.png" id="18_8qhfo"]
+[ext_resource type="Texture2D" uid="uid://dnbk33165g6aw" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_18.png" id="19_d7tvl"]
+[ext_resource type="Texture2D" uid="uid://bswtq4g5n54f4" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_19.png" id="20_2nkt6"]
+[ext_resource type="Texture2D" uid="uid://crjgn16ofqax0" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_20.png" id="21_si64x"]
+[ext_resource type="Texture2D" uid="uid://cdsy5py84ntsg" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_21.png" id="22_ajpma"]
+[ext_resource type="Texture2D" uid="uid://dhq1gl1kohb24" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_22.png" id="23_ar65p"]
+[ext_resource type="Texture2D" uid="uid://c5vl2pv0gcy5o" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_23.png" id="24_mvdtl"]
+[ext_resource type="Texture2D" uid="uid://do6xcdusrv6lw" path="res://enemigos/assets/hada/polvo-maldito-throwing/Armature_polvo-maldito-throwing_24.png" id="25_epk23"]
+[ext_resource type="Texture2D" uid="uid://kxudrqfajl53" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_00.png" id="26_6xt7y"]
+[ext_resource type="Texture2D" uid="uid://b024cir1tstcp" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_01.png" id="27_62e2c"]
+[ext_resource type="Texture2D" uid="uid://bj6f7qjnaghi2" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_02.png" id="28_y40kh"]
+[ext_resource type="Texture2D" uid="uid://dfcp2n5866ias" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_03.png" id="29_js66w"]
+[ext_resource type="Texture2D" uid="uid://diuyr6v7mbci3" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_04.png" id="30_lf0io"]
+[ext_resource type="Texture2D" uid="uid://b6yfogckb4q8j" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_05.png" id="31_1qqsd"]
+[ext_resource type="Texture2D" uid="uid://km0vvtxmvv1" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_06.png" id="32_fssbf"]
+[ext_resource type="Texture2D" uid="uid://ssbwykpioj04" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_07.png" id="33_4ybb6"]
+[ext_resource type="Texture2D" uid="uid://copuy8t5yfrcn" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_08.png" id="34_y36x3"]
+[ext_resource type="Texture2D" uid="uid://joa21rejsi7h" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_09.png" id="35_vmiw5"]
+[ext_resource type="Texture2D" uid="uid://bb4q45b3drhpy" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_10.png" id="36_ldou4"]
+[ext_resource type="Texture2D" uid="uid://ck0fbcc0cako7" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_11.png" id="37_kr1o3"]
+[ext_resource type="Texture2D" uid="uid://d2lepcbssdyo8" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_12.png" id="38_s2wrx"]
+[ext_resource type="Texture2D" uid="uid://xju6bq2015e0" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_13.png" id="39_ro81h"]
+[ext_resource type="Texture2D" uid="uid://dlrbrfumg6emh" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_14.png" id="40_n8oe0"]
+[ext_resource type="Texture2D" uid="uid://cfx6pb1qvitm5" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_15.png" id="41_7cd0y"]
+[ext_resource type="Texture2D" uid="uid://gshtthht13yt" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_16.png" id="42_ua5v6"]
+[ext_resource type="Texture2D" uid="uid://c84ffm2fjnyox" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_17.png" id="43_yxq4b"]
+[ext_resource type="Texture2D" uid="uid://cjurq7tdvhhkw" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_18.png" id="44_vbt04"]
+[ext_resource type="Texture2D" uid="uid://cbfljq0ifixgq" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_19.png" id="45_0y18y"]
+[ext_resource type="Texture2D" uid="uid://cxhm8wsx0s3e0" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_20.png" id="46_4amhs"]
+[ext_resource type="Texture2D" uid="uid://c58qxs6m1wrf4" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_21.png" id="47_uilxn"]
+[ext_resource type="Texture2D" uid="uid://bpqx5ymp83s0y" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_22.png" id="48_vv248"]
+[ext_resource type="Texture2D" uid="uid://bprsqpty7edoi" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_23.png" id="49_qrn6x"]
+[ext_resource type="Texture2D" uid="uid://bpiqj6iqsvo3q" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_24.png" id="50_h1qk6"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_18qkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_p3jm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1akha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yntaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3witr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o70ag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_n5fg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_118kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_csl4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_cdojd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_042t3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2ha7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_em4ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_e3p6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cx7kq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_w062j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ebtx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_8qhfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_d7tvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2nkt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_si64x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ajpma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ar65p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_mvdtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_epk23")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_6xt7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_62e2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_y40kh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_js66w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lf0io")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_1qqsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_fssbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_4ybb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_y36x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_vmiw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ldou4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_kr1o3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_s2wrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ro81h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_n8oe0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_7cd0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ua5v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_yxq4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_vbt04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_0y18y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_4amhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_uilxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_vv248")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_qrn6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_h1qk6")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]
