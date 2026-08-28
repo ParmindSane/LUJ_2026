@@ -39,7 +39,8 @@ func _ready():
 	vidaActual = vidaInicial
 	
 	sprites = $AnimatedSprite2D
-	sprites.sprite_frames = animaciones
+	if sprites.sprite_frames == null && animaciones != null:
+		sprites.sprite_frames = animaciones
 	
 	timer = $Timer
 	
@@ -111,7 +112,7 @@ func forgetTarget(soldado: Area2D):
 
 func spawnProyectil():
 	var newProyectil = proyectilRef.instantiate()
-	newProyectil.set_target(target)
+	newProyectil.set_target(target, sprites.sprite_frames)
 	sprites.add_child(newProyectil)
 	
 	timer.start(ataqueDelay)

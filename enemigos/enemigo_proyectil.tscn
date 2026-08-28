@@ -1,21 +1,9 @@
 [gd_scene format=3 uid="uid://c84l7jc0bexw4"]
 
 [ext_resource type="Script" uid="uid://ca3x2r0odmbsg" path="res://enemigos/enemigo_proyectil.gd" id="1_b4ua2"]
-[ext_resource type="Texture2D" uid="uid://gjf3f83x0mbs" path="res://enemigos/assets/culto/culto_flecha.png" id="2_u87fk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
 radius = 2.79
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ppt1s"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_u87fk")
-}],
-"loop": 0,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="Proyectil" type="Area2D" unique_id=1517549423]
 collision_layer = 1024
@@ -40,10 +28,8 @@ color = Color(1, 0, 0, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1401261794]
 shape = SubResource("CircleShape2D_qe4n8")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1737302311]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=866255768]
 scale = Vector2(1.5, 1.5)
-sprite_frames = SubResource("SpriteFrames_ppt1s")
-autoplay = "default"
 
 [node name="Timer" type="Timer" parent="." unique_id=1585913602]
 wait_time = 2.0

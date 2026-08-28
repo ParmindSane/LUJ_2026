@@ -7,12 +7,21 @@ var timer: Timer
 @export var duracion: float
 @export var damage: float
 
-func set_target(new_target: Node2D) -> void:
+var sprites: AnimatedSprite2D
+var animacion: SpriteFrames
+
+func set_target(new_target: Node2D, _animacion: SpriteFrames) -> void:
 	target = new_target
+	animacion = _animacion
+	
 
 func _ready():
 	timer = $Timer
 	timer.start(duracion)
+	
+	sprites = $AnimatedSprite2D
+	sprites.sprite_frames = animacion
+	sprites.play("PROYECTIL")
 	
 
 func _process(delta):
