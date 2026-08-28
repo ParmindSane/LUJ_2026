@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b46hw016ulctv"]
 
 [ext_resource type="Script" uid="uid://cqyf1ab878k1u" path="res://enemigos/enemigoADistancia.gd" id="1_1hpa4"]
-[ext_resource type="SpriteFrames" uid="uid://bl8sg8bu6wr16" path="res://enemigos/assets/culto/culto.tres" id="2_1hpa4"]
+[ext_resource type="SpriteFrames" uid="uid://360ln7hcaf5s" path="res://enemigos/assets/hada/hada.tres" id="2_ep2sd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1hpa4"]
 radius = 120.0
@@ -37,9 +37,11 @@ metadata/_edit_group_ = true
 shape = SubResource("CircleShape2D_qe4n8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=904686402]
+position = Vector2(0, -15)
 scale = Vector2(0.1, 0.1)
-sprite_frames = ExtResource("2_1hpa4")
-animation = &"ATACAR"
+sprite_frames = ExtResource("2_ep2sd")
+animation = &"AVANZAR"
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="." unique_id=1981769931]
 anchors_preset = 7

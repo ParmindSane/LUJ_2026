@@ -3,7 +3,9 @@ extends PathFollow2D
 var proyectilRef = preload("res://enemigos/enemigo_proyectil.tscn")
 
 var estado: String
+
 @export var volador: bool
+@export var ignoraSoldados: bool
 
 var ang: float
 var pAng: float
@@ -39,15 +41,21 @@ func _ready():
 	vidaActual = vidaInicial
 	
 	sprites = $AnimatedSprite2D
-	if sprites.sprite_frames == null && animaciones != null:
+	if animaciones != null:
 		sprites.sprite_frames = animaciones
 	
 	timer = $Timer
-	
 	colRecibir = $AreaRecibir
 	colAtaque = $AreaAtacar
-	colAtaque.area_entered.connect(addTarget)
-	colAtaque.area_exited.connect(forgetTarget)
+	
+	if !ignoraSoldados:
+		colAtaque.area_entered.connect(addTarget)
+		colAtaque.area_exited.connect(forgetTarget)
+	
+	if volador:
+		sprites.position = Vector2(25, -40)
+		colRecibir.position = Vector2(25, -40)
+		colRecibir.collision_layer = 512
 
 func _process(delta):
 	if vidaActual <= 0:

@@ -27,6 +27,7 @@ animations = [{
 }]
 
 [node name="LanzaProyectil" unique_id=1565077132 instance=ExtResource("1_gpp5w")]
+collision_mask = 768
 script = ExtResource("2_32tw6")
 
 [node name="Timer" parent="." index="0" unique_id=706880896]

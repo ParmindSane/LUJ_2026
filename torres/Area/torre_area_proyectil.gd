@@ -26,7 +26,8 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	if is_instance_valid(target):
 		# Find direction vector from projectile to enemy
-		var direction = (target.global_position - global_position).normalized()
+		var targetPos = target.get_node(^"AreaRecibir").global_position
+		var direction = (targetPos - global_position).normalized()
 		# Move the projectile toward the target
 		global_position += direction * velocidad * delta
 		# Optional: rotate sprite toward target

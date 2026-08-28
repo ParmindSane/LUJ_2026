@@ -1,0 +1,223 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://uhs38ypm6lpd"]
+
+[ext_resource type="Texture2D" uid="uid://dsy3qld3fj5nr" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_00.png" id="1_pa358"]
+[ext_resource type="Texture2D" uid="uid://dsi24o5k5cnv6" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_01.png" id="2_j6o8q"]
+[ext_resource type="Texture2D" uid="uid://dp1yyjsog7fb6" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_02.png" id="3_815sx"]
+[ext_resource type="Texture2D" uid="uid://b05n02typ8gt7" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_03.png" id="4_xjrke"]
+[ext_resource type="Texture2D" uid="uid://boho6motfphnr" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_04.png" id="5_apo6f"]
+[ext_resource type="Texture2D" uid="uid://d1vekgrohucdt" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_05.png" id="6_5ybyi"]
+[ext_resource type="Texture2D" uid="uid://cp8lutxs7qjnh" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_06.png" id="7_pbeyi"]
+[ext_resource type="Texture2D" uid="uid://8y1gnfjl3em7" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_07.png" id="8_v0a72"]
+[ext_resource type="Texture2D" uid="uid://dfny6dbbix4ub" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_08.png" id="9_vijmg"]
+[ext_resource type="Texture2D" uid="uid://84qx2amvso2a" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_09.png" id="10_6myfh"]
+[ext_resource type="Texture2D" uid="uid://cgdcgnn1drnit" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_10.png" id="11_hlem5"]
+[ext_resource type="Texture2D" uid="uid://dce22w40vg7ab" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_11.png" id="12_vsfq7"]
+[ext_resource type="Texture2D" uid="uid://f02pxncgm5sk" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_12.png" id="13_acfxu"]
+[ext_resource type="Texture2D" uid="uid://ccjm1mlj5vfk3" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_13.png" id="14_clnqr"]
+[ext_resource type="Texture2D" uid="uid://d1nrjcfr6pame" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_14.png" id="15_88mbd"]
+[ext_resource type="Texture2D" uid="uid://b73j1w7hfobeu" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_15.png" id="16_n5dta"]
+[ext_resource type="Texture2D" uid="uid://ci7k1a18nof6r" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_16.png" id="17_ebpng"]
+[ext_resource type="Texture2D" uid="uid://u3twtkilghgb" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_17.png" id="18_s6ilm"]
+[ext_resource type="Texture2D" uid="uid://b2jtr4meoqwo6" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_18.png" id="19_8lsp5"]
+[ext_resource type="Texture2D" uid="uid://y7q7e5rn2yud" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_19.png" id="20_qta17"]
+[ext_resource type="Texture2D" uid="uid://ddeni7wqt85l1" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_20.png" id="21_yw2ds"]
+[ext_resource type="Texture2D" uid="uid://ba2cfxrttbe0g" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_21.png" id="22_pc0k6"]
+[ext_resource type="Texture2D" uid="uid://hlj86iuwptv0" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_22.png" id="23_ofika"]
+[ext_resource type="Texture2D" uid="uid://c7lqyehfn8lyx" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_23.png" id="24_374a0"]
+[ext_resource type="Texture2D" uid="uid://dbw17srtpjpbc" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_24.png" id="25_jb8gb"]
+[ext_resource type="Texture2D" uid="uid://cencofrtnoalf" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_25.png" id="26_8ybhh"]
+[ext_resource type="Texture2D" uid="uid://dtmbahc3chkco" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_26.png" id="27_kus2t"]
+[ext_resource type="Texture2D" uid="uid://kqm2l281xjw0" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_27.png" id="28_xr3r7"]
+[ext_resource type="Texture2D" uid="uid://bc33dc5or85lu" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_28.png" id="29_mhwyq"]
+[ext_resource type="Texture2D" uid="uid://c1qct4ujkq7xj" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_29.png" id="30_2145o"]
+[ext_resource type="Texture2D" uid="uid://cqebho2fm5d46" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_30.png" id="31_0atdk"]
+[ext_resource type="Texture2D" uid="uid://c7epdek2g1iir" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_31.png" id="32_0vmsn"]
+[ext_resource type="Texture2D" uid="uid://dwo1ap6p3i76" path="res://enemigos/assets/mari/mari-attacking/Armature_newAnimation_1_32.png" id="33_kyper"]
+[ext_resource type="Texture2D" uid="uid://pk0h7pd2ancu" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_00.png" id="34_oent7"]
+[ext_resource type="Texture2D" uid="uid://cbgoblvp65i36" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_01.png" id="35_pqoks"]
+[ext_resource type="Texture2D" uid="uid://babffoedik8r8" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_02.png" id="36_d07yh"]
+[ext_resource type="Texture2D" uid="uid://dmk7a8b5enkyi" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_03.png" id="37_6npvd"]
+[ext_resource type="Texture2D" uid="uid://cpdua24dh2df5" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_04.png" id="38_jgr81"]
+[ext_resource type="Texture2D" uid="uid://chwu7f18820be" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_05.png" id="39_bc50e"]
+[ext_resource type="Texture2D" uid="uid://dbtsbhv5ia4x7" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_06.png" id="40_7eeen"]
+[ext_resource type="Texture2D" uid="uid://cwktr2l5q5g1h" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_07.png" id="41_jx38u"]
+[ext_resource type="Texture2D" uid="uid://bhc1flx7tw8hv" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_08.png" id="42_s3cer"]
+[ext_resource type="Texture2D" uid="uid://bl2t7ervdy1jh" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_09.png" id="43_xwoqc"]
+[ext_resource type="Texture2D" uid="uid://bu3kagd8u3nfv" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_10.png" id="44_n2hoy"]
+[ext_resource type="Texture2D" uid="uid://cplywh3axaf5q" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_11.png" id="45_fvmsl"]
+[ext_resource type="Texture2D" uid="uid://os48xgvb2gy3" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_12.png" id="46_uddct"]
+[ext_resource type="Texture2D" uid="uid://rcns1q2lrjiw" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_13.png" id="47_iwyr6"]
+[ext_resource type="Texture2D" uid="uid://b6jekq05mkbq0" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_14.png" id="48_vcbyr"]
+[ext_resource type="Texture2D" uid="uid://dcvpha1innljp" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_15.png" id="49_ewqbk"]
+[ext_resource type="Texture2D" uid="uid://uku73q5afy8b" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_16.png" id="50_m5v5b"]
+[ext_resource type="Texture2D" uid="uid://y4t77xpgpmgt" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_17.png" id="51_6qebu"]
+[ext_resource type="Texture2D" uid="uid://cb7hdnrxhforr" path="res://enemigos/assets/mari/mari-flying/Armature_newAnimation_18.png" id="52_lwqtr"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pa358")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_j6o8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_815sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xjrke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_apo6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5ybyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pbeyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_v0a72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vijmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6myfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hlem5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vsfq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_acfxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_clnqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_88mbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_n5dta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ebpng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_s6ilm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8lsp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qta17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_yw2ds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_pc0k6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ofika")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_374a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_jb8gb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_8ybhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_kus2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xr3r7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_mhwyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_2145o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_0atdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0vmsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_kyper")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_oent7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_pqoks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_d07yh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_6npvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_jgr81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_bc50e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_7eeen")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_jx38u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_s3cer")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_xwoqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_n2hoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_fvmsl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_uddct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_iwyr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_vcbyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ewqbk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_m5v5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_6qebu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_lwqtr")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

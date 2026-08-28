@@ -1,6 +1,7 @@
 extends Area2D
 
 var target: Node2D
+var targetPos: Vector2
 @export var timer: Timer
 
 @export var velocidad: float
@@ -17,7 +18,8 @@ func _ready():
 func _process(delta):
 	if is_instance_valid(target):
 		# Find direction vector from projectile to enemy
-		var direction = (target.global_position - global_position).normalized()
+		var targetPos = target.get_node(^"AreaRecibir").global_position
+		var direction = (targetPos - global_position).normalized()
 		# Move the projectile toward the target
 		global_position += direction * velocidad * delta
 		# Optional: rotate sprite toward target

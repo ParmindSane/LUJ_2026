@@ -103,6 +103,7 @@
 [ext_resource type="Texture2D" uid="uid://bcktamqmj4ktp" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_23.png" id="98_escyh"]
 [ext_resource type="PackedScene" uid="uid://b46hw016ulctv" path="res://enemigos/enemigoADistancia.tscn" id="99_bt03f"]
 [ext_resource type="Texture2D" uid="uid://b073btr6t6crg" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_24.png" id="99_y8ec1"]
+[ext_resource type="SpriteFrames" uid="uid://4g74ok1pybok" path="res://enemigos/assets/pegaso/pegaso.tres" id="100_7ntm1"]
 
 [sub_resource type="Curve2D" id="Curve2D_qe4n8"]
 _data = {
@@ -110,7 +111,7 @@ _data = {
 }
 point_count = 9
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_iujc5"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_n1mox"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -412,7 +413,7 @@ animations = [{
 "speed": 30.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_7ntm1"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_tagm8"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -734,7 +735,7 @@ curve = SubResource("Curve2D_qe4n8")
 [node name="Enemigo" parent="Path2D" unique_id=2125227132 instance=ExtResource("1_7pk3x")]
 position = Vector2(585, 670)
 rotation = 0.008771705
-animaciones = SubResource("SpriteFrames_iujc5")
+animaciones = SubResource("SpriteFrames_n1mox")
 metadata/_edit_group_ = true
 
 [node name="Enemigo2" parent="Path2D" unique_id=1821539514 instance=ExtResource("1_7pk3x")]
@@ -742,19 +743,22 @@ position = Vector2(585, 670)
 rotation = 0.008771705
 velocidad = 1.5
 vidaInicial = 5.0
-animaciones = SubResource("SpriteFrames_7ntm1")
+animaciones = SubResource("SpriteFrames_tagm8")
 metadata/_edit_group_ = true
 
 [node name="EnemigoDistancia" parent="Path2D" unique_id=790500521 instance=ExtResource("99_bt03f")]
 position = Vector2(585, 670)
-velocidad = 2.0
+volador = true
 
 [node name="EnemigoDistancia2" parent="Path2D" unique_id=2033891394 instance=ExtResource("99_bt03f")]
 position = Vector2(585, 670)
-velocidad = 0.5
+volador = true
+ignoraSoldados = true
+velocidad = 0.8
+animaciones = ExtResource("100_7ntm1")
 
 [node name="LanzaProyectil" parent="." unique_id=1783453355 instance=ExtResource("2_fworp")]
-position = Vector2(827, 169)
+position = Vector2(393, 330)
 delay = 0.0
 metadata/_edit_group_ = true
 
@@ -764,7 +768,7 @@ scale = Vector2(0.30664077, 0.30664077)
 texture = ExtResource("4_4vuwg")
 
 [node name="LanzaArea" parent="." unique_id=1501204082 instance=ExtResource("5_l3kkx")]
-position = Vector2(316, 263)
+position = Vector2(316, 467)
 
 [node name="Invocador" parent="." unique_id=1565077132 instance=ExtResource("2_4vuwg")]
 position = Vector2(622, 453)

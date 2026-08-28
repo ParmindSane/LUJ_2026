@@ -19,7 +19,7 @@ animations = [{
 
 [node name="Proyectil" type="Area2D" unique_id=1517549423 node_paths=PackedStringArray("timer")]
 collision_layer = 4
-collision_mask = 256
+collision_mask = 768
 script = ExtResource("1_qgr8r")
 timer = NodePath("Timer")
 velocidad = 150.0

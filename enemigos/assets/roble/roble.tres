@@ -62,6 +62,7 @@
 [ext_resource type="Texture2D" uid="uid://dcsifo7ec2tuw" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_22.png" id="60_esvom"]
 [ext_resource type="Texture2D" uid="uid://dtab4nxotqouw" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_23.png" id="61_nkjio"]
 [ext_resource type="Texture2D" uid="uid://krv14n1o3rcr" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_24.png" id="62_00tmi"]
+[ext_resource type="Texture2D" uid="uid://gjf3f83x0mbs" path="res://enemigos/assets/culto/culto_flecha.png" id="63_m6y1e"]
 
 [resource]
 resource_local_to_scene = true
@@ -261,4 +262,12 @@ animations = [{
 "loop": 1,
 "name": &"AVANZAR",
 "speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("63_m6y1e")
+}],
+"loop": 1,
+"name": &"PROYECTIL",
+"speed": 5.0
 }]

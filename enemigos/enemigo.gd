@@ -34,7 +34,7 @@ func _ready():
 	vidaActual = vidaInicial
 	
 	sprites = $AnimatedSprite2D
-	if sprites.sprite_frames == null && animaciones != null:
+	if animaciones != null:
 		sprites.sprite_frames = animaciones
 	
 	timer = $Timer
