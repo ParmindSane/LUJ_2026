@@ -1,7 +1,7 @@
 extends Area2D
 
 var target: Node2D
-@export var timer: Timer
+var timer: Timer
 
 @export var velocidad: float
 @export var duracion: float
@@ -11,6 +11,7 @@ func set_target(new_target: Node2D) -> void:
 	target = new_target
 
 func _ready():
+	timer = $Timer
 	timer.start(duracion)
 	
 
@@ -32,6 +33,6 @@ func _on_timer_timeout():
 	
 
 func _on_area_entered(area):
-	area.get_parent().vidaActual -= damage
+	area.vidaActual -= damage
 	queue_free()
 	

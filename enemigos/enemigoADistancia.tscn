@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b46hw016ulctv"]
+
+[ext_resource type="Script" uid="uid://cqyf1ab878k1u" path="res://enemigos/enemigoADistancia.gd" id="1_1hpa4"]
+[ext_resource type="SpriteFrames" uid="uid://bl8sg8bu6wr16" path="res://enemigos/assets/culto/culto.tres" id="2_1hpa4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1hpa4"]
+radius = 120.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
+radius = 15.0
+
+[node name="Enemigo" type="PathFollow2D" unique_id=1821539514]
+rotates = false
+loop = false
+script = ExtResource("1_1hpa4")
+velocidad = 1.0
+vidaInicial = 2.0
+ataqueASoldado = 2.0
+ataqueDelay = 1.0
+ataqueACore = 1.0
+animaciones = ExtResource("2_1hpa4")
+
+[node name="AreaAtacar" type="Area2D" parent="." unique_id=248271774]
+collision_layer = 2048
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaAtacar" unique_id=1410971372]
+shape = SubResource("CircleShape2D_1hpa4")
+debug_color = Color(0.7, 0, 0, 0.41960785)
+
+[node name="AreaRecibir" type="Area2D" parent="." unique_id=1362194453]
+collision_layer = 256
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="AreaRecibir" unique_id=1237433419]
+shape = SubResource("CircleShape2D_qe4n8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=772477933]
+position = Vector2(0, -11.999999)
+scale = Vector2(0.1, 0.1)
+sprite_frames = ExtResource("2_1hpa4")
+animation = &"AVANZAR"
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1981769931]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "X"
+
+[node name="Timer" type="Timer" parent="." unique_id=1150165994]
+one_shot = true
