@@ -24,3 +24,12 @@ texturas = Array[Texture2D]([ExtResource("1_yimhq"), ExtResource("3_h6h7o")])
 
 [node name="SpritePoint" type="Node2D" parent="." unique_id=1665823529]
 position = Vector2(64, 82)
+
+[node name="Vender" type="Button" parent="." unique_id=669364887]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+text = "Vender"

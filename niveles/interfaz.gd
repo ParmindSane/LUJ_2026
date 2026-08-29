@@ -58,7 +58,6 @@ func _input(event: InputEvent) -> void:
 	
 
 func torres_desplegar(abrir: bool):
-	print(str(abrir) + " " + str(torres_mostrando))
 	if abrir != torres_mostrando:
 		torres_timer.start()
 		torres_mostrando = abrir
