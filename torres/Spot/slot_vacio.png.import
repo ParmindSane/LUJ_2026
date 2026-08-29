@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cndni83sql6rg"
-path="res://.godot/imported/slot.png-deb2c409b1661aa231b5b5b164ef3fea.ctex"
+uid="uid://djcy7yncopvf6"
+path="res://.godot/imported/slot_vacio.png-eb2272e962198d41d0a4dab38e52d365.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://torres/assets/slot.png"
-dest_files=["res://.godot/imported/slot.png-deb2c409b1661aa231b5b5b164ef3fea.ctex"]
+source_file="res://torres/Spot/slot_vacio.png"
+dest_files=["res://.godot/imported/slot_vacio.png-eb2272e962198d41d0a4dab38e52d365.ctex"]
 
 [params]
 

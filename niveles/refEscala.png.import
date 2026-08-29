@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djcy7yncopvf6"
-path="res://.godot/imported/slot_vacio.png-7a796d4b026a734ce7aa02a0430f346c.ctex"
+uid="uid://cd56t6s8b8erx"
+path="res://.godot/imported/refEscala.png-c56ee7032d1a33540f4709b3f74132cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://torres/assets/slot_vacio.png"
-dest_files=["res://.godot/imported/slot_vacio.png-7a796d4b026a734ce7aa02a0430f346c.ctex"]
+source_file="res://niveles/refEscala.png"
+dest_files=["res://.godot/imported/refEscala.png-c56ee7032d1a33540f4709b3f74132cb.ctex"]
 
 [params]
 
