@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cf55mwny83pis"]
 
-[ext_resource type="PackedScene" uid="uid://dy6ate5xm4dhn" path="res://enemigos/enemigo.tscn" id="1_7pk3x"]
 [ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/nivel1day.png" id="1_l3kkx"]
-[ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/interfaz.gd" id="2_g2l8i"]
+[ext_resource type="Script" uid="uid://c1e60oew76vwm" path="res://niveles/nivel.gd" id="1_tagm8"]
+[ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/nivel_interfaz.gd" id="2_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://dqyuoosk3ootb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_00.png" id="4_iujc5"]
 [ext_resource type="Texture2D" uid="uid://d0qeb1jn55bb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_01.png" id="5_7ntm1"]
 [ext_resource type="Texture2D" uid="uid://lhl505o7mgyj" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_02.png" id="6_n1mox"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bjup6vxhd1dew" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_03.png" id="7_tagm8"]
 [ext_resource type="Texture2D" uid="uid://d16qs8h6rb3yi" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_04.png" id="8_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://t0a4nq6rcf87" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_05.png" id="9_3iobf"]
+[ext_resource type="PackedScene" uid="uid://dxobyxtiwflsi" path="res://torres/Invocador/torre_invocador.tscn" id="9_yi00n"]
 [ext_resource type="Texture2D" uid="uid://b1pqx6otr18gv" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_06.png" id="10_p7u5q"]
 [ext_resource type="Texture2D" uid="uid://dts3d6rjc0crx" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_07.png" id="11_3tng7"]
 [ext_resource type="Texture2D" uid="uid://dpaco1ib6dnrb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_08.png" id="12_7t1cp"]
@@ -99,7 +100,7 @@
 [ext_resource type="Texture2D" uid="uid://be3nocf8l3xj8" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_21.png" id="96_c1w6h"]
 [ext_resource type="Texture2D" uid="uid://7vekw17nkp1a" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_22.png" id="97_pjamq"]
 [ext_resource type="Texture2D" uid="uid://bcktamqmj4ktp" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_23.png" id="98_escyh"]
-[ext_resource type="PackedScene" uid="uid://b46hw016ulctv" path="res://enemigos/enemigoADistancia.tscn" id="99_bt03f"]
+[ext_resource type="PackedScene" uid="uid://b46hw016ulctv" path="res://enemigos/enemigo.tscn" id="99_bt03f"]
 [ext_resource type="Texture2D" uid="uid://b073btr6t6crg" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_24.png" id="99_y8ec1"]
 [ext_resource type="SpriteFrames" uid="uid://4g74ok1pybok" path="res://enemigos/assets/pegaso/pegaso.tres" id="100_7ntm1"]
 [ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="104_g2l8i"]
@@ -119,308 +120,6 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 585, 670, 0, 0, 0, 0, 585, 566, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -24, 107)
 }
 point_count = 9
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_n1mox"]
-resource_local_to_scene = true
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_iujc5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_7ntm1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_n1mox")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_tagm8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_g2l8i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_3iobf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_p7u5q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_3tng7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_7t1cp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_07qhy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_tnimk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_tayt1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_etcyr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_8lj8a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_vbjkf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_6vbrf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_i43t7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_jiwef")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_pxiwb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_eh847")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_k3h15")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_rikqh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_dyaw6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_gusbl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_esdip")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_32e6q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_16v1c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_h3nju")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_ik4h8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_a0q8l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_06n2x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_i1rml")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_xipwf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("37_mxumw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("38_lqsmi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("39_xvpmo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("40_otgth")
-}, {
-"duration": 1.0,
-"texture": ExtResource("41_vfe17")
-}, {
-"duration": 1.0,
-"texture": ExtResource("42_sk3tn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("43_w082m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("44_x1wtb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("45_r5ow4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("46_mfs57")
-}, {
-"duration": 1.0,
-"texture": ExtResource("47_j5kdy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("48_wst6h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("49_1xps0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("50_7p84d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("51_3q70o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("52_k1a28")
-}, {
-"duration": 1.0,
-"texture": ExtResource("53_httfh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("54_bt03f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("55_vfawi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("56_87rrr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("57_rhpck")
-}, {
-"duration": 1.0,
-"texture": ExtResource("58_gvkgh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("59_6m1bm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("60_epln3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("61_wvun1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("62_ttvap")
-}, {
-"duration": 1.0,
-"texture": ExtResource("63_i5qgo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("64_6uu8x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("65_ea4gv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("66_ra2l7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("67_maucs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("68_jk8jf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("69_8plhp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("70_ainn8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("71_2ulvg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("72_cnsin")
-}, {
-"duration": 1.0,
-"texture": ExtResource("73_f2vhy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("74_via3q")
-}],
-"loop": 1,
-"name": &"ATACAR",
-"speed": 30.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("75_du6gj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("76_finan")
-}, {
-"duration": 1.0,
-"texture": ExtResource("77_0gmpm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("78_ic28i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("79_t3ln2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("80_ux8ft")
-}, {
-"duration": 1.0,
-"texture": ExtResource("81_5n25m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("82_c2grl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("83_l73m5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("84_0am2y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("85_5nymc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("86_1wel8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("87_8i0nb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("88_np4jq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("89_sn2pf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("90_yy5c5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("91_x5pi6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("92_u3hiv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("93_uk4ll")
-}, {
-"duration": 1.0,
-"texture": ExtResource("94_5xa4p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("95_n7i6d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("96_c1w6h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("97_pjamq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("98_escyh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("99_y8ec1")
-}],
-"loop": 1,
-"name": &"AVANZAR",
-"speed": 30.0
-}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tagm8"]
 resource_local_to_scene = true
@@ -725,6 +424,7 @@ animations = [{
 }]
 
 [node name="Nivel" type="Node2D" unique_id=1112846435]
+script = ExtResource("1_tagm8")
 
 [node name="Fondo" type="CanvasLayer" parent="." unique_id=1662441244]
 layer = -1
@@ -866,42 +566,33 @@ text = "💰 X"
 label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
 
-[node name="Path2D" type="Path2D" parent="." unique_id=1485948904]
+[node name="ObjetosDeJuego" type="CanvasLayer" parent="." unique_id=1021469761]
+
+[node name="Path2D" type="Path2D" parent="ObjetosDeJuego" unique_id=1485948904]
 curve = SubResource("Curve2D_qe4n8")
 
-[node name="Enemigo" parent="Path2D" unique_id=2125227132 instance=ExtResource("1_7pk3x")]
+[node name="EnemigoDistancia" parent="ObjetosDeJuego/Path2D" unique_id=790500521 instance=ExtResource("99_bt03f")]
 position = Vector2(585, 670)
-rotation = 0.008771705
-animaciones = SubResource("SpriteFrames_n1mox")
-metadata/_edit_group_ = true
 
-[node name="Enemigo2" parent="Path2D" unique_id=1821539514 instance=ExtResource("1_7pk3x")]
-position = Vector2(585, 670)
-rotation = 0.008771705
-velocidad = 1.5
-vidaInicial = 5.0
-animaciones = SubResource("SpriteFrames_tagm8")
-metadata/_edit_group_ = true
-
-[node name="EnemigoDistancia" parent="Path2D" unique_id=790500521 instance=ExtResource("99_bt03f")]
-position = Vector2(585, 670)
-volador = true
-
-[node name="EnemigoDistancia2" parent="Path2D" unique_id=2033891394 instance=ExtResource("99_bt03f")]
+[node name="EnemigoDistancia2" parent="ObjetosDeJuego/Path2D" unique_id=2033891394 instance=ExtResource("99_bt03f")]
 position = Vector2(585, 670)
 volador = true
 ignoraSoldados = true
 velocidad = 0.8
 animaciones = ExtResource("100_7ntm1")
 
-[node name="TorreSpot" parent="." unique_id=238956192 instance=ExtResource("104_g2l8i")]
-offset_left = 364.0
-offset_top = 425.0
-offset_right = 488.0
-offset_bottom = 549.0
+[node name="Invocador" parent="ObjetosDeJuego/Path2D" unique_id=1565077132 instance=ExtResource("9_yi00n")]
+position = Vector2(441, 487)
 
-[node name="TorreSpot2" parent="." unique_id=1256141830 instance=ExtResource("104_g2l8i")]
-offset_left = 602.0
-offset_top = 348.0
-offset_right = 726.0
-offset_bottom = 472.0
+[node name="EnemigoADistancia" parent="ObjetosDeJuego/Path2D" unique_id=1821539514 instance=ExtResource("99_bt03f")]
+position = Vector2(585, 670)
+velocidad = 1.25
+animaciones = SubResource("SpriteFrames_tagm8")
+
+[node name="TorreSpot" parent="ObjetosDeJuego" unique_id=238956192 instance=ExtResource("104_g2l8i")]
+offset_left = 12.0
+offset_top = -304.0
+offset_right = 136.0
+offset_bottom = -180.0
+
+[node name="TiempoOleadas" type="Timer" parent="." unique_id=915582272]

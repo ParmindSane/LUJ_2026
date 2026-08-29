@@ -1,12 +1,15 @@
-[gd_scene format=3 uid="uid://dy6ate5xm4dhn"]
+[gd_scene format=3 uid="uid://b46hw016ulctv"]
 
-[ext_resource type="Script" uid="uid://pr2axr2t24od" path="res://enemigos/enemigo.gd" id="1_2ehgw"]
-[ext_resource type="SpriteFrames" uid="uid://bauyf1ekfphp2" path="res://enemigos/assets/zombi/zombi.tres" id="3_dnjyr"]
+[ext_resource type="Script" uid="uid://cqyf1ab878k1u" path="res://enemigos/enemigo.gd" id="1_2ehgw"]
+[ext_resource type="SpriteFrames" uid="uid://bauyf1ekfphp2" path="res://enemigos/assets/zombi/zombi.tres" id="2_1hpa4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1hpa4"]
+radius = 120.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
 radius = 15.0
 
-[node name="Enemigo" type="PathFollow2D" unique_id=1821539514]
+[node name="EnemigoADistancia" type="PathFollow2D" unique_id=1821539514 groups=["Enemigos"]]
 rotates = false
 loop = false
 script = ExtResource("1_2ehgw")
@@ -15,20 +18,30 @@ vidaInicial = 2.0
 ataqueASoldado = 2.0
 ataqueDelay = 1.0
 ataqueACore = 1.0
-animaciones = ExtResource("3_dnjyr")
 
-[node name="AreaRecibir" type="Area2D" parent="." unique_id=248271774]
+[node name="AreaAtacar" type="Area2D" parent="." unique_id=248271774]
+collision_layer = 2048
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaAtacar" unique_id=1410971372]
+shape = SubResource("CircleShape2D_1hpa4")
+debug_color = Color(0.7, 0, 0, 0.41960785)
+
+[node name="AreaRecibir" type="Area2D" parent="." unique_id=1362194453]
 collision_layer = 256
 collision_mask = 2
+metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaRecibir" unique_id=1237433419]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="AreaRecibir" unique_id=1237433419]
 shape = SubResource("CircleShape2D_qe4n8")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=772477933]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=904686402]
 position = Vector2(0, -15)
 scale = Vector2(0.1, 0.1)
-sprite_frames = ExtResource("3_dnjyr")
+sprite_frames = ExtResource("2_1hpa4")
 animation = &"AVANZAR"
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="." unique_id=1981769931]
 anchors_preset = 7
@@ -44,5 +57,4 @@ grow_vertical = 0
 text = "X"
 
 [node name="Timer" type="Timer" parent="." unique_id=1150165994]
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+one_shot = true

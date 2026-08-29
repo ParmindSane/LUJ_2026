@@ -21,6 +21,7 @@ Global="*uid://c4mfv76akkc0b"
 
 [display]
 
+window/size/mode=2
 window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="ignore"
@@ -28,6 +29,10 @@ window/stretch/aspect="ignore"
 [editor]
 
 movie_writer/movie_file="E:/OBS/Grabaciones/LevelUpJam.avi"
+
+[global_group]
+
+Enemigos=""
 
 [layer_names]
 

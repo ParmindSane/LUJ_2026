@@ -1,5 +1,7 @@
 extends Node
 
+#@export var databaseEnemigos: Dictionary[String, claseEnemigo]
+
 signal pedirTorre(spot: Control)
 
 func map(n: float, a1: float, a2: float, b1: float, b2: float) -> float:

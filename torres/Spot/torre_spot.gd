@@ -4,7 +4,7 @@ var torre: Node2D
 var selected: bool
 
 var spritePoint: Node2D
-var vender: Button
+var vender: BaseButton
 
 @export var texturas: Array[Texture2D]
 

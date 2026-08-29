@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://chufr8nhejn75"]
+
+[ext_resource type="Script" uid="uid://c48q46g1ou5o5" path="res://niveles/spawner.gd" id="1_jcnq2"]
+
+[node name="Spawner" type="PathFollow2D" unique_id=1134643131]
+rotates = false
+loop = false
+script = ExtResource("1_jcnq2")
