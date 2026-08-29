@@ -37,6 +37,7 @@ one_shot = true
 shape = SubResource("CircleShape2D_gpp5w")
 
 [node name="AnimatedSprite2D" parent="." index="2" unique_id=2065084869]
+scale = Vector2(0.35, 0.35)
 sprite_frames = SubResource("SpriteFrames_ckf0l")
 animation = &"ATACAR"
 autoplay = "default"

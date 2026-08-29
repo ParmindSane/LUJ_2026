@@ -4,11 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/nivel1day.png" id="1_l3kkx"]
 [ext_resource type="PackedScene" uid="uid://dxobyxtiwflsi" path="res://torres/Invocador/torre_invocador.tscn" id="2_4vuwg"]
 [ext_resource type="PackedScene" uid="uid://8flhx28787wo" path="res://torres/Proyectil/torre_proyectil.tscn" id="2_fworp"]
-[ext_resource type="Texture2D" uid="uid://cd56t6s8b8erx" path="res://niveles/refEscala.png" id="2_g2l8i"]
+[ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/interfaz.gd" id="2_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://dqyuoosk3ootb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_00.png" id="4_iujc5"]
 [ext_resource type="Texture2D" uid="uid://d0qeb1jn55bb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_01.png" id="5_7ntm1"]
 [ext_resource type="PackedScene" uid="uid://d3yqy4dhsfivc" path="res://torres/Area/torre_area.tscn" id="5_l3kkx"]
 [ext_resource type="Texture2D" uid="uid://lhl505o7mgyj" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_02.png" id="6_n1mox"]
+[ext_resource type="Texture2D" uid="uid://brquy7pnu0yo2" path="res://torres/Area/tower2-aniamtion/idle.png" id="7_3iobf"]
 [ext_resource type="Texture2D" uid="uid://bjup6vxhd1dew" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_03.png" id="7_tagm8"]
 [ext_resource type="Texture2D" uid="uid://d16qs8h6rb3yi" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_04.png" id="8_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://t0a4nq6rcf87" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_05.png" id="9_3iobf"]
@@ -740,13 +741,11 @@ grow_vertical = 2
 texture = ExtResource("1_l3kkx")
 expand_mode = 1
 
-[node name="RefInterfaz" type="Sprite2D" parent="Fondo" unique_id=2072218774]
-position = Vector2(576.99994, 324)
-scale = Vector2(0.8172591, 0.81725883)
-texture = ExtResource("2_g2l8i")
-
-[node name="UI" type="CanvasLayer" parent="." unique_id=710199408]
+[node name="UI" type="CanvasLayer" parent="." unique_id=710199408 node_paths=PackedStringArray("torres_butts")]
 layer = 1000
+script = ExtResource("2_g2l8i")
+torres_butts = [NodePath("OpcionesTorres/TorresIniciales/Torre1/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre2/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre3/Button")]
+torres_pre = Array[Resource]([ExtResource("2_fworp"), ExtResource("5_l3kkx"), ExtResource("2_4vuwg")])
 
 [node name="OpcionesTorres" type="PanelContainer" parent="UI" unique_id=1320821653]
 custom_minimum_size = Vector2(180, 0)
@@ -760,94 +759,97 @@ grow_horizontal = 0
 grow_vertical = 2
 size_flags_horizontal = 8
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres" unique_id=624659414]
+[node name="TorresIniciales" type="VBoxContainer" parent="UI/OpcionesTorres" unique_id=624659414]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Torre1" type="PanelContainer" parent="UI/OpcionesTorres/VBoxContainer" unique_id=1868071487]
+[node name="Torre1" type="PanelContainer" parent="UI/OpcionesTorres/TorresIniciales" unique_id=1868071487]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/VBoxContainer/Torre1" unique_id=919067168]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/TorresIniciales/Torre1" unique_id=919067168]
 custom_maximum_size = Vector2(160, -1)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="TextureRect" type="TextureRect" parent="UI/OpcionesTorres/VBoxContainer/Torre1/VBoxContainer" unique_id=53739369]
+[node name="TextureRect" type="TextureRect" parent="UI/OpcionesTorres/TorresIniciales/Torre1/VBoxContainer" unique_id=53739369]
 custom_maximum_size = Vector2(150, 100)
 layout_mode = 2
 texture = ExtResource("106_tagm8")
 stretch_mode = 6
 
-[node name="Label" type="Label" parent="UI/OpcionesTorres/VBoxContainer/Torre1/VBoxContainer" unique_id=524464529]
+[node name="Label" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre1/VBoxContainer" unique_id=524464529]
 layout_mode = 2
 text = "Ballesta lunar"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Button" type="Button" parent="UI/OpcionesTorres/VBoxContainer/Torre1" unique_id=1794849787]
+[node name="Button" type="Button" parent="UI/OpcionesTorres/TorresIniciales/Torre1" unique_id=1794849787]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_b2hyj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_g2l8i")
 
-[node name="Torre2" type="PanelContainer" parent="UI/OpcionesTorres/VBoxContainer" unique_id=171428899]
+[node name="Torre2" type="PanelContainer" parent="UI/OpcionesTorres/TorresIniciales" unique_id=171428899]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/VBoxContainer/Torre2" unique_id=1149721443]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/TorresIniciales/Torre2" unique_id=1149721443]
 custom_maximum_size = Vector2(160, -1)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="TextureRect" type="TextureRect" parent="UI/OpcionesTorres/VBoxContainer/Torre2/VBoxContainer" unique_id=688733008]
+[node name="TextureRect" type="TextureRect" parent="UI/OpcionesTorres/TorresIniciales/Torre2/VBoxContainer" unique_id=688733008]
 custom_maximum_size = Vector2(150, 100)
 layout_mode = 2
-texture = ExtResource("106_tagm8")
+texture = ExtResource("7_3iobf")
 stretch_mode = 6
 
-[node name="Label" type="Label" parent="UI/OpcionesTorres/VBoxContainer/Torre2/VBoxContainer" unique_id=339884499]
+[node name="Label" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre2/VBoxContainer" unique_id=339884499]
 layout_mode = 2
 text = "Catapulta lunar"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Button" type="Button" parent="UI/OpcionesTorres/VBoxContainer/Torre2" unique_id=395510030]
+[node name="Button" type="Button" parent="UI/OpcionesTorres/TorresIniciales/Torre2" unique_id=1903390154]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_b2hyj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g2l8i")
 
-[node name="Torre3" type="PanelContainer" parent="UI/OpcionesTorres/VBoxContainer" unique_id=525263654]
+[node name="Torre3" type="PanelContainer" parent="UI/OpcionesTorres/TorresIniciales" unique_id=525263654]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/VBoxContainer/Torre3" unique_id=1196549888]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/TorresIniciales/Torre3" unique_id=1196549888]
 custom_maximum_size = Vector2(160, -1)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="TextureRect" type="TextureRect" parent="UI/OpcionesTorres/VBoxContainer/Torre3/VBoxContainer" unique_id=2013440111]
+[node name="TextureRect" type="TextureRect" parent="UI/OpcionesTorres/TorresIniciales/Torre3/VBoxContainer" unique_id=2013440111]
 custom_maximum_size = Vector2(150, 100)
 layout_mode = 2
 texture = ExtResource("108_p7u5q")
 stretch_mode = 6
 
-[node name="Label" type="Label" parent="UI/OpcionesTorres/VBoxContainer/Torre3/VBoxContainer" unique_id=1865114253]
+[node name="Label" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre3/VBoxContainer" unique_id=1865114253]
 layout_mode = 2
 text = "Guarida de lobos"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Button" type="Button" parent="UI/OpcionesTorres/VBoxContainer/Torre3" unique_id=185219534]
+[node name="Button" type="Button" parent="UI/OpcionesTorres/TorresIniciales/Torre3" unique_id=1380780799]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_b2hyj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g2l8i")
 
 [node name="Timer" type="Timer" parent="UI/OpcionesTorres" unique_id=905487389]
+wait_time = 0.5
 one_shot = true
 
 [node name="IndicadorVida" type="Label" parent="UI" unique_id=1891238188]

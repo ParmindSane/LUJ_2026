@@ -58,6 +58,7 @@ shape = SubResource("CircleShape2D_gpp5w")
 debug_color = Color(1, 0.35000002, 0, 0.41960785)
 
 [node name="AnimatedSprite2D" parent="." index="2" unique_id=2065084869]
+position = Vector2(0, -15)
 sprite_frames = SubResource("SpriteFrames_2us3v")
 animation = &"ATACAR"
 autoplay = "IDLE"

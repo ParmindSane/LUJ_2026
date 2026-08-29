@@ -14,14 +14,15 @@ func _ready():
 	
 
 func pulsado():
+	print("Pulsado")
 	if !is_instance_valid(torre):
-		GlobalSignals.pedirTorre.emit(self)
+		Global.pedirTorre.emit(self)
 	else:
 		pass
 	
 
-func colocarTorre(preTorre: Resource):
-	torre = preTorre.instanciate()
+func colocarTorre(preTorre):
+	torre = preTorre.instantiate()
 	spritePoint.add_child(torre)
 	
 	texture_normal = texturas[1]
