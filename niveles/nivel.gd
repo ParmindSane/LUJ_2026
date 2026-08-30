@@ -23,6 +23,7 @@ func _ready():
 	spawners = get_tree().get_nodes_in_group("Spawner")
 	for s in spawners:
 		s.enemigoSpawneado.connect(enemigoSpawneado)
+		s.iniciaOleada.connect(empezarOleada)
 		
 	var spots = get_tree().get_nodes_in_group("TorreSpot")
 	for s in spots:
@@ -36,21 +37,26 @@ func _process(delta):
 		if vidas_cantidad <= 0:
 			get_tree().paused = true
 			UI.finDelNivel(false)
-		
-		var spawnersSinTerminar = spawners.filter(func(s): return s.terminado == false)
-		var enemigosVivos = get_tree().get_nodes_in_group("Enemigos")
-		if spawnersSinTerminar.is_empty() && enemigosVivos.is_empty():
-			UI.finDelNivel(true)
+		else:
+			var spawnersSinTerminar = spawners.filter(func(s): return s.terminado == false)
+			var enemigosVivos = get_tree().get_nodes_in_group("Enemigos")
+			if spawnersSinTerminar.is_empty() && enemigosVivos.is_empty():
+				UI.finDelNivel(true)
 	
 	vidas_pCantidad = vidas_cantidad
 	monedas_pCantidad = monedas_cantidad
 	
 
+func empezarOleada(i: int, o: Oleada):
+	monedas_cantidad += o.monedas
+	
 func enemigoSpawneado(enemigo: Enemigo):
 	enemigo.finPath.connect(enemigoLlega)
 	enemigo.matado.connect(enemigoMuerto)
+	
 func enemigoLlega(damage: int):
 	vidas_cantidad -= damage
+	
 func enemigoMuerto(coins: int):
 	monedas_cantidad += coins
 	

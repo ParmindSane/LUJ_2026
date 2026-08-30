@@ -51,7 +51,7 @@ func colocarTorre(preTorre: Torre):
 	selected = false
 	
 	dineroTorre.emit(-torre.precioComprar)
-	vender.text += "\n(💰 " + str(torre.precioVender) + ")"
+	vender.text = "Vender\n(💰 " + str(torre.precioVender) + ")"
 	
 func venderTorre():
 	torre.queue_free()

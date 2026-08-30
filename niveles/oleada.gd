@@ -8,3 +8,6 @@ var database = preload("res://enemigos/databaseEnemigos.tres")
 
 ## Cuántos segundos va a esperar la siguiente oleada desde que esta inicia
 @export var delay: float = 30
+
+## Cuántas monedas regala al iniciar
+@export var monedas: int = 5

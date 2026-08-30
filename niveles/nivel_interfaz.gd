@@ -13,6 +13,7 @@ var torres_spot: Control
 var torres_timer: Timer
 var torres_pos: Array[Vector2]
 @export var torres_butts: Array[BaseButton]
+var torres_carteles: Array[Label]
 var torres_pre = [preload("res://torres/Proyectil/torre_proyectil.tscn"),
 preload("res://torres/Area/torre_area.tscn"),
 preload("res://torres/Invocador/torre_invocador.tscn")]
@@ -36,7 +37,8 @@ func _ready():
 		var i = torres_butts.find(b)
 		var t = torres_pre[i]
 		b.pressed.connect(torres_asignarTorre.bind(t))
-		b.get_parent().get_child(0).get_child(1).text += "\n(💰 " + str(t.precioComprar) + ")"
+		torres_carteles.push_back(b.get_parent().get_child(0).get_child(2))
+		torres_carteles[i].text = "(💰 " + str(t.precioComprar) + ")"
 	
 
 func _process(delta):
@@ -52,7 +54,7 @@ func torres_vincularConSpot(nuevoSpot: Control):
 	torres_desplegar(true)
 	
 func torres_asignarTorre(t: Torre):
-	torres_spot.colocarTorre(t)
+	torres_spot.colocarTorre(t.duplicate())
 	torres_desplegar(false)
 	
 func torres_desplegar(abrir: bool):
@@ -65,9 +67,10 @@ func torres_desplegar(abrir: bool):
 			var t = torres_pre[i]
 			if t.precioComprar > monedas_actuales:
 				b.disabled = true
+				torres_carteles[i].self_modulate = Color(1.0, 0.0, 0.0, 1.0)
 			else:
 				b.disabled = false
-	
+				torres_carteles[i].self_modulate = Color(1.0, 1.0, 1.0, 1.0)
 	
 
 func _input(event: InputEvent) -> void:
@@ -87,7 +90,13 @@ func actualizarCarteles(vidas: int, coins: int):
 	
 
 func finDelNivel(victoria: bool):
+	$GanarPerder.show()
 	if victoria:
-		$GanarPerder/Ganar.show()
+		$GanarPerder/VBoxContainer/Ganar.show()
 	else:
-		$GanarPerder/Perder.show()
+		$GanarPerder/VBoxContainer/Perder.show()
+	$GanarPerder/VBoxContainer/Salir.pressed.connect(salir)
+	
+func salir():
+	get_tree().change_scene_to_file("res://menu/mapaDeNiveles.tscn")
+	

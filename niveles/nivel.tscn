@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://brquy7pnu0yo2" path="res://torres/Area/tower2-aniamtion/idle.png" id="7_3iobf"]
 [ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="7_160gc"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="8_r17jf"]
-[ext_resource type="PackedScene" uid="uid://d3yqy4dhsfivc" path="res://torres/Area/torre_area.tscn" id="10_yi00n"]
 [ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="104_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="106_tagm8"]
 [ext_resource type="Texture2D" uid="uid://pohebfh4p3me" path="res://torres/Invocador/torre_invocador.png" id="108_p7u5q"]
@@ -20,7 +19,10 @@ bg_color = Color(1, 1, 1, 0.19607843)
 font_size = 32
 
 [sub_resource type="LabelSettings" id="LabelSettings_sau36"]
-font_size = 32
+font_size = 48
+
+[sub_resource type="Theme" id="Theme_r17jf"]
+default_font_size = 24
 
 [sub_resource type="Curve2D" id="Curve2D_r17jf"]
 _data = {
@@ -30,12 +32,13 @@ point_count = 9
 
 [sub_resource type="Resource" id="Resource_yi00n"]
 script = ExtResource("8_r17jf")
+delay = 10.0
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [sub_resource type="Resource" id="Resource_r17jf"]
 script = ExtResource("8_r17jf")
 enemigo = 2
-cantidad = 2
+cantidad = 5
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [sub_resource type="Curve2D" id="Curve2D_qe4n8"]
@@ -114,6 +117,11 @@ text = "Ballesta lunar"
 horizontal_alignment = 1
 autowrap_mode = 3
 
+[node name="Label2" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre1/VBoxContainer" unique_id=1471428492]
+layout_mode = 2
+text = "precio"
+horizontal_alignment = 1
+
 [node name="Button" type="Button" parent="UI/OpcionesTorres/TorresIniciales/Torre1" unique_id=1794849787]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_b2hyj")
@@ -142,6 +150,11 @@ text = "Catapulta lunar"
 horizontal_alignment = 1
 autowrap_mode = 3
 
+[node name="Label2" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre2/VBoxContainer" unique_id=220805567]
+layout_mode = 2
+text = "precio"
+horizontal_alignment = 1
+
 [node name="Button" type="Button" parent="UI/OpcionesTorres/TorresIniciales/Torre2" unique_id=1903390154]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_b2hyj")
@@ -169,6 +182,11 @@ layout_mode = 2
 text = "Guarida de lobos"
 horizontal_alignment = 1
 autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre3/VBoxContainer" unique_id=1575825376]
+layout_mode = 2
+text = "precio"
+horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="UI/OpcionesTorres/TorresIniciales/Torre3" unique_id=1380780799]
 layout_mode = 2
@@ -202,32 +220,43 @@ label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
 
 [node name="GanarPerder" type="CenterContainer" parent="UI" unique_id=925247847]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Ganar" type="PanelContainer" parent="UI/GanarPerder" unique_id=1344002680]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/GanarPerder" unique_id=1411653861]
+layout_mode = 2
+
+[node name="Ganar" type="PanelContainer" parent="UI/GanarPerder/VBoxContainer" unique_id=1344002680]
 visible = false
 layout_mode = 2
 
-[node name="Label" type="Label" parent="UI/GanarPerder/Ganar" unique_id=1685067326]
+[node name="Label" type="Label" parent="UI/GanarPerder/VBoxContainer/Ganar" unique_id=1685067326]
 layout_mode = 2
 text = " Ganaste :D "
 label_settings = SubResource("LabelSettings_sau36")
 
-[node name="Perder" type="PanelContainer" parent="UI/GanarPerder" unique_id=21852227]
+[node name="Perder" type="PanelContainer" parent="UI/GanarPerder/VBoxContainer" unique_id=21852227]
 visible = false
 layout_mode = 2
 
-[node name="Label" type="Label" parent="UI/GanarPerder/Perder" unique_id=1024826776]
+[node name="Label" type="Label" parent="UI/GanarPerder/VBoxContainer/Perder" unique_id=1024826776]
 layout_mode = 2
 text = " Perdiste :c "
 label_settings = SubResource("LabelSettings_sau36")
 
+[node name="Salir" type="Button" parent="UI/GanarPerder/VBoxContainer" unique_id=2033777148]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_r17jf")
+text = " Salir del nivel "
+
 [node name="ObjetosDeJuego" type="CanvasLayer" parent="." unique_id=1021469761]
 process_mode = 1
+layer = 0
 
 [node name="Path2D" type="Path2D" parent="ObjetosDeJuego" unique_id=1485948904]
 curve = SubResource("Curve2D_r17jf")
@@ -244,10 +273,7 @@ position = Vector2(1194, -14)
 oleadas = Array[ExtResource("8_r17jf")]([SubResource("Resource_jcnq2")])
 
 [node name="TorreSpot" parent="ObjetosDeJuego" unique_id=238956192 instance=ExtResource("104_g2l8i")]
-offset_left = 12.0
-offset_top = -304.0
-offset_right = 136.0
-offset_bottom = -180.0
-
-[node name="LanzaArea" parent="." unique_id=1565077132 instance=ExtResource("10_yi00n")]
-position = Vector2(457, 483)
+offset_left = 20.0
+offset_top = -303.0
+offset_right = 144.0
+offset_bottom = -179.0
