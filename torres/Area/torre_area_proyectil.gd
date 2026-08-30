@@ -53,6 +53,7 @@ func explotar():
 	explosion.visible = true
 	explosion.monitoring = true
 	explosion.monitorable = true
+	$AnimatedSprite2D.play("explosion")
 	
 	exploted = true
 	
