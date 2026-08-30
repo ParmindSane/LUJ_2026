@@ -84,6 +84,7 @@
 [ext_resource type="Texture2D" uid="uid://h2qviqw14bv4" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_46.png" id="82_u0vpu"]
 [ext_resource type="Texture2D" uid="uid://03hjwxl7xbro" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_47.png" id="83_p3anr"]
 [ext_resource type="Texture2D" uid="uid://6mbycsj2o7fs" path="res://enemigos/assets/arcano/maestria-arcana-walking/Armature_maestria-arcana-walking_48.png" id="84_kadgl"]
+[ext_resource type="Texture2D" uid="uid://b3ioqmiudg3ub" path="res://enemigos/assets/arcano/fireball.png" id="85_ll824"]
 
 [resource]
 resource_local_to_scene = true
@@ -349,4 +350,12 @@ animations = [{
 "loop": 1,
 "name": &"AVANZAR",
 "speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("85_ll824")
+}],
+"loop": 1,
+"name": &"PROYECTIL",
+"speed": 5.0
 }]

@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://cknsftp7cljt7"]
+
+[ext_resource type="Texture2D" uid="uid://v10jod2fn2pr" path="res://niveles/assets/torreButt.png" id="1_q8s21"]
+
+[resource]
+texture = ExtResource("1_q8s21")
+expand_margin_left = 30.0
+expand_margin_top = 30.0
+expand_margin_right = 30.0
+expand_margin_bottom = 30.0
