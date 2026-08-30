@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LevelUpJam2026"
-run/main_scene="uid://dv8ju4ddtkxov"
+run/main_scene="uid://crl6w8h5yedm7"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
