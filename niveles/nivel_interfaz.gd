@@ -61,16 +61,6 @@ func torres_desplegar(abrir: bool):
 	if abrir != torres_mostrando:
 		torres_timer.start()
 		torres_mostrando = abrir
-		
-		for b in torres_butts:
-			var i = torres_butts.find(b)
-			var t = torres_pre[i]
-			if t.precioComprar > monedas_actuales:
-				b.disabled = true
-				torres_carteles[i].self_modulate = Color(1.0, 0.0, 0.0, 1.0)
-			else:
-				b.disabled = false
-				torres_carteles[i].self_modulate = Color(1.0, 1.0, 1.0, 1.0)
 	
 
 func _input(event: InputEvent) -> void:
@@ -87,6 +77,17 @@ func actualizarCarteles(vidas: int, coins: int):
 	
 	monedas_actuales = coins
 	monedas_cartel.text = "💰 " + str(coins) + " "
+	
+	for b in torres_butts:
+			var i = torres_butts.find(b)
+			var t = torres_pre[i]
+			if t.precioComprar > monedas_actuales:
+				b.disabled = true
+				torres_carteles[i].self_modulate = Color(1.0, 0.0, 0.0, 1.0)
+			else:
+				b.disabled = false
+				torres_carteles[i].self_modulate = Color(1.0, 1.0, 1.0, 1.0)
+	
 	
 
 func finDelNivel(victoria: bool):
