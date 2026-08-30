@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://03gsx7l8dufu"]
+
+[ext_resource type="PackedScene" uid="uid://cf55mwny83pis" path="res://niveles/nivel.tscn" id="1_d8x1h"]
+[ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/assets/nivel1day.png" id="2_eu3iu"]
+[ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="2_w6qyd"]
+[ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="3_2iqk4"]
+
+[sub_resource type="Curve2D" id="Curve2D_2iqk4"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1116, 80, 0, 0, 0, 0, 791, 331, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -66, 96)
+}
+point_count = 9
+
+[sub_resource type="Resource" id="Resource_2iqk4"]
+script = ExtResource("2_w6qyd")
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Curve2D" id="Curve2D_eu3iu"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 586, 705, 0, 0, 0, 0, 586, 538, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -66, 96)
+}
+point_count = 9
+
+[sub_resource type="Resource" id="Resource_eu3iu"]
+script = ExtResource("2_w6qyd")
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[node name="Nivel1" unique_id=1112846435 instance=ExtResource("1_d8x1h")]
+
+[node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
+texture = ExtResource("2_eu3iu")
+
+[node name="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="0" unique_id=1211606735]
+curve = SubResource("Curve2D_2iqk4")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
+oleadas = Array[ExtResource("2_w6qyd")]([SubResource("Resource_2iqk4")])
+
+[node name="Path2D2" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="1" unique_id=760333687]
+curve = SubResource("Curve2D_eu3iu")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D2" index="0" unique_id=1134643131 instance=ExtResource("3_2iqk4")]
+position = Vector2(586, 705)
+oleadas = Array[ExtResource("2_w6qyd")]([SubResource("Resource_eu3iu")])

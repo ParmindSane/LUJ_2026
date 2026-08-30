@@ -11,12 +11,17 @@ config_version=5
 [application]
 
 config/name="LevelUpJam2026"
-run/main_scene="uid://cf55mwny83pis"
+run/main_scene="uid://crl6w8h5yedm7"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://c4mfv76akkc0b"
+
 [display]
 
+window/size/mode=2
 window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="ignore"
@@ -25,14 +30,22 @@ window/stretch/aspect="ignore"
 
 movie_writer/movie_file="E:/OBS/Grabaciones/LevelUpJam.avi"
 
+[global_group]
+
+Enemigos=""
+Spawner=""
+TorreSpot=""
+
 [layer_names]
 
 2d_physics/layer_1="Torre"
 2d_physics/layer_2="Soldado"
-2d_physics/layer_3="Proyectil"
+2d_physics/layer_3="ProyectilAmigo"
 2d_physics/layer_4="Explosion"
 2d_physics/layer_9="Enemigo"
 2d_physics/layer_10="EnemigoVolador"
+2d_physics/layer_11="ProyectilEnemigo"
+2d_physics/layer_12="EnemigoRango"
 
 [physics]
 

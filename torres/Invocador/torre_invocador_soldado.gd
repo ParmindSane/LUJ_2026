@@ -6,8 +6,8 @@ var ang: float
 var pAng: float
 
 @export var velocidad: float
-var target: Node2D
-var pTarget: Node2D
+var target: Enemigo
+var pTarget: Enemigo
 
 @export var ataque: float
 @export var ataqueDelay: float
@@ -59,7 +59,7 @@ func _process(delta):
 	
 	pTarget = target
 	
-	$Label.text = str(vidaActual)
+	$Label.text = str(vidaActual) + "\n" + str(target)
 	
 
 func setTarget(nuevoTarget: Node2D):
@@ -75,8 +75,12 @@ func _on_area_entered(area):
 		estado = "ATACAR"
 		timer.start(ataqueDelay)
 	
+func herir(damage: float):
+	vidaActual -= damage
+	
 
 func _on_timer_timeout():
+	print(str(self) + "atacando")
 	if estado == "ATACAR" && is_instance_valid(target):
-		target.vidaActual -= ataque
+		target.herir(ataque)
 	

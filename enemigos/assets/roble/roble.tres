@@ -62,6 +62,20 @@
 [ext_resource type="Texture2D" uid="uid://dcsifo7ec2tuw" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_22.png" id="60_esvom"]
 [ext_resource type="Texture2D" uid="uid://dtab4nxotqouw" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_23.png" id="61_nkjio"]
 [ext_resource type="Texture2D" uid="uid://krv14n1o3rcr" path="res://enemigos/assets/roble/estirpe-del-roble-walking/Armature_estirpe-del-roble-walking_24.png" id="62_00tmi"]
+[ext_resource type="Texture2D" uid="uid://bmvvt2ituxg7y" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-1.png" id="63_f7o5e"]
+[ext_resource type="Texture2D" uid="uid://deuuxxeivtgq1" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-2.png" id="64_y1pkm"]
+[ext_resource type="Texture2D" uid="uid://bqkghxx5od1b5" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-3.png" id="65_2y0ll"]
+[ext_resource type="Texture2D" uid="uid://pt1mddsw5n15" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-4.png" id="66_kx6ik"]
+[ext_resource type="Texture2D" uid="uid://3hsvdw36qttg" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-5.png" id="67_5j8tn"]
+[ext_resource type="Texture2D" uid="uid://2t1gch8j1u6h" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-6.png" id="68_0n2oj"]
+[ext_resource type="Texture2D" uid="uid://cfg1lfo6ws4on" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-7.png" id="69_sify4"]
+[ext_resource type="Texture2D" uid="uid://d01esyt8l6cr" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-8.png" id="70_0dmlu"]
+[ext_resource type="Texture2D" uid="uid://butcg0aduo2s7" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-9.png" id="71_usitg"]
+[ext_resource type="Texture2D" uid="uid://rmpjcd6bc0lc" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-10.png" id="72_c041v"]
+[ext_resource type="Texture2D" uid="uid://cthoscsy6h2eu" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-11.png" id="73_1rpwe"]
+[ext_resource type="Texture2D" uid="uid://xr7iabyfek76" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-12.png" id="74_k1h4b"]
+[ext_resource type="Texture2D" uid="uid://byr3gofisiodm" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-13.png" id="75_dk76e"]
+[ext_resource type="Texture2D" uid="uid://bb5axtevrndr5" path="res://enemigos/assets/roble/estirpe-del-roble/row-1-column-14.png" id="76_46ihq"]
 
 [resource]
 resource_local_to_scene = true
@@ -261,4 +275,51 @@ animations = [{
 "loop": 1,
 "name": &"AVANZAR",
 "speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("63_f7o5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_y1pkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_2y0ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_kx6ik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_5j8tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_0n2oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_sify4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_0dmlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_usitg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_c041v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_1rpwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_k1h4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_dk76e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_46ihq")
+}],
+"loop": 2,
+"name": &"PROYECTIL",
+"speed": 20.0
 }]

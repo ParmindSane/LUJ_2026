@@ -2,7 +2,7 @@ extends Torre
 
 var soldadoRef = preload("res://torres/Invocador/torre_invocador_soldado.tscn")
 var soldados: Array[Node2D]
-@export var cantidadSoldados: int
+@export var maxCantSoldados: int
 
 var targetsAsignados: Array[Node2D]
 
@@ -11,8 +11,8 @@ func _ready():
 	area_entered.connect(addTarget)
 	area_exited.connect(forgetTarget)
 	
-	if cantidadSoldados <= 0:
-		cantidadSoldados = 3
+	if maxCantSoldados <= 0:
+		maxCantSoldados = 3
 	
 
 func _process(delta):
@@ -42,7 +42,7 @@ func forgetTarget(enemyArea: Area2D):
 	
 
 func canSpawn() -> bool:
-	return soldados.size() < cantidadSoldados
+	return soldados.size() < maxCantSoldados
 
 func spawnSoldado():
 	var newSoldado = soldadoRef.instantiate()

@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://bpqx5ymp83s0y" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_22.png" id="48_vv248"]
 [ext_resource type="Texture2D" uid="uid://bprsqpty7edoi" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_23.png" id="49_qrn6x"]
 [ext_resource type="Texture2D" uid="uid://bpiqj6iqsvo3q" path="res://enemigos/assets/hada/polvo-maldito-flying/Armature_polvo-magico-flying_24.png" id="50_h1qk6"]
+[ext_resource type="Texture2D" uid="uid://bdogxu63uv7aw" path="res://enemigos/assets/hada/polvo_magico.png" id="51_p3jm2"]
 
 [resource]
 resource_local_to_scene = true
@@ -213,4 +214,12 @@ animations = [{
 "loop": 1,
 "name": &"AVANZAR",
 "speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("51_p3jm2")
+}],
+"loop": 0,
+"name": &"PROYECTIL",
+"speed": 5.0
 }]

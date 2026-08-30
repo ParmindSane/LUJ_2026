@@ -1,0 +1,215 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://vxkm8w151da7"]
+
+[ext_resource type="Texture2D" uid="uid://660c438ellp4" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_00.png" id="1_5th55"]
+[ext_resource type="Texture2D" uid="uid://bkbtdu6fc0hmv" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_01.png" id="2_pip8e"]
+[ext_resource type="Texture2D" uid="uid://dybjc7e7c0l8x" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_02.png" id="3_taolr"]
+[ext_resource type="Texture2D" uid="uid://bdqn20w0rjdxm" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_03.png" id="4_f80a7"]
+[ext_resource type="Texture2D" uid="uid://boa3lqmle6rnc" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_04.png" id="5_4k1rn"]
+[ext_resource type="Texture2D" uid="uid://d13pw7phs154b" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_05.png" id="6_55vp7"]
+[ext_resource type="Texture2D" uid="uid://vcag766cmp1a" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_06.png" id="7_s6cp3"]
+[ext_resource type="Texture2D" uid="uid://cip3fdcx1iwid" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_07.png" id="8_4ywg5"]
+[ext_resource type="Texture2D" uid="uid://r303bj2kirv1" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_08.png" id="9_wfo16"]
+[ext_resource type="Texture2D" uid="uid://dvqyo8vbywhcq" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_09.png" id="10_nnbm5"]
+[ext_resource type="Texture2D" uid="uid://c4c23p1ph11qh" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_10.png" id="11_0t4sk"]
+[ext_resource type="Texture2D" uid="uid://cijxg5iiy2gst" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_11.png" id="12_k08wa"]
+[ext_resource type="Texture2D" uid="uid://i13o2mh37kgs" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_12.png" id="13_axp74"]
+[ext_resource type="Texture2D" uid="uid://bnmh4yobvo2bq" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_13.png" id="14_8b3f3"]
+[ext_resource type="Texture2D" uid="uid://b8yhyjiuddme" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_14.png" id="15_cdq4l"]
+[ext_resource type="Texture2D" uid="uid://ceb41q14nwv35" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_15.png" id="16_3jgxd"]
+[ext_resource type="Texture2D" uid="uid://dmesovhq0nw4l" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_16.png" id="17_a80ar"]
+[ext_resource type="Texture2D" uid="uid://dr3g1hurdd5bj" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_17.png" id="18_u5prj"]
+[ext_resource type="Texture2D" uid="uid://cc6s8sqkx5d5g" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_18.png" id="19_irjag"]
+[ext_resource type="Texture2D" uid="uid://de2xngdr5jvqb" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_19.png" id="20_q6042"]
+[ext_resource type="Texture2D" uid="uid://bbw22m0prd6iw" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_20.png" id="21_kxgdd"]
+[ext_resource type="Texture2D" uid="uid://biu37bia04fwp" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_21.png" id="22_v8ib5"]
+[ext_resource type="Texture2D" uid="uid://bldhlde6dl7aa" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_22.png" id="23_w65ra"]
+[ext_resource type="Texture2D" uid="uid://75jwubav30np" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_23.png" id="24_7xoql"]
+[ext_resource type="Texture2D" uid="uid://dkc751vgrp5m" path="res://enemigos/assets/diablo/pacto-abisal-flying/Armature_polvo-magico-flying_24.png" id="25_61qwi"]
+[ext_resource type="Texture2D" uid="uid://c0jl06b35vao8" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_00.png" id="26_nmn06"]
+[ext_resource type="Texture2D" uid="uid://cb05pnkxlh2y7" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_01.png" id="27_yrpm6"]
+[ext_resource type="Texture2D" uid="uid://b4mmf4uxijh66" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_02.png" id="28_t0xtu"]
+[ext_resource type="Texture2D" uid="uid://dcl1a0ffcxome" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_03.png" id="29_un56t"]
+[ext_resource type="Texture2D" uid="uid://bf5dij0qomftv" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_04.png" id="30_wvwkr"]
+[ext_resource type="Texture2D" uid="uid://crl1vefiaw8sr" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_05.png" id="31_hoi42"]
+[ext_resource type="Texture2D" uid="uid://du6mwthnmmwuq" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_06.png" id="32_u2351"]
+[ext_resource type="Texture2D" uid="uid://c3iu2jvncy73" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_07.png" id="33_0gur6"]
+[ext_resource type="Texture2D" uid="uid://b0h3w12ewc7i6" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_08.png" id="34_eosqw"]
+[ext_resource type="Texture2D" uid="uid://bxstcbo4gs4at" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_09.png" id="35_02ud4"]
+[ext_resource type="Texture2D" uid="uid://daqg4qpj5a0sc" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_10.png" id="36_65dv7"]
+[ext_resource type="Texture2D" uid="uid://ckji1ycs7bxmg" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_11.png" id="37_i44pn"]
+[ext_resource type="Texture2D" uid="uid://tmfgrlfyuepy" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_12.png" id="38_bh7r8"]
+[ext_resource type="Texture2D" uid="uid://g7u07ux3sby4" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_13.png" id="39_lnq1h"]
+[ext_resource type="Texture2D" uid="uid://w13phklh26sl" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_14.png" id="40_pcyd0"]
+[ext_resource type="Texture2D" uid="uid://h7x30chf761v" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_15.png" id="41_sibj0"]
+[ext_resource type="Texture2D" uid="uid://8007fn1hukwx" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_16.png" id="42_2an3w"]
+[ext_resource type="Texture2D" uid="uid://co0ux53rcsxef" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_17.png" id="43_lctfj"]
+[ext_resource type="Texture2D" uid="uid://bfr7bade1axj4" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_18.png" id="44_4yj2y"]
+[ext_resource type="Texture2D" uid="uid://cs2e6kjj736o7" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_19.png" id="45_x61ar"]
+[ext_resource type="Texture2D" uid="uid://dlj6c7jx864mc" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_20.png" id="46_ctp6e"]
+[ext_resource type="Texture2D" uid="uid://mkqn15t8hp8d" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_21.png" id="47_68kn3"]
+[ext_resource type="Texture2D" uid="uid://6404b41v0sem" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_22.png" id="48_77s4w"]
+[ext_resource type="Texture2D" uid="uid://daswubjjn15ke" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_23.png" id="49_0srr3"]
+[ext_resource type="Texture2D" uid="uid://d1g0704vxsbbx" path="res://enemigos/assets/diablo/pacto-abisal-throwing/Armature_polvo-maldito-throwing_24.png" id="50_kriht"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5th55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pip8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_taolr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f80a7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4k1rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_55vp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_s6cp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4ywg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wfo16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nnbm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0t4sk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_k08wa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_axp74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8b3f3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cdq4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3jgxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_a80ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_u5prj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_irjag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_q6042")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_kxgdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_v8ib5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_w65ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_7xoql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_61qwi")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_nmn06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_yrpm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_t0xtu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_un56t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_wvwkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_hoi42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_u2351")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_0gur6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_eosqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_02ud4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_65dv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_i44pn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_bh7r8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_lnq1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_pcyd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_sibj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_2an3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_lctfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_4yj2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_x61ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ctp6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_68kn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_77s4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_0srr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_kriht")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

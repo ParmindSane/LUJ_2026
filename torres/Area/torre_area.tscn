@@ -48,7 +48,6 @@ animations = [{
 
 [node name="LanzaArea" unique_id=1565077132 instance=ExtResource("1_2us3v")]
 script = ExtResource("2_2us3v")
-delay = 0.0
 
 [node name="Timer" parent="." index="0" unique_id=706880896]
 one_shot = true
@@ -58,6 +57,7 @@ shape = SubResource("CircleShape2D_gpp5w")
 debug_color = Color(1, 0.35000002, 0, 0.41960785)
 
 [node name="AnimatedSprite2D" parent="." index="2" unique_id=2065084869]
+position = Vector2(0, -15)
 sprite_frames = SubResource("SpriteFrames_2us3v")
 animation = &"ATACAR"
 autoplay = "IDLE"

@@ -1,0 +1,195 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bjemxc4nww74a"]
+
+[ext_resource type="Texture2D" uid="uid://born384shjnob" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_00.png" id="1_estcn"]
+[ext_resource type="Texture2D" uid="uid://dug158eymj6d4" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_01.png" id="2_ai0hi"]
+[ext_resource type="Texture2D" uid="uid://eerk16fevsrj" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_02.png" id="3_6sp8x"]
+[ext_resource type="Texture2D" uid="uid://c2dfixyy8cw1p" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_03.png" id="4_tljld"]
+[ext_resource type="Texture2D" uid="uid://dijy13kmf1vsu" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_04.png" id="5_bjc0r"]
+[ext_resource type="Texture2D" uid="uid://bgb4vkba2ggms" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_05.png" id="6_i1npd"]
+[ext_resource type="Texture2D" uid="uid://d1ah47sqx1skj" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_06.png" id="7_qoyxb"]
+[ext_resource type="Texture2D" uid="uid://iija3sjm78xd" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_07.png" id="8_4aveh"]
+[ext_resource type="Texture2D" uid="uid://ljhn2f2tep6p" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_08.png" id="9_of7dw"]
+[ext_resource type="Texture2D" uid="uid://b8r1jcbiyfut" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_09.png" id="10_ybxa0"]
+[ext_resource type="Texture2D" uid="uid://cyavhvelbih0m" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_10.png" id="11_by78m"]
+[ext_resource type="Texture2D" uid="uid://blq4brjtdcq2d" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_11.png" id="12_2ksvf"]
+[ext_resource type="Texture2D" uid="uid://8kdm6i6khag5" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_12.png" id="13_qqr57"]
+[ext_resource type="Texture2D" uid="uid://blg6bmyn8nhsu" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_13.png" id="14_ww3u5"]
+[ext_resource type="Texture2D" uid="uid://dcegkudxv3fwj" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_14.png" id="15_x8kra"]
+[ext_resource type="Texture2D" uid="uid://ju31dxj75ije" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_15.png" id="16_gkt2m"]
+[ext_resource type="Texture2D" uid="uid://cn8qqxybty1b3" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_16.png" id="17_n48nw"]
+[ext_resource type="Texture2D" uid="uid://bcul36a5n0r5x" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_17.png" id="18_entw8"]
+[ext_resource type="Texture2D" uid="uid://c2v3t1uciy6sw" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_18.png" id="19_yfnug"]
+[ext_resource type="Texture2D" uid="uid://buot423fcprxr" path="res://enemigos/assets/osvaldo/osvaldo-attacking/Armature_newAnimation_1_19.png" id="20_xieho"]
+[ext_resource type="Texture2D" uid="uid://doqwh3ss648km" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_00.png" id="21_2jg6f"]
+[ext_resource type="Texture2D" uid="uid://b7msrgyde6u2h" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_01.png" id="22_uqwbc"]
+[ext_resource type="Texture2D" uid="uid://bayrovx3yq0vb" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_02.png" id="23_inn55"]
+[ext_resource type="Texture2D" uid="uid://b22pbg8b8pskl" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_03.png" id="24_4mdgn"]
+[ext_resource type="Texture2D" uid="uid://f6lv42j6nnn8" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_04.png" id="25_bdh7n"]
+[ext_resource type="Texture2D" uid="uid://bidnoieorfenv" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_05.png" id="26_3e7ev"]
+[ext_resource type="Texture2D" uid="uid://ctitjnkdtbyqn" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_06.png" id="27_ilbk4"]
+[ext_resource type="Texture2D" uid="uid://dx4ayht48nqy2" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_07.png" id="28_d0isa"]
+[ext_resource type="Texture2D" uid="uid://d2v7q64omf0sv" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_08.png" id="29_tuuyn"]
+[ext_resource type="Texture2D" uid="uid://v4c46iphkwwh" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_09.png" id="30_k2qf2"]
+[ext_resource type="Texture2D" uid="uid://bp3u0bluyyir4" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_10.png" id="31_ulu27"]
+[ext_resource type="Texture2D" uid="uid://q7eilkgb7qem" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_11.png" id="32_i60cu"]
+[ext_resource type="Texture2D" uid="uid://7osidplt4gb0" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_12.png" id="33_ayjmk"]
+[ext_resource type="Texture2D" uid="uid://bafebifqet0o5" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_13.png" id="34_pt8ws"]
+[ext_resource type="Texture2D" uid="uid://cdq27gu8wevps" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_14.png" id="35_7idfc"]
+[ext_resource type="Texture2D" uid="uid://bel8f27i2x5yk" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_15.png" id="36_tdcif"]
+[ext_resource type="Texture2D" uid="uid://bqhax0yxfnqfj" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_16.png" id="37_v77o1"]
+[ext_resource type="Texture2D" uid="uid://da2wmijbme46" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_17.png" id="38_j706f"]
+[ext_resource type="Texture2D" uid="uid://cq5lsm4gc6mby" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_18.png" id="39_32l68"]
+[ext_resource type="Texture2D" uid="uid://bwbjjf27xpeco" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_19.png" id="40_xngdj"]
+[ext_resource type="Texture2D" uid="uid://dxjpngv1efyll" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_20.png" id="41_hkomf"]
+[ext_resource type="Texture2D" uid="uid://unboec4qyt6i" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_21.png" id="42_v3i2x"]
+[ext_resource type="Texture2D" uid="uid://b76ecuuxwu3hi" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_22.png" id="43_3ldgk"]
+[ext_resource type="Texture2D" uid="uid://bahf3r0j8s5bp" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_23.png" id="44_3gqci"]
+[ext_resource type="Texture2D" uid="uid://ckuo2ym67lcn" path="res://enemigos/assets/osvaldo/osvaldo-walking/Armature_newAnimation_24.png" id="45_ljcqf"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_estcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ai0hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6sp8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tljld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bjc0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i1npd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qoyxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4aveh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_of7dw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ybxa0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_by78m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2ksvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qqr57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ww3u5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_x8kra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gkt2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_n48nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_entw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_yfnug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xieho")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_2jg6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_uqwbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_inn55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4mdgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_bdh7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_3e7ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ilbk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_d0isa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tuuyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_k2qf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ulu27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_i60cu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ayjmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_pt8ws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_7idfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_tdcif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_v77o1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_j706f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_32l68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_xngdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_hkomf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_v3i2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_3ldgk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_3gqci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ljcqf")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

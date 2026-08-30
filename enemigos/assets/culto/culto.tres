@@ -64,9 +64,9 @@
 [ext_resource type="Texture2D" uid="uid://botlp2ax45kwg" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_46.png" id="62_dcw7p"]
 [ext_resource type="Texture2D" uid="uid://c8rh52k8ns7db" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_47.png" id="63_fl718"]
 [ext_resource type="Texture2D" uid="uid://dsg7sgqeoe5ew" path="res://enemigos/assets/culto/culto-del-umbral-walking/Armature_maestria-arcana-walking_48.png" id="64_t7qvd"]
+[ext_resource type="Texture2D" uid="uid://gjf3f83x0mbs" path="res://enemigos/assets/culto/culto_flecha.png" id="65_xfdtk"]
 
 [resource]
-resource_local_to_scene = true
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -116,7 +116,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"ATACAR",
-"speed": 30.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -269,4 +269,12 @@ animations = [{
 "loop": 1,
 "name": &"AVANZAR",
 "speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("65_xfdtk")
+}],
+"loop": 1,
+"name": &"PROYECTIL",
+"speed": 5.0
 }]

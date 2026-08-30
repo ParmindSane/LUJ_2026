@@ -2,7 +2,6 @@ extends Torre
 
 var proyectilRef = preload("res://torres/Proyectil/torre_proyectil_proyectil.tscn")
 
-
 func _ready():
 	colShape = $CollisionShape2D
 	area_entered.connect(addTarget)

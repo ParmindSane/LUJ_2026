@@ -3,12 +3,14 @@
 [ext_resource type="Script" uid="uid://cslnys85t8qgy" path="res://torres/torre.gd" id="1_xxpgf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jwhw"]
-radius = 120.0
+radius = 140.0
 
 [node name="Torre" type="Area2D" unique_id=1565077132]
 collision_mask = 256
 script = ExtResource("1_xxpgf")
 delay = 1.0
+precioComprar = 5
+precioVender = 2
 
 [node name="Timer" type="Timer" parent="." unique_id=706880896]
 
