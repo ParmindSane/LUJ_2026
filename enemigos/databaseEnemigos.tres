@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="clasesEnemigos" format=3 uid="uid://y3rsekbnyw2n"]
+
+[ext_resource type="Script" uid="uid://cwxdf836wr4fy" path="res://enemigos/claseEnemigo.gd" id="1_a18re"]
+[ext_resource type="SpriteFrames" uid="uid://bauyf1ekfphp2" path="res://enemigos/assets/zombi/zombi.tres" id="2_mggim"]
+[ext_resource type="Script" uid="uid://o53ch5qtuy5c" path="res://enemigos/clasesEnemigos.gd" id="2_pu73f"]
+
+[sub_resource type="Resource" id="Resource_pu73f"]
+script = ExtResource("1_a18re")
+animaciones = ExtResource("2_mggim")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[resource]
+script = ExtResource("2_pu73f")
+databaseEnemigos = Dictionary[String, ExtResource("1_a18re")]({
+"zombi": SubResource("Resource_pu73f")
+})
+metadata/_custom_type_script = "uid://o53ch5qtuy5c"

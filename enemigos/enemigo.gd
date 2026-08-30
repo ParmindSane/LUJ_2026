@@ -1,5 +1,7 @@
 extends PathFollow2D
 
+@export var clase: ClaseEnemigo
+
 var proyectilRef = preload("res://enemigos/enemigo_proyectil.tscn")
 
 var estado: String
@@ -36,6 +38,10 @@ signal matado(coins: int)
 signal finPath(yo: PathFollow2D)
 var paths: Array
 
+func setClase(c: ClaseEnemigo):
+	pass
+	
+
 func _ready():
 	add_to_group("Enemigos")
 	
@@ -52,6 +58,11 @@ func _ready():
 	timer = $Timer
 	colRecibir = $AreaRecibir
 	colAtaque = $AreaAtacar
+	
+	if volador:
+		aDistancia = true
+	else:
+		ignoraSoldados = false
 	
 	if !ignoraSoldados && aDistancia:
 		colAtaque.area_entered.connect(addTarget)

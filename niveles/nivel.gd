@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var clasesEnemigos: ClasesEnemigos
+
 var UI: Node
 @export var vidas_iniciales: int
 var vidas_cantidad: int

@@ -1,3 +1,3 @@
 extends PathFollow2D
 
-@export var oleadas: Resource
+@export var oleadas: Oleada
