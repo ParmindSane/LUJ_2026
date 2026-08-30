@@ -56,7 +56,7 @@ func setClase(cn: ClasesEnemigos.Clases, c: ClaseEnemigo):
 	ataqueACore = claseData.ataqueACore
 	animaciones = claseData.animaciones
 	
-	vidaActual = vidaInicial
+	vidaActual += vidaInicial
 	
 	$AnimatedSprite2D.sprite_frames = animaciones
 		
@@ -95,7 +95,6 @@ func _process(delta):
 	if vidaActual <= 0:
 		matado.emit(loot)
 		queue_free()
-#		¿APARECE TIRADO UNOS SEGUNDOS CUANDO MUERE?
 	
 	if estado == "AVANZAR":
 		progress += velocidad
@@ -121,32 +120,39 @@ func _process(delta):
 			if estado != "ATACAR":
 				timer.start(ataqueDelay)
 				estado = "ATACAR"
+				print(str(self) + " peleando con "+str(target))
 			
 			if global_position.x > target.global_position.x:
 				sprites.flip_h = true
 			else:
 				sprites.flip_h = false
 			
-			if timer.is_stopped() && aDistancia:
-				spawnProyectil()
+			if timer.is_stopped():
+				if aDistancia:
+					spawnProyectil()
+				else:
+					atacarRival()
 	else:
 		estado = "AVANZAR"
 		timer.stop()
 	
 	if estado != sprites.animation || !sprites.is_playing():
 		sprites.play(estado)
-#			¿REPRODUCIR SPRITE ACOSTADO PARA SOMBRA?
 	
-	$Label.text = str(vidaActual)
+	$Label.text = str(vidaActual) + "\n" + str(target)
 	
 	pPosition = position
 	pAng = ang
 	
 
 func setRival(s: Node2D):
-	if !aDistancia:
+	if !volador:
 		targets.push_back(s)
 	
+func herir(damage: float):
+	vidaActual -= damage
+	
+
 func addTarget(soldado: Area2D):
 	targets.push_back(soldado)
 	
@@ -154,6 +160,10 @@ func forgetTarget(soldado: Area2D):
 	targets.erase(soldado)
 	
 
+func atacarRival():
+	if estado == "ATACAR" && is_instance_valid(target):
+		target.herir(ataqueASoldado)
+	
 func spawnProyectil():
 	var newProyectil = proyectilRef.instantiate()
 	newProyectil.set_target(target, sprites.sprite_frames)

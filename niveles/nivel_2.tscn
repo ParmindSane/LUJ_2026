@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bvc8cx5ave4ha"]
+
+[ext_resource type="PackedScene" uid="uid://cf55mwny83pis" path="res://niveles/nivel.tscn" id="1_a1qd3"]
+[ext_resource type="Texture2D" uid="uid://bivh2mq7ytabq" path="res://niveles/assets/nivel1.png" id="2_buu7l"]
+
+[node name="Nivel2" unique_id=1112846435 instance=ExtResource("1_a1qd3")]
+
+[node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
+texture = ExtResource("2_buu7l")

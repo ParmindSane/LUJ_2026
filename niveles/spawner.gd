@@ -17,19 +17,18 @@ signal enemigoSpawneado(enemigo: Enemigo)
 signal finDeSpawns()
 
 func _ready():
-	oleada = oleadas[0]
+	if !oleadas.is_empty():
+		oleada = oleadas[0]
 	
-	tiempoOleadas = $TiempoEntreOleadas
-	tiempoOleadas.timeout.connect(empezarOleada)
-	
-	tiempoEnemigos = $TiempoEntreEnemigos
-	tiempoEnemigos.timeout.connect(spawnearEnemigo)
-	
-	empezarOleada()
-	
-
-func _process(delta):
-	pass
+		tiempoEnemigos = $TiempoEntreEnemigos
+		tiempoEnemigos.timeout.connect(spawnearEnemigo)
+		
+		tiempoOleadas = $TiempoEntreOleadas
+		tiempoOleadas.timeout.connect(empezarOleada)
+		tiempoOleadas.start(1)
+	else:
+		finDeSpawns.emit()
+		terminado = true
 	
 
 func empezarOleada():

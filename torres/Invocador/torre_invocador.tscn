@@ -4,9 +4,6 @@
 [ext_resource type="Script" uid="uid://dumsep3ugrsrg" path="res://torres/Invocador/torre_invocador.gd" id="2_kgttl"]
 [ext_resource type="Texture2D" uid="uid://pohebfh4p3me" path="res://torres/Invocador/torre_invocador.png" id="3_42ihj"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_32p6t"]
-radius = 100.0
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_755fi"]
 animations = [{
 "frames": [{
@@ -27,7 +24,6 @@ one_shot = true
 autostart = true
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1037154666]
-shape = SubResource("CircleShape2D_32p6t")
 debug_color = Color(0.03500005, 0.7, 0, 0.41960785)
 
 [node name="AnimatedSprite2D" parent="." index="2" unique_id=2065084869]

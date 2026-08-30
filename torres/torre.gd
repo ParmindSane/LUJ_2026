@@ -5,8 +5,8 @@ class_name Torre
 @export var precioComprar: int
 @export var precioVender: int
 
-var target: Node2D
-var targets: Array[Node2D]
+var target: Enemigo
+var targets: Array[Enemigo]
 
 var colShape: CollisionShape2D
 var sprites: AnimatedSprite2D

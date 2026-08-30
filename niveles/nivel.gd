@@ -1,4 +1,5 @@
 extends Node2D
+class_name Nivel
 
 var clasesEnemigos: ClasesEnemigos = preload("res://enemigos/databaseEnemigos.tres")
 

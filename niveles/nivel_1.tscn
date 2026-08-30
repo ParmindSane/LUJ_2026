@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://03gsx7l8dufu"]
+
+[ext_resource type="PackedScene" uid="uid://cf55mwny83pis" path="res://niveles/nivel.tscn" id="1_d8x1h"]
+[ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="2_w6qyd"]
+
+[node name="Nivel1" unique_id=1112846435 instance=ExtResource("1_d8x1h")]
+
+[node name="Spawner" parent="ObjetosDeJuego/Path2D2" parent_id_path=PackedInt32Array(1211606735) index="0" unique_id=1342199954]
+oleadas = Array[ExtResource("2_w6qyd")]([])
