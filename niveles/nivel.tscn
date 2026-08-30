@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://brquy7pnu0yo2" path="res://torres/Area/tower2-aniamtion/idle.png" id="7_3iobf"]
 [ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="7_160gc"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="8_r17jf"]
+[ext_resource type="PackedScene" uid="uid://d3yqy4dhsfivc" path="res://torres/Area/torre_area.tscn" id="10_yi00n"]
 [ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="104_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="106_tagm8"]
 [ext_resource type="Texture2D" uid="uid://pohebfh4p3me" path="res://torres/Invocador/torre_invocador.png" id="108_p7u5q"]
@@ -31,6 +32,12 @@ point_count = 9
 script = ExtResource("8_r17jf")
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
+[sub_resource type="Resource" id="Resource_r17jf"]
+script = ExtResource("8_r17jf")
+enemigo = 2
+cantidad = 2
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
 [sub_resource type="Curve2D" id="Curve2D_qe4n8"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 1194, -14, 0, 0, 0, 0, 1025, 120, 0, 0, 0, 0, 840, 301, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -66, 96)
@@ -39,6 +46,7 @@ point_count = 10
 
 [sub_resource type="Resource" id="Resource_jcnq2"]
 script = ExtResource("8_r17jf")
+enemigo = 1
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [node name="Nivel" type="Node2D" unique_id=1112846435]
@@ -226,7 +234,7 @@ curve = SubResource("Curve2D_r17jf")
 
 [node name="Spawner" parent="ObjetosDeJuego/Path2D" unique_id=1134643131 instance=ExtResource("7_160gc")]
 position = Vector2(583, 746)
-oleadas = Array[ExtResource("8_r17jf")]([SubResource("Resource_yi00n")])
+oleadas = Array[ExtResource("8_r17jf")]([SubResource("Resource_yi00n"), SubResource("Resource_r17jf")])
 
 [node name="Path2D2" type="Path2D" parent="ObjetosDeJuego" unique_id=1211606735]
 curve = SubResource("Curve2D_qe4n8")
@@ -240,3 +248,6 @@ offset_left = 12.0
 offset_top = -304.0
 offset_right = 136.0
 offset_bottom = -180.0
+
+[node name="LanzaArea" parent="." unique_id=1565077132 instance=ExtResource("10_yi00n")]
+position = Vector2(457, 483)

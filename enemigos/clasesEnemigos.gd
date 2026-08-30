@@ -15,7 +15,7 @@ enum Clases {
 	Diablo,
 	Pegaso,
 	Osvaldo,
-	Mari
+	Mari,
 }
 
 @export var databaseEnemigos: Dictionary[Clases, ClaseEnemigo]

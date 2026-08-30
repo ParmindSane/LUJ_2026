@@ -34,9 +34,9 @@ func _process(delta):
 
 func empezarOleada():
 	spawnsRestantes = oleada.cantidad
-	spawnearEnemigo()
-	
 	iniciaOleada.emit(oleadas.find(oleada), oleada)
+	
+	spawnearEnemigo()
 	
 
 func spawnearEnemigo():
@@ -56,4 +56,5 @@ func spawnearEnemigo():
 			oleada = oleadas[oleadas.find(oleada)+1]
 		else:
 			finDeSpawns.emit()
+			terminado = true
 	

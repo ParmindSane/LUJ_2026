@@ -16,75 +16,76 @@
 [ext_resource type="SpriteFrames" uid="uid://4g74ok1pybok" path="res://enemigos/assets/pegaso/pegaso.tres" id="13_ytjd0"]
 [ext_resource type="SpriteFrames" uid="uid://bjemxc4nww74a" path="res://enemigos/assets/osvaldo/osvaldo.tres" id="14_3xlen"]
 
-[sub_resource type="Resource" id="Resource_jiuv6"]
+[sub_resource type="Resource" id="Resource_7arfl"]
 script = ExtResource("1_a18re")
-animaciones = ExtResource("6_n4rwq")
+animaciones = ExtResource("2_mggim")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_qtvrj"]
 script = ExtResource("1_a18re")
-aDistancia = true
-animaciones = ExtResource("9_jiuv6")
+vidaInicial = 3.0
+animaciones = ExtResource("3_2b0nb")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_n4rwq"]
 script = ExtResource("1_a18re")
-animaciones = ExtResource("3_2b0nb")
+animaciones = ExtResource("4_owpq8")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
-[sub_resource type="Resource" id="Resource_7arfl"]
+[sub_resource type="Resource" id="Resource_3xlen"]
 script = ExtResource("1_a18re")
-aDistancia = true
-animaciones = ExtResource("10_wme23")
+animaciones = ExtResource("5_5htug")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_dy58s"]
 script = ExtResource("1_a18re")
-volador = true
-ignoraSoldados = true
-animaciones = ExtResource("12_7arfl")
+animaciones = ExtResource("6_n4rwq")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_pubbl"]
-script = ExtResource("1_a18re")
-volador = true
-ignoraSoldados = true
-animaciones = ExtResource("11_qtvrj")
-metadata/_custom_type_script = "uid://cwxdf836wr4fy"
-
-[sub_resource type="Resource" id="Resource_wme23"]
 script = ExtResource("1_a18re")
 aDistancia = true
 volador = true
 animaciones = ExtResource("7_tupwp")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
-[sub_resource type="Resource" id="Resource_svygd"]
-script = ExtResource("1_a18re")
-volador = true
-ignoraSoldados = true
-animaciones = ExtResource("13_ytjd0")
-metadata/_custom_type_script = "uid://cwxdf836wr4fy"
-
-[sub_resource type="Resource" id="Resource_tupwp"]
-script = ExtResource("1_a18re")
-animaciones = ExtResource("4_owpq8")
-metadata/_custom_type_script = "uid://cwxdf836wr4fy"
-
-[sub_resource type="Resource" id="Resource_4h82u"]
+[sub_resource type="Resource" id="Resource_wme23"]
 script = ExtResource("1_a18re")
 aDistancia = true
 animaciones = ExtResource("8_2tmpy")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
+[sub_resource type="Resource" id="Resource_svygd"]
+script = ExtResource("1_a18re")
+aDistancia = true
+animaciones = ExtResource("9_jiuv6")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_tupwp"]
+script = ExtResource("1_a18re")
+aDistancia = true
+animaciones = ExtResource("10_wme23")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_4h82u"]
+script = ExtResource("1_a18re")
+volador = true
+ignoraSoldados = true
+animaciones = ExtResource("11_qtvrj")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
 [sub_resource type="Resource" id="Resource_2tmpy"]
 script = ExtResource("1_a18re")
-animaciones = ExtResource("5_5htug")
+volador = true
+ignoraSoldados = true
+animaciones = ExtResource("12_7arfl")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_cu1ge"]
 script = ExtResource("1_a18re")
-animaciones = ExtResource("2_mggim")
+volador = true
+ignoraSoldados = true
+animaciones = ExtResource("13_ytjd0")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_ytjd0"]
@@ -95,10 +96,10 @@ metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 [resource]
 script = ExtResource("2_pu73f")
 databaseEnemigos = Dictionary[int, ExtResource("1_a18re")]({
-0: SubResource("Resource_jiuv6"),
+0: SubResource("Resource_7arfl"),
 1: SubResource("Resource_qtvrj"),
 2: SubResource("Resource_n4rwq"),
-3: SubResource("Resource_7arfl"),
+3: SubResource("Resource_3xlen"),
 4: SubResource("Resource_dy58s"),
 5: SubResource("Resource_pubbl"),
 6: SubResource("Resource_wme23"),

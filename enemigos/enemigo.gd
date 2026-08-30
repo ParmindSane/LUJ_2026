@@ -101,7 +101,7 @@ func _process(delta):
 		progress += velocidad
 		
 		if progress_ratio == 1:
-			finPath.emit(self)
+			finPath.emit(ataqueACore)
 			queue_free()
 	
 		if pPosition != position:
