@@ -3,11 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/assets/nivel1day.png" id="1_l3kkx"]
 [ext_resource type="Script" uid="uid://c1e60oew76vwm" path="res://niveles/nivel.gd" id="1_tagm8"]
 [ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/nivel_interfaz.gd" id="2_g2l8i"]
+[ext_resource type="Texture2D" uid="uid://bcvnr5ldrmj84" path="res://niveles/assets/torrePanel.png" id="4_l25ip"]
+[ext_resource type="StyleBox" uid="uid://1byc145786mt" path="res://niveles/assets/torreButt.stylebox" id="5_l25ip"]
+[ext_resource type="Theme" uid="uid://svatb6hy1pm" path="res://menu/assets/buttTheme.theme" id="6_l25ip"]
 [ext_resource type="Texture2D" uid="uid://brquy7pnu0yo2" path="res://torres/Area/tower2-aniamtion/idle.png" id="7_3iobf"]
 [ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="7_160gc"]
 [ext_resource type="Texture2D" uid="uid://cuinyvandjgi3" path="res://niveles/assets/victoria.png" id="7_yi00n"]
 [ext_resource type="Texture2D" uid="uid://b7gr0s0hlnewb" path="res://niveles/assets/derrota.png" id="8_qhy6q"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="8_r17jf"]
+[ext_resource type="Texture2D" uid="uid://6b8vaq4aggki" path="res://niveles/assets/barra.png" id="10_e7tdi"]
+[ext_resource type="Texture2D" uid="uid://bon72act0var2" path="res://menu/assets/exit_hover.png" id="13_ie5aq"]
+[ext_resource type="Texture2D" uid="uid://n4q884wjn0ui" path="res://menu/assets/exit.png" id="14_7mve8"]
 [ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="104_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="106_tagm8"]
 [ext_resource type="Texture2D" uid="uid://pohebfh4p3me" path="res://torres/Invocador/torre_invocador.png" id="108_p7u5q"]
@@ -72,8 +78,8 @@ expand_mode = 1
 [node name="UI" type="CanvasLayer" parent="." unique_id=710199408 node_paths=PackedStringArray("vidas_cartel", "monedas_cartel", "torres_butts", "buttSalir")]
 layer = 1000
 script = ExtResource("2_g2l8i")
-vidas_cartel = NodePath("Indicadores/IndicadorVidas/Label")
-monedas_cartel = NodePath("Indicadores/IndicadorMonedas/Label")
+vidas_cartel = NodePath("Control/TextureRect/IndicadorVidas")
+monedas_cartel = NodePath("Control/TextureRect/IndicadorMonedas")
 torres_butts = [NodePath("OpcionesTorres/TorresIniciales/Torre1/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre2/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre3/Button")]
 buttSalir = NodePath("GanarPerder/Control/Salir")
 
@@ -91,17 +97,20 @@ size_flags_horizontal = 8
 
 [node name="TextureRect" type="TextureRect" parent="UI/OpcionesTorres" unique_id=1219716482]
 layout_mode = 2
+texture = ExtResource("4_l25ip")
 expand_mode = 1
 
 [node name="TorresIniciales" type="VBoxContainer" parent="UI/OpcionesTorres" unique_id=624659414]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+alignment = 1
 
 [node name="Torre1" type="PanelContainer" parent="UI/OpcionesTorres/TorresIniciales" unique_id=1868071487]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 170)
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("5_l25ip")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/TorresIniciales/Torre1" unique_id=919067168]
 custom_maximum_size = Vector2(160, -1)
@@ -117,12 +126,20 @@ stretch_mode = 6
 
 [node name="Label" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre1/VBoxContainer" unique_id=524464529]
 layout_mode = 2
+theme = ExtResource("6_l25ip")
+theme_override_colors/font_color = Color(0.8980392, 0.8, 0.57254905, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
 text = "Ballesta lunar"
 horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre1/VBoxContainer" unique_id=1471428492]
 layout_mode = 2
+theme = ExtResource("6_l25ip")
+theme_override_colors/font_color = Color(0.8980392, 0.8, 0.57254905, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
 text = "precio"
 horizontal_alignment = 1
 
@@ -131,10 +148,15 @@ layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_b2hyj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_g2l8i")
 
+[node name="Margin" type="Control" parent="UI/OpcionesTorres/TorresIniciales" unique_id=2033429886]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
 [node name="Torre2" type="PanelContainer" parent="UI/OpcionesTorres/TorresIniciales" unique_id=171428899]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 170)
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_styles/panel = ExtResource("5_l25ip")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/TorresIniciales/Torre2" unique_id=1149721443]
 custom_maximum_size = Vector2(160, -1)
@@ -150,12 +172,14 @@ stretch_mode = 6
 
 [node name="Label" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre2/VBoxContainer" unique_id=339884499]
 layout_mode = 2
+theme = ExtResource("6_l25ip")
 text = "Catapulta lunar"
 horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre2/VBoxContainer" unique_id=220805567]
 layout_mode = 2
+theme = ExtResource("6_l25ip")
 text = "precio"
 horizontal_alignment = 1
 
@@ -164,10 +188,15 @@ layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_b2hyj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_g2l8i")
 
+[node name="Margin2" type="Control" parent="UI/OpcionesTorres/TorresIniciales" unique_id=2057712109]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
 [node name="Torre3" type="PanelContainer" parent="UI/OpcionesTorres/TorresIniciales" unique_id=525263654]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(150, 170)
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_styles/panel = ExtResource("5_l25ip")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI/OpcionesTorres/TorresIniciales/Torre3" unique_id=1196549888]
 custom_maximum_size = Vector2(160, -1)
@@ -183,12 +212,14 @@ stretch_mode = 6
 
 [node name="Label" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre3/VBoxContainer" unique_id=1865114253]
 layout_mode = 2
+theme = ExtResource("6_l25ip")
 text = "Guarida de lobos"
 horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="UI/OpcionesTorres/TorresIniciales/Torre3/VBoxContainer" unique_id=1575825376]
 layout_mode = 2
+theme = ExtResource("6_l25ip")
 text = "precio"
 horizontal_alignment = 1
 
@@ -201,25 +232,41 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_g2l8i")
 wait_time = 0.5
 one_shot = true
 
-[node name="Indicadores" type="HBoxContainer" parent="UI" unique_id=1810357570]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Control" type="Control" parent="UI" unique_id=113045510]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
 
-[node name="IndicadorVidas" type="PanelContainer" parent="UI/Indicadores" unique_id=1689788352]
-layout_mode = 2
+[node name="TextureRect" type="TextureRect" parent="UI/Control" unique_id=1628350004]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -256.0
+offset_right = 256.0
+offset_bottom = 128.0
+grow_horizontal = 2
+texture = ExtResource("10_e7tdi")
 
-[node name="Label" type="Label" parent="UI/Indicadores/IndicadorVidas" unique_id=1891238188]
-layout_mode = 2
-text = "❤️ X "
+[node name="IndicadorVidas" type="Label" parent="UI/Control/TextureRect" unique_id=1891238188]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 14.855
+offset_right = 170.0
+offset_bottom = 59.855
+text = "X"
 label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
 
-[node name="IndicadorMonedas" type="PanelContainer" parent="UI/Indicadores" unique_id=1984527939]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="UI/Indicadores/IndicadorMonedas" unique_id=1804670638]
-layout_mode = 2
-text = "💰 X "
+[node name="IndicadorMonedas" type="Label" parent="UI/Control/TextureRect" unique_id=1804670638]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 14.855
+offset_right = 300.0
+offset_bottom = 59.855
+text = "X"
 label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
 
@@ -234,7 +281,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Ganar" type="TextureRect" parent="UI/GanarPerder" unique_id=612233645]
-visible = false
 layout_mode = 2
 texture = ExtResource("7_yi00n")
 expand_mode = 1
@@ -248,16 +294,21 @@ expand_mode = 1
 [node name="Control" type="Control" parent="UI/GanarPerder" unique_id=383701571]
 layout_mode = 2
 
-[node name="Salir" type="Button" parent="UI/GanarPerder/Control" unique_id=2033777148]
+[node name="Salir" type="TextureButton" parent="UI/GanarPerder/Control" unique_id=1636547363]
+custom_maximum_size = Vector2(-1, 150)
 layout_mode = 1
-offset_left = 112.0
-offset_top = 548.0
-offset_right = 287.0
-offset_bottom = 590.0
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+offset_right = 512.0
+grow_vertical = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = SubResource("Theme_qhy6q")
-text = " Salir del nivel "
+texture_normal = ExtResource("13_ie5aq")
+texture_hover = ExtResource("14_7mve8")
+stretch_mode = 5
 metadata/_edit_group_ = true
 
 [node name="ObjetosDeJuego" type="CanvasLayer" parent="." unique_id=1021469761]

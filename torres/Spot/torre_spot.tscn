@@ -3,6 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://cndni83sql6rg" path="res://torres/Spot/slot.png" id="1_yimhq"]
 [ext_resource type="Script" uid="uid://dusmhn3dysq0i" path="res://torres/Spot/torre_spot.gd" id="2_skin1"]
 [ext_resource type="Texture2D" uid="uid://djcy7yncopvf6" path="res://torres/Spot/slot_vacio.png" id="3_h6h7o"]
+[ext_resource type="Theme" uid="uid://svatb6hy1pm" path="res://menu/assets/buttTheme.theme" id="4_hsg2t"]
+[ext_resource type="Texture2D" uid="uid://v10jod2fn2pr" path="res://niveles/assets/torreButt.png" id="5_g2sjt"]
+[ext_resource type="Texture2D" uid="uid://cx01p8wvhlhs5" path="res://niveles/assets/torreButtHover.png" id="6_g2sjt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u5y7p"]
+texture = ExtResource("5_g2sjt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ie5aq"]
+texture = ExtResource("6_g2sjt")
 
 [node name="TorreSpot" type="TextureButton" unique_id=238956192 groups=["TorreSpot"]]
 anchors_preset = 7
@@ -30,6 +39,10 @@ visible = false
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 31.0
+offset_bottom = 42.0
 grow_horizontal = 2
-text = "Vender"
+theme = ExtResource("4_hsg2t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_u5y7p")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ie5aq")
+text = "Vender
+precio"

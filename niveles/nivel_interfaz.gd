@@ -40,7 +40,9 @@ func _ready():
 		var t = torres_pre[i]
 		b.pressed.connect(torres_asignarTorre.bind(t))
 		torres_carteles.push_back(b.get_parent().get_child(0).get_child(2))
-		torres_carteles[i].text = "(💰 " + str(t.precioComprar) + ")"
+		torres_carteles[i].text = "($ " + str(t.precioComprar) + ")"
+	
+	buttSalir.pressed.connect(salir)
 	
 
 func _process(delta):
@@ -75,10 +77,10 @@ func _input(event: InputEvent) -> void:
 
 func actualizarCarteles(vidas: int, coins: int):
 	vidas_actuales = vidas
-	vidas_cartel.text = "❤️ " + str(vidas) + " "
+	vidas_cartel.text = str(vidas)
 	
 	monedas_actuales = coins
-	monedas_cartel.text = "💰 " + str(coins) + " "
+	monedas_cartel.text = str(coins)
 	
 	for b in torres_butts:
 			var i = torres_butts.find(b)
@@ -98,7 +100,6 @@ func finDelNivel(victoria: bool):
 		$GanarPerder/Ganar.show()
 	else:
 		$GanarPerder/Perder.show()
-	buttSalir.pressed.connect(salir)
 	
 func salir():
 	get_tree().change_scene_to_file("res://menu/mapaDeNiveles.tscn")
