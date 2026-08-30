@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var clasesEnemigos: ClasesEnemigos
+var clasesEnemigos: ClasesEnemigos = preload("res://enemigos/databaseEnemigos.tres")
 
 var UI: Node
 @export var vidas_iniciales: int

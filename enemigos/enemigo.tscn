@@ -9,7 +9,7 @@ radius = 120.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
 radius = 15.0
 
-[node name="EnemigoADistancia" type="PathFollow2D" unique_id=1821539514 groups=["Enemigos"]]
+[node name="Enemigo" type="PathFollow2D" unique_id=1821539514 groups=["Enemigos"]]
 rotates = false
 loop = false
 script = ExtResource("1_2ehgw")

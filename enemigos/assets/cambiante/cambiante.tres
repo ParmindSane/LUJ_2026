@@ -1,0 +1,244 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dhv1oio61ceuk"]
+
+[ext_resource type="Texture2D" uid="uid://biwstsswnq4ko" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_00.png" id="1_sbrc5"]
+[ext_resource type="Texture2D" uid="uid://c8vlm6hlrp1c8" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_01.png" id="2_d8jm8"]
+[ext_resource type="Texture2D" uid="uid://dwxcrl4pqag7d" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_02.png" id="3_44a2a"]
+[ext_resource type="Texture2D" uid="uid://c4bnhm1ry3vtr" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_03.png" id="4_mb7m1"]
+[ext_resource type="Texture2D" uid="uid://ds5hc0vtb0awn" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_04.png" id="5_6ptd0"]
+[ext_resource type="Texture2D" uid="uid://b6lrhet1sag2r" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_05.png" id="6_am7qn"]
+[ext_resource type="Texture2D" uid="uid://bcuwc7jnfwsav" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_06.png" id="7_kelo2"]
+[ext_resource type="Texture2D" uid="uid://c7av3abm165sl" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_07.png" id="8_3drtc"]
+[ext_resource type="Texture2D" uid="uid://cakspjc2f2n7d" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_08.png" id="9_qy5wb"]
+[ext_resource type="Texture2D" uid="uid://l5vnvf0giq7q" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_09.png" id="10_v12sh"]
+[ext_resource type="Texture2D" uid="uid://bvor1554ju60m" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_10.png" id="11_sbyrr"]
+[ext_resource type="Texture2D" uid="uid://b48hxu34jolhs" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_11.png" id="12_h0r0n"]
+[ext_resource type="Texture2D" uid="uid://c6lpxg6pdj1ul" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_12.png" id="13_8rcbc"]
+[ext_resource type="Texture2D" uid="uid://byohkbxqehwbn" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_13.png" id="14_c8uvb"]
+[ext_resource type="Texture2D" uid="uid://bccj6m1apg3ah" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_14.png" id="15_f34kb"]
+[ext_resource type="Texture2D" uid="uid://c2c8qmav3qnmp" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_15.png" id="16_ngbhm"]
+[ext_resource type="Texture2D" uid="uid://db5e3845iikxn" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_16.png" id="17_jmsnp"]
+[ext_resource type="Texture2D" uid="uid://b2o70nv8qud3w" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_17.png" id="18_af6s1"]
+[ext_resource type="Texture2D" uid="uid://dxw0sj2mpwjvl" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_18.png" id="19_ayshg"]
+[ext_resource type="Texture2D" uid="uid://76ilnfnbkgy1" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_19.png" id="20_21jum"]
+[ext_resource type="Texture2D" uid="uid://cpu2chdvelov7" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_20.png" id="21_miy1g"]
+[ext_resource type="Texture2D" uid="uid://rhnwcwlifyj8" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_21.png" id="22_y80y2"]
+[ext_resource type="Texture2D" uid="uid://blrbtodk3uttm" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_22.png" id="23_pmjqg"]
+[ext_resource type="Texture2D" uid="uid://cqixs41efnuhk" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_23.png" id="24_d2qqd"]
+[ext_resource type="Texture2D" uid="uid://i3o5j65cbhxy" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_24.png" id="25_r7krk"]
+[ext_resource type="Texture2D" uid="uid://bade4u27wbhri" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_25.png" id="26_kn2op"]
+[ext_resource type="Texture2D" uid="uid://cd2wxwrivcspl" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_26.png" id="27_ahomw"]
+[ext_resource type="Texture2D" uid="uid://d2u88af35ffbu" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_27.png" id="28_271vh"]
+[ext_resource type="Texture2D" uid="uid://bvovdert3cycg" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_28.png" id="29_ql8yj"]
+[ext_resource type="Texture2D" uid="uid://bdxnsswypxir4" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_29.png" id="30_gfk6a"]
+[ext_resource type="Texture2D" uid="uid://doaqxivar3fsd" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_30.png" id="31_h44l4"]
+[ext_resource type="Texture2D" uid="uid://blnvyjlsw47hi" path="res://enemigos/assets/cambiante/forma-cambiante-attacking/Armature_forma-cambiante-attacking_31.png" id="32_dwo2f"]
+[ext_resource type="Texture2D" uid="uid://d4eka70n8t1mp" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_00.png" id="33_01sw4"]
+[ext_resource type="Texture2D" uid="uid://d1rvch18bwdo3" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_01.png" id="34_evnyn"]
+[ext_resource type="Texture2D" uid="uid://i6imckixryir" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_02.png" id="35_yl35e"]
+[ext_resource type="Texture2D" uid="uid://cor117o8kk2hm" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_03.png" id="36_g0l4y"]
+[ext_resource type="Texture2D" uid="uid://d1wykssjyfam8" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_04.png" id="37_vk27q"]
+[ext_resource type="Texture2D" uid="uid://bjyxo61hricvq" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_05.png" id="38_5uo88"]
+[ext_resource type="Texture2D" uid="uid://waoklelthi8e" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_06.png" id="39_pgnk1"]
+[ext_resource type="Texture2D" uid="uid://cu157mijj55cw" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_07.png" id="40_20if3"]
+[ext_resource type="Texture2D" uid="uid://44dqvutf22o2" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_08.png" id="41_qkt2u"]
+[ext_resource type="Texture2D" uid="uid://dmxqt75aysg4m" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_09.png" id="42_wmel5"]
+[ext_resource type="Texture2D" uid="uid://dtp2npuyeihu5" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_10.png" id="43_pnx21"]
+[ext_resource type="Texture2D" uid="uid://cqmi0ad7ks68i" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_11.png" id="44_c615g"]
+[ext_resource type="Texture2D" uid="uid://o2dhvdmimedm" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_12.png" id="45_dvjh3"]
+[ext_resource type="Texture2D" uid="uid://kj45xjl84pb2" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_13.png" id="46_upnde"]
+[ext_resource type="Texture2D" uid="uid://hycj8pq57ndy" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_14.png" id="47_wtd2p"]
+[ext_resource type="Texture2D" uid="uid://bjxh6a8t6dlwc" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_15.png" id="48_w8ukt"]
+[ext_resource type="Texture2D" uid="uid://cjhig0d7l0wai" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_16.png" id="49_f2hmy"]
+[ext_resource type="Texture2D" uid="uid://51pwyv2etb8m" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_17.png" id="50_civan"]
+[ext_resource type="Texture2D" uid="uid://csfalu61pjkpk" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_18.png" id="51_4s5qg"]
+[ext_resource type="Texture2D" uid="uid://cy1ag3std3b75" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_19.png" id="52_ryajq"]
+[ext_resource type="Texture2D" uid="uid://bmex84usmugjr" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_20.png" id="53_mtvrf"]
+[ext_resource type="Texture2D" uid="uid://lne0jdd1ukwa" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_21.png" id="54_4qo6s"]
+[ext_resource type="Texture2D" uid="uid://su0scjylkwhc" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_22.png" id="55_4jlo1"]
+[ext_resource type="Texture2D" uid="uid://tgpwr0v42cn7" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_23.png" id="56_34hbf"]
+[ext_resource type="Texture2D" uid="uid://cma8qwjx7uxtw" path="res://enemigos/assets/cambiante/forma-cambiante-walking/Armature_forma-cambiante-walking_24.png" id="57_v1e8l"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_sbrc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_d8jm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_44a2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mb7m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6ptd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_am7qn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kelo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3drtc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qy5wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_v12sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sbyrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_h0r0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8rcbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_c8uvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f34kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ngbhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_jmsnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_af6s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ayshg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_21jum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_miy1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_y80y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_pmjqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_d2qqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_r7krk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_kn2op")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ahomw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_271vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ql8yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_gfk6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_h44l4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_dwo2f")
+}],
+"loop": 1,
+"name": &"ATACAR",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_01sw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_evnyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_yl35e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_g0l4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_vk27q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_5uo88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_pgnk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_20if3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_qkt2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_wmel5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_pnx21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_c615g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_dvjh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_upnde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_wtd2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_w8ukt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_f2hmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_civan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_4s5qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ryajq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_mtvrf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_4qo6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_4jlo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_34hbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_v1e8l")
+}],
+"loop": 1,
+"name": &"AVANZAR",
+"speed": 30.0
+}]

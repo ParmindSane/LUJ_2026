@@ -1,17 +1,112 @@
-[gd_resource type="Resource" script_class="clasesEnemigos" format=3 uid="uid://y3rsekbnyw2n"]
+[gd_resource type="Resource" script_class="ClasesEnemigos" format=3 uid="uid://y3rsekbnyw2n"]
 
 [ext_resource type="Script" uid="uid://cwxdf836wr4fy" path="res://enemigos/claseEnemigo.gd" id="1_a18re"]
 [ext_resource type="SpriteFrames" uid="uid://bauyf1ekfphp2" path="res://enemigos/assets/zombi/zombi.tres" id="2_mggim"]
 [ext_resource type="Script" uid="uid://o53ch5qtuy5c" path="res://enemigos/clasesEnemigos.gd" id="2_pu73f"]
+[ext_resource type="SpriteFrames" uid="uid://dhv1oio61ceuk" path="res://enemigos/assets/cambiante/cambiante.tres" id="3_2b0nb"]
+[ext_resource type="SpriteFrames" uid="uid://cgn1giegk01s2" path="res://enemigos/assets/peste/peste.tres" id="4_owpq8"]
+[ext_resource type="SpriteFrames" uid="uid://descljoblq7k7" path="res://enemigos/assets/samurai/samurai.tres" id="5_5htug"]
+[ext_resource type="SpriteFrames" uid="uid://b7dn6tt68x07l" path="res://enemigos/assets/acero/acero.tres" id="6_n4rwq"]
+[ext_resource type="SpriteFrames" uid="uid://360ln7hcaf5s" path="res://enemigos/assets/hada/hada.tres" id="7_tupwp"]
+[ext_resource type="SpriteFrames" uid="uid://cfj7ibqvy4n08" path="res://enemigos/assets/roble/roble.tres" id="8_2tmpy"]
+[ext_resource type="SpriteFrames" uid="uid://53gsirh7uxxr" path="res://enemigos/assets/arcano/arcano.tres" id="9_jiuv6"]
+[ext_resource type="SpriteFrames" uid="uid://bl8sg8bu6wr16" path="res://enemigos/assets/culto/culto.tres" id="10_wme23"]
+[ext_resource type="SpriteFrames" uid="uid://kh7i3oc0vjyv" path="res://enemigos/assets/fenix/fenix.tres" id="11_qtvrj"]
+[ext_resource type="SpriteFrames" uid="uid://vxkm8w151da7" path="res://enemigos/assets/diablo/diablo.tres" id="12_7arfl"]
+[ext_resource type="SpriteFrames" uid="uid://4g74ok1pybok" path="res://enemigos/assets/pegaso/pegaso.tres" id="13_ytjd0"]
+[ext_resource type="SpriteFrames" uid="uid://bjemxc4nww74a" path="res://enemigos/assets/osvaldo/osvaldo.tres" id="14_3xlen"]
 
-[sub_resource type="Resource" id="Resource_pu73f"]
+[sub_resource type="Resource" id="Resource_cu1ge"]
 script = ExtResource("1_a18re")
 animaciones = ExtResource("2_mggim")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
+[sub_resource type="Resource" id="Resource_n4rwq"]
+script = ExtResource("1_a18re")
+animaciones = ExtResource("3_2b0nb")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_tupwp"]
+script = ExtResource("1_a18re")
+animaciones = ExtResource("4_owpq8")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_2tmpy"]
+script = ExtResource("1_a18re")
+animaciones = ExtResource("5_5htug")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_jiuv6"]
+script = ExtResource("1_a18re")
+animaciones = ExtResource("6_n4rwq")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_wme23"]
+script = ExtResource("1_a18re")
+aDistancia = true
+volador = true
+animaciones = ExtResource("7_tupwp")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_4h82u"]
+script = ExtResource("1_a18re")
+aDistancia = true
+animaciones = ExtResource("8_2tmpy")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_qtvrj"]
+script = ExtResource("1_a18re")
+aDistancia = true
+animaciones = ExtResource("9_jiuv6")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_7arfl"]
+script = ExtResource("1_a18re")
+aDistancia = true
+animaciones = ExtResource("10_wme23")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_pubbl"]
+script = ExtResource("1_a18re")
+volador = true
+ignoraSoldados = true
+animaciones = ExtResource("11_qtvrj")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_dy58s"]
+script = ExtResource("1_a18re")
+volador = true
+ignoraSoldados = true
+animaciones = ExtResource("12_7arfl")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_svygd"]
+script = ExtResource("1_a18re")
+volador = true
+ignoraSoldados = true
+animaciones = ExtResource("13_ytjd0")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
+[sub_resource type="Resource" id="Resource_ytjd0"]
+script = ExtResource("1_a18re")
+animaciones = ExtResource("14_3xlen")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
+
 [resource]
 script = ExtResource("2_pu73f")
-databaseEnemigos = Dictionary[String, ExtResource("1_a18re")]({
-"zombi": SubResource("Resource_pu73f")
+databaseEnemigos = Dictionary[int, ExtResource("1_a18re")]({
+0: SubResource("Resource_jiuv6"),
+1: SubResource("Resource_qtvrj"),
+2: SubResource("Resource_n4rwq"),
+3: SubResource("Resource_7arfl"),
+4: SubResource("Resource_dy58s"),
+5: SubResource("Resource_pubbl"),
+6: SubResource("Resource_wme23"),
+7: SubResource("Resource_svygd"),
+8: SubResource("Resource_tupwp"),
+9: SubResource("Resource_4h82u"),
+10: SubResource("Resource_2tmpy"),
+11: SubResource("Resource_cu1ge"),
+12: SubResource("Resource_ytjd0")
 })
 metadata/_custom_type_script = "uid://o53ch5qtuy5c"

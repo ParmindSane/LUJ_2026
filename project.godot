@@ -33,6 +33,7 @@ movie_writer/movie_file="E:/OBS/Grabaciones/LevelUpJam.avi"
 [global_group]
 
 Enemigos=""
+Spawner=""
 
 [layer_names]
 

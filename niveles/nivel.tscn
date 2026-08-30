@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/nivel1day.png" id="1_l3kkx"]
 [ext_resource type="Script" uid="uid://c1e60oew76vwm" path="res://niveles/nivel.gd" id="1_tagm8"]
-[ext_resource type="Resource" uid="uid://y3rsekbnyw2n" path="res://enemigos/databaseEnemigos.tres" id="2_3iobf"]
 [ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/nivel_interfaz.gd" id="2_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://dqyuoosk3ootb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_00.png" id="4_iujc5"]
 [ext_resource type="Texture2D" uid="uid://d0qeb1jn55bb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_01.png" id="5_7ntm1"]
@@ -122,7 +121,7 @@ _data = {
 }
 point_count = 9
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_tagm8"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_g2l8i"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -426,7 +425,6 @@ animations = [{
 
 [node name="Nivel" type="Node2D" unique_id=1112846435]
 script = ExtResource("1_tagm8")
-clasesEnemigos = ExtResource("2_3iobf")
 
 [node name="Fondo" type="CanvasLayer" parent="." unique_id=1662441244]
 layer = -1
@@ -589,7 +587,7 @@ position = Vector2(441, 487)
 [node name="EnemigoADistancia" parent="ObjetosDeJuego/Path2D" unique_id=1821539514 instance=ExtResource("99_bt03f")]
 position = Vector2(585, 670)
 velocidad = 1.25
-animaciones = SubResource("SpriteFrames_tagm8")
+animaciones = SubResource("SpriteFrames_g2l8i")
 
 [node name="TorreSpot" parent="ObjetosDeJuego" unique_id=238956192 instance=ExtResource("104_g2l8i")]
 offset_left = 12.0

@@ -1,4 +1,21 @@
 extends Resource
 class_name ClasesEnemigos
 
-@export var databaseEnemigos: Dictionary[String, ClaseEnemigo]
+enum Clases {
+	Acero,
+	Arcano,
+	Cambiante,
+	Culto,
+	Diablo,
+	Fenix,
+	Hada,
+	Pegaso,
+	Peste,
+	Roble,
+	Samurai,
+	Zombi,
+	Osvaldo,
+	Mari
+}
+
+@export var databaseEnemigos: Dictionary[Clases, ClaseEnemigo]

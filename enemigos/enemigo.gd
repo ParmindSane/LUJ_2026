@@ -16,6 +16,8 @@ var pAng: float
 @export var velocidad: float
 var pPosition: Vector2
 
+@export var minSpawnDelay: float
+
 @export var vidaInicial: float
 var vidaActual: float
 @export var loot: int
@@ -39,26 +41,25 @@ signal finPath(yo: PathFollow2D)
 var paths: Array
 
 func setClase(c: ClaseEnemigo):
-	pass
+	clase = c
 	
-
-func _ready():
-	add_to_group("Enemigos")
-	
-	progress = 0
-	estado = "AVANZAR"
-	pPosition = position
+	volador = clase.volador
+	ignoraSoldados = clase.ignoraSoldados
+	aDistancia = clase.aDistancia
+	velocidad = clase.velocidad
+	minSpawnDelay = clase.minSpawnDelay
+	vidaInicial = clase.vidaInicial
+	loot = clase.loot
+	ataqueASoldado = clase.ataqueASoldado
+	ataqueDelay = clase.ataqueDelay
+	ataqueACore = clase.ataqueACore
+	animaciones = clase.animaciones
 	
 	vidaActual = vidaInicial
 	
-	sprites = $AnimatedSprite2D
 	if animaciones != null:
 		sprites.sprite_frames = animaciones
-	
-	timer = $Timer
-	colRecibir = $AreaRecibir
-	colAtaque = $AreaAtacar
-	
+		
 	if volador:
 		aDistancia = true
 	else:
@@ -72,6 +73,20 @@ func _ready():
 		sprites.position = Vector2(25, -40)
 		colRecibir.position = Vector2(25, -40)
 		colRecibir.collision_layer = 512
+	
+
+func _ready():
+	add_to_group("Enemigos")
+	
+	progress = 0
+	estado = "AVANZAR"
+	pPosition = position
+	
+	sprites = $AnimatedSprite2D
+	timer = $Timer
+	colRecibir = $AreaRecibir
+	colAtaque = $AreaAtacar
+	
 
 func _process(delta):
 	if vidaActual <= 0:
