@@ -3,9 +3,8 @@ class_name Oleada
 
 var database = preload("res://enemigos/databaseEnemigos.tres")
 
-## 
 @export var enemigo: ClasesEnemigos.Clases
-@export var cantidad: int
+@export var cantidad: int = 10
 
-## Cuántos segundos va a esperar la siguiente ronda desde que esta inicia
-@export var delay: float
+## Cuántos segundos va a esperar la siguiente oleada desde que esta inicia
+@export var delay: float = 30

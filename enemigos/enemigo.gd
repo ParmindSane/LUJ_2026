@@ -41,7 +41,7 @@ signal matado(coins: int)
 signal finPath(yo: PathFollow2D)
 var paths: Array
 
-func setClase(c: ClaseEnemigo):
+func setClase(cn: ClasesEnemigos.Clases, c: ClaseEnemigo):
 	claseData = c
 	
 	volador = claseData.volador
@@ -58,8 +58,7 @@ func setClase(c: ClaseEnemigo):
 	
 	vidaActual = vidaInicial
 	
-	if animaciones != null:
-		sprites.sprite_frames = animaciones
+	$AnimatedSprite2D.sprite_frames = animaciones
 		
 	if volador:
 		aDistancia = true
@@ -74,6 +73,9 @@ func setClase(c: ClaseEnemigo):
 		sprites.position = Vector2(25, -40)
 		colRecibir.position = Vector2(25, -40)
 		colRecibir.collision_layer = 512
+	
+	if cn == ClasesEnemigos.Clases.Mari:
+		scale = Vector2(0.2,0.2)
 	
 
 func _ready():

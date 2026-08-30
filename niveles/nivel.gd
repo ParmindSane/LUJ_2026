@@ -34,7 +34,7 @@ func _process(delta):
 		UI.actualizarCarteles(vidas_cantidad, monedas_cantidad)
 		
 		if vidas_cantidad <= 0:
-			objetosDeJuego.paused
+			get_tree().paused = true
 			UI.finDelNivel(false)
 		
 		var spawnersSinTerminar = spawners.filter(func(s): return s.terminado == false)
