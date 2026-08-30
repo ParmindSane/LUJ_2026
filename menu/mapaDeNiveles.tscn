@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://baurp3c71qh2h" path="res://menu/assets/mapa.png" id="2_hn1xi"]
 [ext_resource type="Theme" uid="uid://svatb6hy1pm" path="res://menu/assets/buttTheme.theme" id="3_r5ogj"]
 [ext_resource type="StyleBox" uid="uid://1byc145786mt" path="res://niveles/assets/torreButt.stylebox" id="4_moemr"]
+[ext_resource type="StyleBox" uid="uid://bwnp7civepwrt" path="res://niveles/assets/torreButtHover.stylebox" id="5_moemr"]
+[ext_resource type="Texture2D" uid="uid://bon72act0var2" path="res://menu/assets/exit_hover.png" id="6_yi8jt"]
+[ext_resource type="Texture2D" uid="uid://n4q884wjn0ui" path="res://menu/assets/exit.png" id="7_jtula"]
 
 [node name="Mapa" type="Node2D" unique_id=742589701 node_paths=PackedStringArray("botones")]
 script = ExtResource("1_514df")
@@ -28,7 +31,7 @@ offset_right = 437.0
 offset_bottom = 499.0
 theme = ExtResource("3_r5ogj")
 theme_override_styles/normal = ExtResource("4_moemr")
-theme_override_styles/hover = ExtResource("4_moemr")
+theme_override_styles/hover = ExtResource("5_moemr")
 text = " Jugar nivel 1 "
 
 [node name="Nivel2" type="Button" parent="." unique_id=1889101492]
@@ -38,7 +41,7 @@ offset_right = 481.0
 offset_bottom = 383.0
 theme = ExtResource("3_r5ogj")
 theme_override_styles/normal = ExtResource("4_moemr")
-theme_override_styles/hover = ExtResource("4_moemr")
+theme_override_styles/hover = ExtResource("5_moemr")
 text = " Jugar nivel 2 "
 
 [node name="Nivel3" type="Button" parent="." unique_id=933570559]
@@ -48,7 +51,7 @@ offset_right = 684.0
 offset_bottom = 531.0
 theme = ExtResource("3_r5ogj")
 theme_override_styles/normal = ExtResource("4_moemr")
-theme_override_styles/hover = ExtResource("4_moemr")
+theme_override_styles/hover = ExtResource("5_moemr")
 text = " Jugar nivel 3 "
 
 [node name="Nivel4" type="Button" parent="." unique_id=1448566146]
@@ -58,7 +61,7 @@ offset_right = 728.0
 offset_bottom = 403.0
 theme = ExtResource("3_r5ogj")
 theme_override_styles/normal = ExtResource("4_moemr")
-theme_override_styles/hover = ExtResource("4_moemr")
+theme_override_styles/hover = ExtResource("5_moemr")
 text = " Jugar nivel 4 "
 
 [node name="Nivel5" type="Button" parent="." unique_id=250077404]
@@ -68,5 +71,13 @@ offset_right = 920.0
 offset_bottom = 385.0
 theme = ExtResource("3_r5ogj")
 theme_override_styles/normal = ExtResource("4_moemr")
-theme_override_styles/hover = ExtResource("4_moemr")
+theme_override_styles/hover = ExtResource("5_moemr")
 text = " Jugar nivel 5 "
+
+[node name="Exit" type="TextureButton" parent="." unique_id=153847045]
+custom_maximum_size = Vector2(180, 70)
+offset_right = 512.0
+offset_bottom = 130.0
+texture_normal = ExtResource("6_yi8jt")
+texture_hover = ExtResource("7_jtula")
+stretch_mode = 5

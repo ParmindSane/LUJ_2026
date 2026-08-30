@@ -11,13 +11,17 @@ _data = {
 }
 point_count = 12
 
+[sub_resource type="Resource" id="Resource_sah5m"]
+script = ExtResource("4_drvti")
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
 [sub_resource type="Curve2D" id="Curve2D_frnpr"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 648, -62, 0, 0, 0, 0, 668, 63, 0, 0, 0, 0, 755, 106, 0, 0, 0, 0, 804, 125, 0, 0, 0, 0, 837, 177, 0, 0, 0, 0, 899, 235, 0, 0, 0, 0, 928, 344, 0, 0, 0, 0, 903, 447, 0, 0, 0, 0, 817, 501, 0, 0, 0, 0, 668, 513, 0, 0, 0, 0, 554, 525, 0, 0, 0, 0, 525, 708)
 }
 point_count = 12
 
-[sub_resource type="Resource" id="Resource_jcnq2"]
+[sub_resource type="Resource" id="Resource_drvti"]
 script = ExtResource("4_drvti")
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
@@ -31,13 +35,14 @@ curve = SubResource("Curve2D_ahqp3")
 
 [node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
 position = Vector2(648, -62)
+oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_sah5m")])
 
 [node name="Path2D2" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="1" unique_id=1291610166]
 curve = SubResource("Curve2D_frnpr")
 
 [node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D2" index="0" unique_id=1134643131 instance=ExtResource("3_sah5m")]
 position = Vector2(648, -62)
-oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_jcnq2")])
+oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_drvti")])
 
 [node name="TorreSpot" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="0" unique_id=238956192]
 offset_left = 732.0

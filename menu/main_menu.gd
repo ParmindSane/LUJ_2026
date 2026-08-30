@@ -10,12 +10,9 @@ var introIndex: int
 func _ready():
 	
 	buttJugar.pressed.connect(avanzarIntro)
-	buttSalir.pressed.connect(salir)
+	buttSalir.pressed.connect(Global.salir)
 	
 
-func salir():
-	get_tree().quit()
-	
 func avanzarIntro():
 	if !intro:
 		intro = true

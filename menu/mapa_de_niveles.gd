@@ -13,6 +13,9 @@ func _ready():
 	for b in botones:
 		var i = botones.find(b)
 		b.pressed.connect(irANivel.bind(niveles[i]))
+	
+	
+	$Exit.pressed.connect(Global.salir)
 
 func irANivel(n: String):
 	get_tree().change_scene_to_file(n)
