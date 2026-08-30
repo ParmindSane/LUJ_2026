@@ -1,12 +1,21 @@
 [gd_scene format=3 uid="uid://chufr8nhejn75"]
 
 [ext_resource type="Script" uid="uid://c48q46g1ou5o5" path="res://niveles/spawner.gd" id="1_jcnq2"]
+[ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="2_jri6o"]
+
+[sub_resource type="Resource" id="Resource_qtvrj"]
+script = ExtResource("2_jri6o")
+enemigo = 11
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [node name="Spawner" type="PathFollow2D" unique_id=1134643131 groups=["Spawner"]]
 rotates = false
 loop = false
 script = ExtResource("1_jcnq2")
+oleadas = Array[ExtResource("2_jri6o")]([SubResource("Resource_qtvrj")])
 
 [node name="TiempoEntreEnemigos" type="Timer" parent="." unique_id=1697412879]
+one_shot = true
 
 [node name="TiempoEntreOleadas" type="Timer" parent="." unique_id=610222516]
+one_shot = true

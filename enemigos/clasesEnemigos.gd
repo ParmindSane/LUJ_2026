@@ -2,18 +2,18 @@ extends Resource
 class_name ClasesEnemigos
 
 enum Clases {
-	Acero,
-	Arcano,
-	Cambiante,
-	Culto,
-	Diablo,
-	Fenix,
-	Hada,
-	Pegaso,
-	Peste,
-	Roble,
-	Samurai,
 	Zombi,
+	Cambiante,
+	Peste,
+	Samurai,
+	Acero,
+	Hada,
+	Roble,
+	Arcano,
+	Culto,
+	Fenix,
+	Diablo,
+	Pegaso,
 	Osvaldo,
 	Mari
 }

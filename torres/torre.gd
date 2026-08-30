@@ -2,7 +2,8 @@ extends Area2D
 class_name Torre
 
 @export var delay: float
-@export var prioridadVoladores: bool
+@export var precioComprar: int
+@export var precioVender: int
 
 var target: Node2D
 var targets: Array[Node2D]

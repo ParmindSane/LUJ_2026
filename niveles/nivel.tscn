@@ -3,106 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/nivel1day.png" id="1_l3kkx"]
 [ext_resource type="Script" uid="uid://c1e60oew76vwm" path="res://niveles/nivel.gd" id="1_tagm8"]
 [ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/nivel_interfaz.gd" id="2_g2l8i"]
-[ext_resource type="Texture2D" uid="uid://dqyuoosk3ootb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_00.png" id="4_iujc5"]
-[ext_resource type="Texture2D" uid="uid://d0qeb1jn55bb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_01.png" id="5_7ntm1"]
-[ext_resource type="Texture2D" uid="uid://lhl505o7mgyj" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_02.png" id="6_n1mox"]
 [ext_resource type="Texture2D" uid="uid://brquy7pnu0yo2" path="res://torres/Area/tower2-aniamtion/idle.png" id="7_3iobf"]
-[ext_resource type="Texture2D" uid="uid://bjup6vxhd1dew" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_03.png" id="7_tagm8"]
-[ext_resource type="Texture2D" uid="uid://d16qs8h6rb3yi" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_04.png" id="8_g2l8i"]
-[ext_resource type="Texture2D" uid="uid://t0a4nq6rcf87" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_05.png" id="9_3iobf"]
-[ext_resource type="PackedScene" uid="uid://dxobyxtiwflsi" path="res://torres/Invocador/torre_invocador.tscn" id="9_yi00n"]
-[ext_resource type="Texture2D" uid="uid://b1pqx6otr18gv" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_06.png" id="10_p7u5q"]
-[ext_resource type="Texture2D" uid="uid://dts3d6rjc0crx" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_07.png" id="11_3tng7"]
-[ext_resource type="Texture2D" uid="uid://dpaco1ib6dnrb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_08.png" id="12_7t1cp"]
-[ext_resource type="Texture2D" uid="uid://cw17ergfklf4h" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_09.png" id="13_07qhy"]
-[ext_resource type="Texture2D" uid="uid://5gabt7dg5jye" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_10.png" id="14_tnimk"]
-[ext_resource type="Texture2D" uid="uid://bn4brm1h0ifpk" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_11.png" id="15_tayt1"]
-[ext_resource type="Texture2D" uid="uid://bgua1b334bqws" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_12.png" id="16_etcyr"]
-[ext_resource type="Texture2D" uid="uid://dlcof745xyfhy" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_13.png" id="17_8lj8a"]
-[ext_resource type="Texture2D" uid="uid://dntpr38w0dce5" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_14.png" id="18_vbjkf"]
-[ext_resource type="Texture2D" uid="uid://txkkarc76jgm" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_15.png" id="19_6vbrf"]
-[ext_resource type="Texture2D" uid="uid://bgnslwkdux672" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_16.png" id="20_i43t7"]
-[ext_resource type="Texture2D" uid="uid://d21or4pqynt5k" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_17.png" id="21_jiwef"]
-[ext_resource type="Texture2D" uid="uid://cv0eglthyekn" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_18.png" id="22_pxiwb"]
-[ext_resource type="Texture2D" uid="uid://8w76w1h1l7o1" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_19.png" id="23_eh847"]
-[ext_resource type="Texture2D" uid="uid://dg1amfxldo4cb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_20.png" id="24_k3h15"]
-[ext_resource type="Texture2D" uid="uid://bwvruj0878dwc" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_21.png" id="25_rikqh"]
-[ext_resource type="Texture2D" uid="uid://c2jj34jfcj38q" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_22.png" id="26_dyaw6"]
-[ext_resource type="Texture2D" uid="uid://cs5tjtq3m0iau" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_23.png" id="27_gusbl"]
-[ext_resource type="Texture2D" uid="uid://cx5e0c3ajexfb" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_24.png" id="28_esdip"]
-[ext_resource type="Texture2D" uid="uid://n0j8375hxws6" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_25.png" id="29_32e6q"]
-[ext_resource type="Texture2D" uid="uid://i24nxtttoucx" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_26.png" id="30_16v1c"]
-[ext_resource type="Texture2D" uid="uid://6r8a5evbw08y" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_27.png" id="31_h3nju"]
-[ext_resource type="Texture2D" uid="uid://b2o51sskhn2vw" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_28.png" id="32_ik4h8"]
-[ext_resource type="Texture2D" uid="uid://c2qsofncyaf40" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_29.png" id="33_a0q8l"]
-[ext_resource type="Texture2D" uid="uid://dqnjv8btnaff4" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_30.png" id="34_06n2x"]
-[ext_resource type="Texture2D" uid="uid://di4ev8und8mmt" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_31.png" id="35_i1rml"]
-[ext_resource type="Texture2D" uid="uid://tav5hoh2ft6a" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_32.png" id="36_xipwf"]
-[ext_resource type="Texture2D" uid="uid://b8nfsrnfej4fc" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_33.png" id="37_mxumw"]
-[ext_resource type="Texture2D" uid="uid://bmph75w4xq0lv" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_34.png" id="38_lqsmi"]
-[ext_resource type="Texture2D" uid="uid://i0n4oh5slvh1" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_35.png" id="39_xvpmo"]
-[ext_resource type="Texture2D" uid="uid://gtdpx3k04is6" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_36.png" id="40_otgth"]
-[ext_resource type="Texture2D" uid="uid://uqqlj7to26j5" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_37.png" id="41_vfe17"]
-[ext_resource type="Texture2D" uid="uid://b7v16kfs3snja" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_38.png" id="42_sk3tn"]
-[ext_resource type="Texture2D" uid="uid://cqu1slfg7srfy" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_39.png" id="43_w082m"]
-[ext_resource type="Texture2D" uid="uid://dru4cyaggcg62" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_40.png" id="44_x1wtb"]
-[ext_resource type="Texture2D" uid="uid://gm0461qyaiqk" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_41.png" id="45_r5ow4"]
-[ext_resource type="Texture2D" uid="uid://ba8a0uxeefiqp" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_42.png" id="46_mfs57"]
-[ext_resource type="Texture2D" uid="uid://s2fyb05fqji7" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_43.png" id="47_j5kdy"]
-[ext_resource type="Texture2D" uid="uid://muf15fjsjin" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_44.png" id="48_wst6h"]
-[ext_resource type="Texture2D" uid="uid://c2rgpdaakq04f" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_45.png" id="49_1xps0"]
-[ext_resource type="Texture2D" uid="uid://b3it80yv8c1ey" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_46.png" id="50_7p84d"]
-[ext_resource type="Texture2D" uid="uid://2jkvkyqvlxwm" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_47.png" id="51_3q70o"]
-[ext_resource type="Texture2D" uid="uid://dav2c5pqo2ns5" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_48.png" id="52_k1a28"]
-[ext_resource type="Texture2D" uid="uid://cebmuhylcfylj" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_49.png" id="53_httfh"]
-[ext_resource type="Texture2D" uid="uid://c4b4nmdb6l5n8" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_50.png" id="54_bt03f"]
-[ext_resource type="Texture2D" uid="uid://dx06anr045ad7" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_51.png" id="55_vfawi"]
-[ext_resource type="Texture2D" uid="uid://ddgdyloku52vq" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_52.png" id="56_87rrr"]
-[ext_resource type="Texture2D" uid="uid://rofbl8u0n0wc" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_53.png" id="57_rhpck"]
-[ext_resource type="Texture2D" uid="uid://d387mdddbuhv4" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_54.png" id="58_gvkgh"]
-[ext_resource type="Texture2D" uid="uid://dxs46igffufij" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_55.png" id="59_6m1bm"]
-[ext_resource type="Texture2D" uid="uid://daga2uky6lnvu" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_56.png" id="60_epln3"]
-[ext_resource type="Texture2D" uid="uid://bb1buryifvu7n" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_57.png" id="61_wvun1"]
-[ext_resource type="Texture2D" uid="uid://cxj5jce2eer3i" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_58.png" id="62_ttvap"]
-[ext_resource type="Texture2D" uid="uid://8gjc812rjg5n" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_59.png" id="63_i5qgo"]
-[ext_resource type="Texture2D" uid="uid://vpsilpfx3832" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_60.png" id="64_6uu8x"]
-[ext_resource type="Texture2D" uid="uid://4xdp1h6rd4r5" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_61.png" id="65_ea4gv"]
-[ext_resource type="Texture2D" uid="uid://byrldbiqnxnkg" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_62.png" id="66_ra2l7"]
-[ext_resource type="Texture2D" uid="uid://8couumgrt1yi" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_63.png" id="67_maucs"]
-[ext_resource type="Texture2D" uid="uid://bgsuj3jjb5kst" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_64.png" id="68_jk8jf"]
-[ext_resource type="Texture2D" uid="uid://dan7nv4odes8y" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_65.png" id="69_8plhp"]
-[ext_resource type="Texture2D" uid="uid://7xa3gwm7fw1c" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_66.png" id="70_ainn8"]
-[ext_resource type="Texture2D" uid="uid://b5wdq08h1gvt5" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_67.png" id="71_2ulvg"]
-[ext_resource type="Texture2D" uid="uid://dhr4tvjlxx1pc" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_68.png" id="72_cnsin"]
-[ext_resource type="Texture2D" uid="uid://c8o8o1wmbimkq" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_69.png" id="73_f2vhy"]
-[ext_resource type="Texture2D" uid="uid://d1f0ss7dr303" path="res://enemigos/assets/zombi/zombie_attacking/Armature_zombie_attacking_70.png" id="74_via3q"]
-[ext_resource type="Texture2D" uid="uid://djnoh6eq1sp1y" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_00.png" id="75_du6gj"]
-[ext_resource type="Texture2D" uid="uid://b1s3hkk873cjj" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_01.png" id="76_finan"]
-[ext_resource type="Texture2D" uid="uid://fibwpqekk7qm" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_02.png" id="77_0gmpm"]
-[ext_resource type="Texture2D" uid="uid://bmiawn5y8gf8s" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_03.png" id="78_ic28i"]
-[ext_resource type="Texture2D" uid="uid://bodft2a7v4v5j" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_04.png" id="79_t3ln2"]
-[ext_resource type="Texture2D" uid="uid://0rr6ps3p4es0" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_05.png" id="80_ux8ft"]
-[ext_resource type="Texture2D" uid="uid://btu1tfu8tg66k" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_06.png" id="81_5n25m"]
-[ext_resource type="Texture2D" uid="uid://eoi23ihmiehh" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_07.png" id="82_c2grl"]
-[ext_resource type="Texture2D" uid="uid://bi0d6b4334sm2" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_08.png" id="83_l73m5"]
-[ext_resource type="Texture2D" uid="uid://ds7mucqirpn8j" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_09.png" id="84_0am2y"]
-[ext_resource type="Texture2D" uid="uid://cmktv7m2wcj2x" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_10.png" id="85_5nymc"]
-[ext_resource type="Texture2D" uid="uid://dvcwvy2jsomk6" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_11.png" id="86_1wel8"]
-[ext_resource type="Texture2D" uid="uid://br0vois37byx4" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_12.png" id="87_8i0nb"]
-[ext_resource type="Texture2D" uid="uid://c0l6byoqmdhnp" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_13.png" id="88_np4jq"]
-[ext_resource type="Texture2D" uid="uid://bxavtmxd4etk" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_14.png" id="89_sn2pf"]
-[ext_resource type="Texture2D" uid="uid://cn47oft34b531" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_15.png" id="90_yy5c5"]
-[ext_resource type="Texture2D" uid="uid://cdqf0cvu5srhg" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_16.png" id="91_x5pi6"]
-[ext_resource type="Texture2D" uid="uid://c3wbixytcp0mk" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_17.png" id="92_u3hiv"]
-[ext_resource type="Texture2D" uid="uid://bcr18jnfi37iy" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_18.png" id="93_uk4ll"]
-[ext_resource type="Texture2D" uid="uid://bn83htupfd4c" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_19.png" id="94_5xa4p"]
-[ext_resource type="Texture2D" uid="uid://c3nagggyi5fqd" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_20.png" id="95_n7i6d"]
-[ext_resource type="Texture2D" uid="uid://be3nocf8l3xj8" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_21.png" id="96_c1w6h"]
-[ext_resource type="Texture2D" uid="uid://7vekw17nkp1a" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_22.png" id="97_pjamq"]
-[ext_resource type="Texture2D" uid="uid://bcktamqmj4ktp" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_23.png" id="98_escyh"]
+[ext_resource type="Script" uid="uid://cwxdf836wr4fy" path="res://enemigos/claseEnemigo.gd" id="8_tagm8"]
 [ext_resource type="PackedScene" uid="uid://b46hw016ulctv" path="res://enemigos/enemigo.tscn" id="99_bt03f"]
-[ext_resource type="Texture2D" uid="uid://b073btr6t6crg" path="res://enemigos/assets/zombi/zombie_walking/Armature_zombie_walking_24.png" id="99_y8ec1"]
-[ext_resource type="SpriteFrames" uid="uid://4g74ok1pybok" path="res://enemigos/assets/pegaso/pegaso.tres" id="100_7ntm1"]
 [ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="104_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="106_tagm8"]
 [ext_resource type="Texture2D" uid="uid://pohebfh4p3me" path="res://torres/Invocador/torre_invocador.png" id="108_p7u5q"]
@@ -115,316 +18,23 @@ bg_color = Color(1, 1, 1, 0.19607843)
 [sub_resource type="LabelSettings" id="LabelSettings_qe4n8"]
 font_size = 32
 
+[sub_resource type="LabelSettings" id="LabelSettings_sau36"]
+font_size = 32
+
 [sub_resource type="Curve2D" id="Curve2D_qe4n8"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 585, 670, 0, 0, 0, 0, 585, 566, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -24, 107)
 }
 point_count = 9
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_g2l8i"]
-resource_local_to_scene = true
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_iujc5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_7ntm1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_n1mox")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_tagm8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_g2l8i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_3iobf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_p7u5q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_3tng7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_7t1cp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_07qhy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_tnimk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_tayt1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_etcyr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_8lj8a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_vbjkf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_6vbrf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_i43t7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_jiwef")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_pxiwb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_eh847")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_k3h15")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_rikqh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_dyaw6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_gusbl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_esdip")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_32e6q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_16v1c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_h3nju")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_ik4h8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_a0q8l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_06n2x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_i1rml")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_xipwf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("37_mxumw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("38_lqsmi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("39_xvpmo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("40_otgth")
-}, {
-"duration": 1.0,
-"texture": ExtResource("41_vfe17")
-}, {
-"duration": 1.0,
-"texture": ExtResource("42_sk3tn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("43_w082m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("44_x1wtb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("45_r5ow4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("46_mfs57")
-}, {
-"duration": 1.0,
-"texture": ExtResource("47_j5kdy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("48_wst6h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("49_1xps0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("50_7p84d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("51_3q70o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("52_k1a28")
-}, {
-"duration": 1.0,
-"texture": ExtResource("53_httfh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("54_bt03f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("55_vfawi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("56_87rrr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("57_rhpck")
-}, {
-"duration": 1.0,
-"texture": ExtResource("58_gvkgh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("59_6m1bm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("60_epln3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("61_wvun1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("62_ttvap")
-}, {
-"duration": 1.0,
-"texture": ExtResource("63_i5qgo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("64_6uu8x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("65_ea4gv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("66_ra2l7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("67_maucs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("68_jk8jf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("69_8plhp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("70_ainn8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("71_2ulvg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("72_cnsin")
-}, {
-"duration": 1.0,
-"texture": ExtResource("73_f2vhy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("74_via3q")
-}],
-"loop": 1,
-"name": &"ATACAR",
-"speed": 30.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("75_du6gj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("76_finan")
-}, {
-"duration": 1.0,
-"texture": ExtResource("77_0gmpm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("78_ic28i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("79_t3ln2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("80_ux8ft")
-}, {
-"duration": 1.0,
-"texture": ExtResource("81_5n25m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("82_c2grl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("83_l73m5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("84_0am2y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("85_5nymc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("86_1wel8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("87_8i0nb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("88_np4jq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("89_sn2pf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("90_yy5c5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("91_x5pi6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("92_u3hiv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("93_uk4ll")
-}, {
-"duration": 1.0,
-"texture": ExtResource("94_5xa4p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("95_n7i6d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("96_c1w6h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("97_pjamq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("98_escyh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("99_y8ec1")
-}],
-"loop": 1,
-"name": &"AVANZAR",
-"speed": 30.0
-}]
+[sub_resource type="Resource" id="Resource_bvf6m"]
+script = ExtResource("8_tagm8")
+metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [node name="Nivel" type="Node2D" unique_id=1112846435]
 script = ExtResource("1_tagm8")
+vidas_iniciales = 20
+monedas_iniciales = 10
 
 [node name="Fondo" type="CanvasLayer" parent="." unique_id=1662441244]
 layer = -1
@@ -438,9 +48,11 @@ grow_vertical = 2
 texture = ExtResource("1_l3kkx")
 expand_mode = 1
 
-[node name="UI" type="CanvasLayer" parent="." unique_id=710199408 node_paths=PackedStringArray("torres_butts")]
+[node name="UI" type="CanvasLayer" parent="." unique_id=710199408 node_paths=PackedStringArray("vidas_cartel", "monedas_cartel", "torres_butts")]
 layer = 1000
 script = ExtResource("2_g2l8i")
+vidas_cartel = NodePath("Indicadores/IndicadorVidas/Label")
+monedas_cartel = NodePath("Indicadores/IndicadorMonedas/Label")
 torres_butts = [NodePath("OpcionesTorres/TorresIniciales/Torre1/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre2/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre3/Button")]
 
 [node name="OpcionesTorres" type="PanelContainer" parent="UI" unique_id=1320821653]
@@ -548,51 +160,70 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_g2l8i")
 wait_time = 0.5
 one_shot = true
 
-[node name="IndicadorVida" type="Label" parent="UI" unique_id=1891238188]
-offset_left = 21.0
-offset_top = 15.0
-offset_right = 141.0
-offset_bottom = 60.0
-text = "❤️ X"
+[node name="Indicadores" type="HBoxContainer" parent="UI" unique_id=1810357570]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="IndicadorVidas" type="PanelContainer" parent="UI/Indicadores" unique_id=1689788352]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/Indicadores/IndicadorVidas" unique_id=1891238188]
+layout_mode = 2
+text = "❤️ X "
 label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
 
-[node name="IndicadorDineros" type="Label" parent="UI" unique_id=704428150]
-offset_left = 211.0
-offset_top = 15.0
-offset_right = 331.0
-offset_bottom = 60.0
-text = "💰 X"
+[node name="IndicadorMonedas" type="PanelContainer" parent="UI/Indicadores" unique_id=1984527939]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/Indicadores/IndicadorMonedas" unique_id=1804670638]
+layout_mode = 2
+text = "💰 X "
 label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
+
+[node name="GanarPerder" type="CenterContainer" parent="UI" unique_id=925247847]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Ganar" type="PanelContainer" parent="UI/GanarPerder" unique_id=1344002680]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/GanarPerder/Ganar" unique_id=1685067326]
+layout_mode = 2
+text = " Ganaste :D "
+label_settings = SubResource("LabelSettings_sau36")
+
+[node name="Perder" type="PanelContainer" parent="UI/GanarPerder" unique_id=21852227]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/GanarPerder/Perder" unique_id=1024826776]
+layout_mode = 2
+text = " Perdiste :c "
+label_settings = SubResource("LabelSettings_sau36")
 
 [node name="ObjetosDeJuego" type="CanvasLayer" parent="." unique_id=1021469761]
 
 [node name="Path2D" type="Path2D" parent="ObjetosDeJuego" unique_id=1485948904]
 curve = SubResource("Curve2D_qe4n8")
 
-[node name="EnemigoDistancia" parent="ObjetosDeJuego/Path2D" unique_id=790500521 instance=ExtResource("99_bt03f")]
+[node name="Enemigo" parent="ObjetosDeJuego/Path2D" unique_id=790500521 instance=ExtResource("99_bt03f")]
+position = Vector2(585, 670)
+clase = SubResource("Resource_bvf6m")
+
+[node name="Enemigo2" parent="ObjetosDeJuego/Path2D" unique_id=2033891394 instance=ExtResource("99_bt03f")]
 position = Vector2(585, 670)
 
-[node name="EnemigoDistancia2" parent="ObjetosDeJuego/Path2D" unique_id=2033891394 instance=ExtResource("99_bt03f")]
+[node name="Enemigo3" parent="ObjetosDeJuego/Path2D" unique_id=1821539514 instance=ExtResource("99_bt03f")]
 position = Vector2(585, 670)
-volador = true
-ignoraSoldados = true
-velocidad = 0.8
-animaciones = ExtResource("100_7ntm1")
-
-[node name="Invocador" parent="ObjetosDeJuego/Path2D" unique_id=1565077132 instance=ExtResource("9_yi00n")]
-position = Vector2(441, 487)
-
-[node name="EnemigoADistancia" parent="ObjetosDeJuego/Path2D" unique_id=1821539514 instance=ExtResource("99_bt03f")]
-position = Vector2(585, 670)
-velocidad = 1.25
-animaciones = SubResource("SpriteFrames_g2l8i")
 
 [node name="TorreSpot" parent="ObjetosDeJuego" unique_id=238956192 instance=ExtResource("104_g2l8i")]
 offset_left = 12.0
 offset_top = -304.0
 offset_right = 136.0
 offset_bottom = -180.0
-
-[node name="TiempoOleadas" type="Timer" parent="." unique_id=915582272]

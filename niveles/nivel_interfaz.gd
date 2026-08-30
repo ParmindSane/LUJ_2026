@@ -1,7 +1,10 @@
 extends CanvasLayer
+class_name NivelInterfaz
 
-var vidas_cartel: Label
-var monedas_cartel: Label
+@export var vidas_cartel: Label
+var vidas_actuales: int
+@export var monedas_cartel: Label
+var monedas_actuales: int
 
 var torres_opciones: Control
 var torres_mostrando: bool
@@ -9,15 +12,12 @@ var torres_desplegando: bool
 var torres_spot: Control
 var torres_timer: Timer
 var torres_pos: Array[Vector2]
-@export var torres_butts: Array[Control]
+@export var torres_butts: Array[BaseButton]
 var torres_pre = [preload("res://torres/Proyectil/torre_proyectil.tscn"),
 preload("res://torres/Area/torre_area.tscn"),
 preload("res://torres/Invocador/torre_invocador.tscn")]
 
 func _ready():
-	vidas_cartel = $IndicadorVida
-	monedas_cartel = $IndicadorDineros
-	
 	torres_opciones = $OpcionesTorres
 	torres_timer = $OpcionesTorres/Timer
 	torres_mostrando = false
@@ -25,10 +25,18 @@ func _ready():
 	torres_pos.push_back(torres_opciones.position)
 	torres_pos.push_back(Vector2(torres_pos[0].x + torres_opciones.size.x*1.01, torres_pos[0].y))
 	torres_opciones.position = torres_pos[1]
-	Global.pedirTorre.connect(torres_vincularConSpot)
+	
+	var spots = get_tree().get_nodes_in_group("TorreSpot")
+	for s in spots:
+		s.pedirTorre.connect(torres_vincularConSpot)
+	for t in torres_pre:
+		var i = torres_pre.find(t)
+		torres_pre[i] = t.instantiate()
 	for b in torres_butts:
 		var i = torres_butts.find(b)
-		b.pressed.connect(torres_asignarTorre.bind(i))
+		var t = torres_pre[i]
+		b.pressed.connect(torres_asignarTorre.bind(t))
+		b.get_parent().get_child(0).get_child(1).text += "\n(💰 " + str(t.precioComprar) + ")"
 	
 
 func _process(delta):
@@ -39,20 +47,27 @@ func _process(delta):
 		torres_opciones.position.x = Global.map(torres_timer.time_left, torres_timer.wait_time, 0, lado[0], lado[1])
 	
 
-
-
 func torres_vincularConSpot(nuevoSpot: Control):
 	torres_spot = nuevoSpot
 	torres_desplegar(true)
 	
-func torres_asignarTorre(i: int):
-	torres_spot.colocarTorre(torres_pre[i])
+func torres_asignarTorre(t: Torre):
+	torres_spot.colocarTorre(t)
 	torres_desplegar(false)
 	
 func torres_desplegar(abrir: bool):
 	if abrir != torres_mostrando:
 		torres_timer.start()
 		torres_mostrando = abrir
+		
+		for b in torres_butts:
+			var i = torres_butts.find(b)
+			var t = torres_pre[i]
+			if t.precioComprar > monedas_actuales:
+				b.disabled = true
+			else:
+				b.disabled = false
+	
 	
 
 func _input(event: InputEvent) -> void:
@@ -62,3 +77,17 @@ func _input(event: InputEvent) -> void:
 			if not torres_opciones.get_global_rect().has_point(mouse_pos):
 				torres_desplegar(false)
 	
+
+func actualizarCarteles(vidas: int, coins: int):
+	vidas_actuales = vidas
+	vidas_cartel.text = "❤️ " + str(vidas) + " "
+	
+	monedas_actuales = coins
+	monedas_cartel.text = "💰 " + str(coins) + " "
+	
+
+func finDelNivel(victoria: bool):
+	if victoria:
+		$GanarPerder/Ganar.show()
+	else:
+		$GanarPerder/Perder.show()

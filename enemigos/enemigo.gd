@@ -1,59 +1,60 @@
 extends PathFollow2D
+class_name Enemigo
 
-@export var clase: ClaseEnemigo
+var claseData: ClaseEnemigo
 
 var proyectilRef = preload("res://enemigos/enemigo_proyectil.tscn")
 
 var estado: String
 
-@export var volador: bool
-@export var ignoraSoldados: bool
-@export var aDistancia: bool
+var volador: bool
+var ignoraSoldados: bool
+var aDistancia: bool
 
 var ang: float
 var pAng: float
 
-@export var velocidad: float
+var velocidad: float
 var pPosition: Vector2
 
-@export var minSpawnDelay: float
+var minSpawnDelay: float
 
-@export var vidaInicial: float
+var vidaInicial: float
 var vidaActual: float
-@export var loot: int
+var loot: int
 
 var colAtaque: Area2D
 var colRecibir: Area2D
 
 var target: Node2D
 var targets: Array[Node2D]
-@export var ataqueASoldado: float
-@export var ataqueDelay: float
-@export var ataqueACore: float
+var ataqueASoldado: float
+var ataqueDelay: float
+var ataqueACore: float
 var timer: Timer
 
 var sprites: AnimatedSprite2D
 var animar: String
-@export var animaciones: SpriteFrames
+var animaciones: SpriteFrames
 
 signal matado(coins: int)
 signal finPath(yo: PathFollow2D)
 var paths: Array
 
 func setClase(c: ClaseEnemigo):
-	clase = c
+	claseData = c
 	
-	volador = clase.volador
-	ignoraSoldados = clase.ignoraSoldados
-	aDistancia = clase.aDistancia
-	velocidad = clase.velocidad
-	minSpawnDelay = clase.minSpawnDelay
-	vidaInicial = clase.vidaInicial
-	loot = clase.loot
-	ataqueASoldado = clase.ataqueASoldado
-	ataqueDelay = clase.ataqueDelay
-	ataqueACore = clase.ataqueACore
-	animaciones = clase.animaciones
+	volador = claseData.volador
+	ignoraSoldados = claseData.ignoraSoldados
+	aDistancia = claseData.aDistancia
+	velocidad = claseData.velocidad
+	minSpawnDelay = claseData.minSpawnDelay
+	vidaInicial = claseData.vidaInicial
+	loot = claseData.loot
+	ataqueASoldado = claseData.ataqueASoldado
+	ataqueDelay = claseData.ataqueDelay
+	ataqueACore = claseData.ataqueACore
+	animaciones = claseData.animaciones
 	
 	vidaActual = vidaInicial
 	

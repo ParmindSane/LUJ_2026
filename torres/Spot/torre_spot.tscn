@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dusmhn3dysq0i" path="res://torres/Spot/torre_spot.gd" id="2_skin1"]
 [ext_resource type="Texture2D" uid="uid://djcy7yncopvf6" path="res://torres/Spot/slot_vacio.png" id="3_h6h7o"]
 
-[node name="TorreSpot" type="TextureButton" unique_id=238956192]
+[node name="TorreSpot" type="TextureButton" unique_id=238956192 groups=["TorreSpot"]]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0

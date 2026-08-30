@@ -34,6 +34,7 @@ movie_writer/movie_file="E:/OBS/Grabaciones/LevelUpJam.avi"
 
 Enemigos=""
 Spawner=""
+TorreSpot=""
 
 [layer_names]
 

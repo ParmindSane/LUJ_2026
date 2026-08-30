@@ -1,4 +1,5 @@
 extends TextureButton
+class_name TorreSpot
 
 var torre: Node2D
 var selected: bool
@@ -7,6 +8,9 @@ var spritePoint: Node2D
 var vender: BaseButton
 
 @export var texturas: Array[Texture2D]
+
+signal pedirTorre(spot: TorreSpot)
+signal dineroTorre(precio: int)
 
 func _ready():
 	texture_normal = texturas[0]
@@ -24,7 +28,7 @@ func _ready():
 func pulsado():
 	selected = true
 	if !is_instance_valid(torre):
-		Global.pedirTorre.emit(self)
+		pedirTorre.emit(self)
 	else:
 		vender.show()
 	
@@ -39,12 +43,15 @@ func _input(event: InputEvent) -> void:
 			hoverOut()
 	
 
-func colocarTorre(preTorre):
-	torre = preTorre.instantiate()
+func colocarTorre(preTorre: Torre):
+	torre = preTorre
 	spritePoint.add_child(torre)
 	
 	texture_normal = texturas[1]
 	selected = false
+	
+	dineroTorre.emit(-torre.precioComprar)
+	vender.text += "\n(💰 " + str(torre.precioVender) + ")"
 	
 func venderTorre():
 	torre.queue_free()
@@ -52,6 +59,8 @@ func venderTorre():
 	
 	texture_normal = texturas[0]
 	selected = false
+	
+	dineroTorre.emit(+torre.precioVender)
 	
 
 func hoverIn():
