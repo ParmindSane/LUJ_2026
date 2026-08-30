@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/nivel_interfaz.gd" id="2_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://brquy7pnu0yo2" path="res://torres/Area/tower2-aniamtion/idle.png" id="7_3iobf"]
 [ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="7_160gc"]
+[ext_resource type="Texture2D" uid="uid://cuinyvandjgi3" path="res://niveles/assets/victoria.png" id="7_yi00n"]
+[ext_resource type="Texture2D" uid="uid://b7gr0s0hlnewb" path="res://niveles/assets/derrota.png" id="8_qhy6q"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="8_r17jf"]
 [ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="104_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="106_tagm8"]
@@ -18,11 +20,8 @@ bg_color = Color(1, 1, 1, 0.19607843)
 [sub_resource type="LabelSettings" id="LabelSettings_qe4n8"]
 font_size = 32
 
-[sub_resource type="LabelSettings" id="LabelSettings_sau36"]
-font_size = 48
-
-[sub_resource type="Theme" id="Theme_r17jf"]
-default_font_size = 24
+[sub_resource type="Theme" id="Theme_qhy6q"]
+default_font_size = 32
 
 [sub_resource type="Curve2D" id="Curve2D_r17jf"]
 _data = {
@@ -70,12 +69,13 @@ grow_vertical = 2
 texture = ExtResource("1_l3kkx")
 expand_mode = 1
 
-[node name="UI" type="CanvasLayer" parent="." unique_id=710199408 node_paths=PackedStringArray("vidas_cartel", "monedas_cartel", "torres_butts")]
+[node name="UI" type="CanvasLayer" parent="." unique_id=710199408 node_paths=PackedStringArray("vidas_cartel", "monedas_cartel", "torres_butts", "buttSalir")]
 layer = 1000
 script = ExtResource("2_g2l8i")
 vidas_cartel = NodePath("Indicadores/IndicadorVidas/Label")
 monedas_cartel = NodePath("Indicadores/IndicadorMonedas/Label")
 torres_butts = [NodePath("OpcionesTorres/TorresIniciales/Torre1/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre2/Button"), NodePath("OpcionesTorres/TorresIniciales/Torre3/Button")]
+buttSalir = NodePath("GanarPerder/Control/Salir")
 
 [node name="OpcionesTorres" type="PanelContainer" parent="UI" unique_id=1320821653]
 custom_minimum_size = Vector2(180, 0)
@@ -223,40 +223,42 @@ text = "💰 X "
 label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
 
-[node name="GanarPerder" type="CenterContainer" parent="UI" unique_id=925247847]
+[node name="GanarPerder" type="PanelContainer" parent="UI" unique_id=1471185866]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/GanarPerder" unique_id=1411653861]
-layout_mode = 2
-
-[node name="Ganar" type="PanelContainer" parent="UI/GanarPerder/VBoxContainer" unique_id=1344002680]
-visible = false
-layout_mode = 2
-
-[node name="Label" type="Label" parent="UI/GanarPerder/VBoxContainer/Ganar" unique_id=1685067326]
-layout_mode = 2
-text = " Ganaste :D "
-label_settings = SubResource("LabelSettings_sau36")
-
-[node name="Perder" type="PanelContainer" parent="UI/GanarPerder/VBoxContainer" unique_id=21852227]
-visible = false
-layout_mode = 2
-
-[node name="Label" type="Label" parent="UI/GanarPerder/VBoxContainer/Perder" unique_id=1024826776]
-layout_mode = 2
-text = " Perdiste :c "
-label_settings = SubResource("LabelSettings_sau36")
-
-[node name="Salir" type="Button" parent="UI/GanarPerder/VBoxContainer" unique_id=2033777148]
-layout_mode = 2
 size_flags_horizontal = 4
-theme = SubResource("Theme_r17jf")
+size_flags_vertical = 4
+
+[node name="Ganar" type="TextureRect" parent="UI/GanarPerder" unique_id=612233645]
+visible = false
+layout_mode = 2
+texture = ExtResource("7_yi00n")
+expand_mode = 1
+
+[node name="Perder" type="TextureRect" parent="UI/GanarPerder" unique_id=878778003]
+visible = false
+layout_mode = 2
+texture = ExtResource("8_qhy6q")
+expand_mode = 1
+
+[node name="Control" type="Control" parent="UI/GanarPerder" unique_id=383701571]
+layout_mode = 2
+
+[node name="Salir" type="Button" parent="UI/GanarPerder/Control" unique_id=2033777148]
+layout_mode = 1
+offset_left = 112.0
+offset_top = 548.0
+offset_right = 287.0
+offset_bottom = 590.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_qhy6q")
 text = " Salir del nivel "
+metadata/_edit_group_ = true
 
 [node name="ObjetosDeJuego" type="CanvasLayer" parent="." unique_id=1021469761]
 process_mode = 1

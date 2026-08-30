@@ -830,6 +830,7 @@ sprite_frames = SubResource("SpriteFrames_qe4n8")
 animation = &"IDLE"
 
 [node name="Label" type="Label" parent="." unique_id=1239942844]
+visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 

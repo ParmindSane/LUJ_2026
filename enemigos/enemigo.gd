@@ -58,17 +58,20 @@ func setClase(cn: ClasesEnemigos.Clases, c: ClaseEnemigo):
 	
 	vidaActual += vidaInicial
 	
-	$AnimatedSprite2D.sprite_frames = animaciones
+	sprites = $AnimatedSprite2D
+	sprites.sprite_frames = animaciones
 		
 	if volador:
 		aDistancia = true
 	else:
 		ignoraSoldados = false
 	
+	colAtaque = $AreaAtacar
 	if !ignoraSoldados && aDistancia:
 		colAtaque.area_entered.connect(addTarget)
 		colAtaque.area_exited.connect(forgetTarget)
 	
+	colRecibir = $AreaRecibir
 	if volador:
 		sprites.position = Vector2(25, -40)
 		colRecibir.position = Vector2(25, -40)

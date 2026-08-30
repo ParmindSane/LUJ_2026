@@ -18,6 +18,8 @@ var torres_pre = [preload("res://torres/Proyectil/torre_proyectil.tscn"),
 preload("res://torres/Area/torre_area.tscn"),
 preload("res://torres/Invocador/torre_invocador.tscn")]
 
+@export var buttSalir: BaseButton
+
 func _ready():
 	torres_opciones = $OpcionesTorres
 	torres_timer = $OpcionesTorres/Timer
@@ -93,10 +95,10 @@ func actualizarCarteles(vidas: int, coins: int):
 func finDelNivel(victoria: bool):
 	$GanarPerder.show()
 	if victoria:
-		$GanarPerder/VBoxContainer/Ganar.show()
+		$GanarPerder/Ganar.show()
 	else:
-		$GanarPerder/VBoxContainer/Perder.show()
-	$GanarPerder/VBoxContainer/Salir.pressed.connect(salir)
+		$GanarPerder/Perder.show()
+	buttSalir.pressed.connect(salir)
 	
 func salir():
 	get_tree().change_scene_to_file("res://menu/mapaDeNiveles.tscn")
