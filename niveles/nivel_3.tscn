@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://ckt8vwuxne62i"]
+
+[ext_resource type="PackedScene" uid="uid://cf55mwny83pis" path="res://niveles/nivel.tscn" id="1_wwcbt"]
+[ext_resource type="Texture2D" uid="uid://dlcd8ib04d35f" path="res://niveles/assets/nivel3.png" id="2_wwcbt"]
+[ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="3_sah5m"]
+[ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="4_drvti"]
+
+[sub_resource type="Curve2D" id="Curve2D_ahqp3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 648, -62, 0, 0, 0, 0, 616, 54, 0, 0, 0, 0, 508, 70, 0, 0, 0, 0, 399, 90, 0, 0, 0, 0, 333, 149, 0, 0, 0, 0, 303, 218, 0, 0, 0, 0, 319, 315, 0, 0, 0, 0, 363, 387, 0, 0, 0, 0, 404, 403, 0, 0, 0, 0, 443, 451, 0, 0, 0, 0, 514, 511, 0, 0, 0, 0, 525, 708)
+}
+point_count = 12
+
+[sub_resource type="Curve2D" id="Curve2D_frnpr"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 648, -62, 0, 0, 0, 0, 668, 63, 0, 0, 0, 0, 755, 106, 0, 0, 0, 0, 804, 125, 0, 0, 0, 0, 837, 177, 0, 0, 0, 0, 899, 235, 0, 0, 0, 0, 928, 344, 0, 0, 0, 0, 903, 447, 0, 0, 0, 0, 817, 501, 0, 0, 0, 0, 668, 513, 0, 0, 0, 0, 554, 525, 0, 0, 0, 0, 525, 708)
+}
+point_count = 12
+
+[sub_resource type="Resource" id="Resource_jcnq2"]
+script = ExtResource("4_drvti")
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[node name="Nivel3" unique_id=1112846435 instance=ExtResource("1_wwcbt")]
+
+[node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
+texture = ExtResource("2_wwcbt")
+
+[node name="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="0" unique_id=1211606735]
+curve = SubResource("Curve2D_ahqp3")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
+position = Vector2(648, -62)
+
+[node name="Path2D2" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="1" unique_id=1291610166]
+curve = SubResource("Curve2D_frnpr")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D2" index="0" unique_id=1134643131 instance=ExtResource("3_sah5m")]
+position = Vector2(648, -62)
+oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_jcnq2")])
+
+[node name="TorreSpot" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="0" unique_id=238956192]
+offset_left = 732.0
+offset_top = 315.0
+offset_right = 856.0
+offset_bottom = 439.0

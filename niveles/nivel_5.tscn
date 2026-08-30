@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://bqssow335sx7b"]
+
+[ext_resource type="PackedScene" uid="uid://cf55mwny83pis" path="res://niveles/nivel.tscn" id="1_b5t1x"]
+[ext_resource type="Texture2D" uid="uid://dopl6csnf6rin" path="res://niveles/assets/nivel5.png" id="2_eywp5"]
+[ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="3_3pmbg"]
+[ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="4_pv2dg"]
+
+[sub_resource type="Curve2D" id="Curve2D_iwl55"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1213, 226, 0, 0, 0, 0, 1047, 220, 0, 0, 0, 0, 998, 153, 0, 0, 0, 0, 890, 118, 0, 0, 0, 0, 752, 102, 0, 0, 0, 0, 670, 88, 0, 0, 0, 0, 582, 114, 0, 0, 0, 0, 465, 89, 0, 0, 0, 0, 342, 86, 0, 0, 0, 0, 282, 79, 0, 0, 0, 0, 206, 133, 0, 0, 0, 0, 110, 158, 0, 0, 0, 0, -84, 165)
+}
+point_count = 13
+
+[sub_resource type="Curve2D" id="Curve2D_t6xj8"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1214, 229, 0, 0, 0, 0, 1050, 219, 0, 0, 0, 0, 993, 254, 0, 0, 0, 0, 863, 274, 0, 0, 0, 0, 774, 251, 0, 0, 0, 0, 715, 283, 0, 0, 0, 0, 558, 351, 0, 0, 0, 0, 479, 336, 0, 0, 0, 0, 417, 308, 0, 0, 0, 0, 337, 323, 0, 0, 0, 0, 155, 321, 0, 0, 0, 0, -82, 331)
+}
+point_count = 12
+
+[sub_resource type="Resource" id="Resource_jcnq2"]
+script = ExtResource("4_pv2dg")
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Curve2D" id="Curve2D_eywp5"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1214, 398, 0, 0, 0, 0, 923, 407, 0, 0, 0, 0, 840, 394, 0, 0, 0, 0, 700, 428, 0, 0, 0, 0, 558, 351, 0, 0, 0, 0, 479, 336, 0, 0, 0, 0, 417, 308, 0, 0, 0, 0, 337, 323, 0, 0, 0, 0, 155, 321, 0, 0, 0, 0, -82, 331)
+}
+point_count = 10
+
+[sub_resource type="Curve2D" id="Curve2D_3pmbg"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1214, 398, 0, 0, 0, 0, 923, 407, 0, 0, 0, 0, 840, 394, 0, 0, 0, 0, 700, 428, 0, 0, 0, 0, 663, 491, 0, 0, 0, 0, 612, 509, 0, 0, 0, 0, 513, 499, 0, 0, 0, 0, 427, 515, 0, 0, 0, 0, -79, 510)
+}
+point_count = 9
+
+[node name="Nivel5" unique_id=1112846435 instance=ExtResource("1_b5t1x")]
+
+[node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
+texture = ExtResource("2_eywp5")
+
+[node name="UI" parent="." index="1" unique_id=710199408]
+visible = false
+
+[node name="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="0" unique_id=1211606735]
+curve = SubResource("Curve2D_iwl55")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
+position = Vector2(1213, 226)
+
+[node name="Path2D2" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="1" unique_id=439990923]
+curve = SubResource("Curve2D_t6xj8")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D2" index="0" unique_id=1134643131 instance=ExtResource("3_3pmbg")]
+position = Vector2(1214, 229)
+oleadas = Array[ExtResource("4_pv2dg")]([SubResource("Resource_jcnq2")])
+
+[node name="Path2D3" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="2" unique_id=1710652519]
+curve = SubResource("Curve2D_eywp5")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D3" index="0" unique_id=694463091 instance=ExtResource("3_3pmbg")]
+position = Vector2(1214, 398)
+oleadas = Array[ExtResource("4_pv2dg")]([SubResource("Resource_jcnq2")])
+
+[node name="Path2D4" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="3" unique_id=994759164]
+curve = SubResource("Curve2D_3pmbg")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D4" index="0" unique_id=1458612073 instance=ExtResource("3_3pmbg")]
+position = Vector2(1214, 398)
+oleadas = Array[ExtResource("4_pv2dg")]([SubResource("Resource_jcnq2")])
+
+[node name="TorreSpot" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="0" unique_id=238956192]
+offset_left = 644.0
+offset_top = 251.0
+offset_right = 768.0
+offset_bottom = 375.0

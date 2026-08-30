@@ -1,9 +1,33 @@
 [gd_scene format=3 uid="uid://bvc8cx5ave4ha"]
 
 [ext_resource type="PackedScene" uid="uid://cf55mwny83pis" path="res://niveles/nivel.tscn" id="1_a1qd3"]
-[ext_resource type="Texture2D" uid="uid://bivh2mq7ytabq" path="res://niveles/assets/nivel1.png" id="2_buu7l"]
+[ext_resource type="Texture2D" uid="uid://duaisdu80c64r" path="res://niveles/assets/nivel2.png" id="2_buu7l"]
+[ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="3_ucysf"]
+
+[sub_resource type="Curve2D" id="Curve2D_buu7l"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1214, 282, 0, 0, 0, 0, 966, 285, 0, 0, 0, 0, 791, 331, 0, 0, 0, 0, 592, 420, 0, 0, 0, 0, 524, 399, 0, 0, 0, 0, 456, 423, 0, 0, 0, 0, 371, 402, 0, 0, 0, 0, 294, 359, 0, 0, 0, 0, 221, 273, 0, 0, 0, 0, 130, 185, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -66, 96)
+}
+point_count = 12
+
+[sub_resource type="Resource" id="Resource_y3dyb"]
+script = ExtResource("3_ucysf")
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [node name="Nivel2" unique_id=1112846435 instance=ExtResource("1_a1qd3")]
 
 [node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
 texture = ExtResource("2_buu7l")
+
+[node name="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="0" unique_id=1211606735]
+curve = SubResource("Curve2D_buu7l")
+
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
+position = Vector2(1214, 282)
+oleadas = Array[ExtResource("3_ucysf")]([SubResource("Resource_y3dyb")])
+
+[node name="TorreSpot" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="0" unique_id=238956192]
+offset_left = 850.0
+offset_top = 271.0
+offset_right = 974.0
+offset_bottom = 395.0

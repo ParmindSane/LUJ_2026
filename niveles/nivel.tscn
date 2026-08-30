@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cf55mwny83pis"]
 
-[ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/assets/nivel1day.png" id="1_l3kkx"]
 [ext_resource type="Script" uid="uid://c1e60oew76vwm" path="res://niveles/nivel.gd" id="1_tagm8"]
 [ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/nivel_interfaz.gd" id="2_g2l8i"]
+[ext_resource type="Texture2D" uid="uid://bivh2mq7ytabq" path="res://niveles/assets/nivel1.png" id="2_ie5aq"]
 [ext_resource type="Texture2D" uid="uid://bcvnr5ldrmj84" path="res://niveles/assets/torrePanel.png" id="4_l25ip"]
 [ext_resource type="StyleBox" uid="uid://1byc145786mt" path="res://niveles/assets/torreButt.stylebox" id="5_l25ip"]
 [ext_resource type="Theme" uid="uid://svatb6hy1pm" path="res://menu/assets/buttTheme.theme" id="6_l25ip"]
@@ -29,32 +29,14 @@ font_size = 32
 [sub_resource type="Theme" id="Theme_qhy6q"]
 default_font_size = 32
 
-[sub_resource type="Curve2D" id="Curve2D_r17jf"]
+[sub_resource type="Curve2D" id="Curve2D_qe4n8"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 583, 746, 0, 0, 0, 0, 581, 544, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -66, 96)
+"points": PackedVector2Array(0, 0, 0, 0, 1116, 80, 0, 0, 0, 0, 791, 331, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -66, 96)
 }
 point_count = 9
 
-[sub_resource type="Resource" id="Resource_yi00n"]
-script = ExtResource("8_r17jf")
-delay = 10.0
-metadata/_custom_type_script = "uid://bpm3syve7qopj"
-
-[sub_resource type="Resource" id="Resource_r17jf"]
-script = ExtResource("8_r17jf")
-enemigo = 2
-cantidad = 5
-metadata/_custom_type_script = "uid://bpm3syve7qopj"
-
-[sub_resource type="Curve2D" id="Curve2D_qe4n8"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1194, -14, 0, 0, 0, 0, 1025, 120, 0, 0, 0, 0, 840, 301, 0, 0, 0, 0, 513, 425, 0, 0, 0, 0, 361, 406, 0, 0, 0, 0, 287, 358, 0, 0, 0, 0, 194, 254, 0, 0, 0, 0, 99, 170, 0, 0, 0, 0, 31, 125, 0, 0, 0, 0, -66, 96)
-}
-point_count = 10
-
 [sub_resource type="Resource" id="Resource_jcnq2"]
 script = ExtResource("8_r17jf")
-enemigo = 1
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [node name="Nivel" type="Node2D" unique_id=1112846435]
@@ -72,7 +54,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_l3kkx")
+texture = ExtResource("2_ie5aq")
 expand_mode = 1
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=710199408 node_paths=PackedStringArray("vidas_cartel", "monedas_cartel", "torres_butts", "buttSalir")]
@@ -315,22 +297,19 @@ metadata/_edit_group_ = true
 process_mode = 1
 layer = 0
 
-[node name="Path2D" type="Path2D" parent="ObjetosDeJuego" unique_id=1485948904]
-curve = SubResource("Curve2D_r17jf")
+[node name="Enemigos" type="Node2D" parent="ObjetosDeJuego" unique_id=1030810102]
 
-[node name="Spawner" parent="ObjetosDeJuego/Path2D" unique_id=1134643131 instance=ExtResource("7_160gc")]
-position = Vector2(583, 746)
-oleadas = Array[ExtResource("8_r17jf")]([SubResource("Resource_yi00n"), SubResource("Resource_r17jf")])
-
-[node name="Path2D2" type="Path2D" parent="ObjetosDeJuego" unique_id=1211606735]
+[node name="Path2D" type="Path2D" parent="ObjetosDeJuego/Enemigos" unique_id=1211606735]
 curve = SubResource("Curve2D_qe4n8")
 
-[node name="Spawner" parent="ObjetosDeJuego/Path2D2" unique_id=1342199954 instance=ExtResource("7_160gc")]
-position = Vector2(1194, -14)
+[node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" unique_id=1342199954 instance=ExtResource("7_160gc")]
+position = Vector2(1116, 80)
 oleadas = Array[ExtResource("8_r17jf")]([SubResource("Resource_jcnq2")])
 
-[node name="TorreSpot" parent="ObjetosDeJuego" unique_id=238956192 instance=ExtResource("104_g2l8i")]
-offset_left = 20.0
-offset_top = -303.0
-offset_right = 144.0
-offset_bottom = -179.0
+[node name="SpotsParaTorres" type="Node2D" parent="ObjetosDeJuego" unique_id=686366816]
+
+[node name="TorreSpot" parent="ObjetosDeJuego/SpotsParaTorres" unique_id=238956192 instance=ExtResource("104_g2l8i")]
+offset_left = 596.0
+offset_top = 345.0
+offset_right = 720.0
+offset_bottom = 469.0

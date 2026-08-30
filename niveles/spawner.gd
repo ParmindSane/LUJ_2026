@@ -25,7 +25,7 @@ func _ready():
 		
 		tiempoOleadas = $TiempoEntreOleadas
 		tiempoOleadas.timeout.connect(empezarOleada)
-		tiempoOleadas.start(1)
+		tiempoOleadas.start(10)
 	else:
 		finDeSpawns.emit()
 		terminado = true

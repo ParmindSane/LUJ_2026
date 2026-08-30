@@ -20,7 +20,7 @@ func avanzarIntro():
 	if !intro:
 		intro = true
 		$Intro.show()
-		introIndex = 0
+		introIndex = -1
 	
 	introIndex += 1
 	if introIndex < introSprites.size():

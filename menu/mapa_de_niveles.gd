@@ -3,7 +3,10 @@ extends Node2D
 @export var botones: Array[BaseButton]
 var niveles = [
 	"res://niveles/nivel_1.tscn",
-	"res://niveles/nivel_2.tscn"
+	"res://niveles/nivel_2.tscn",
+	"res://niveles/nivel_3.tscn",
+	"res://niveles/nivel_4.tscn",
+	"res://niveles/nivel_5.tscn"
 	]
 
 func _ready():
