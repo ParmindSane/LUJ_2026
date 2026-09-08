@@ -6,3 +6,8 @@ func map(n: float, a1: float, a2: float, b1: float, b2: float) -> float:
 
 func salir():
 	get_tree().quit()
+	
+func salirDelNivel():
+	get_tree().change_scene_to_file("res://menu/mapaDeNiveles.tscn")
+	
+var puntoMusica: float

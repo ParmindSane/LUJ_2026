@@ -66,6 +66,7 @@ func setTarget(nuevoTarget: Node2D):
 	if estado == "ATACAR" && is_instance_valid(target):
 		target.setRival(null)
 	
+	timer.stop()
 	target = nuevoTarget
 	
 
@@ -80,7 +81,8 @@ func herir(damage: float):
 	
 
 func _on_timer_timeout():
-	print(str(self) + "atacando")
 	if estado == "ATACAR" && is_instance_valid(target):
 		target.herir(ataque)
+	else:
+		timer.stop()
 	

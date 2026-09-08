@@ -39,7 +39,6 @@ var animaciones: SpriteFrames
 
 signal matado(coins: int)
 signal finPath(yo: PathFollow2D)
-var paths: Array
 
 func setClase(cn: ClasesEnemigos.Clases, c: ClaseEnemigo):
 	claseData = c

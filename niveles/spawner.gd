@@ -32,6 +32,7 @@ func _ready():
 	
 
 func empezarOleada():
+	$AudioStreamPlayer.play()
 	spawnsRestantes = oleada.cantidad
 	iniciaOleada.emit(oleadas.find(oleada), oleada)
 	

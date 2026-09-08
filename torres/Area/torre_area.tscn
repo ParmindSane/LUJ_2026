@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b7gfwdoldarnn" path="res://torres/Area/tower2-aniamtion/action3.png" id="6_06jsq"]
 [ext_resource type="Texture2D" uid="uid://dmnpwk5537ojw" path="res://torres/Area/tower2-aniamtion/action4.png" id="7_3pwm3"]
 [ext_resource type="Texture2D" uid="uid://c0co8g60l6e83" path="res://torres/Area/tower2-aniamtion/action5.png" id="8_fkgl3"]
+[ext_resource type="AudioStream" uid="uid://boaoycgkbaxjo" path="res://menu/sound/buildings/bomb_explosion.mp3" id="9_6na2p"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gpp5w"]
 radius = 120.0
@@ -48,6 +49,8 @@ animations = [{
 
 [node name="LanzaArea" unique_id=1565077132 instance=ExtResource("1_2us3v")]
 script = ExtResource("2_2us3v")
+precioComprar = 50
+precioVender = 20
 
 [node name="Timer" parent="." index="0" unique_id=706880896]
 one_shot = true
@@ -64,5 +67,8 @@ autoplay = "IDLE"
 
 [node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
 position = Vector2(-19, -54)
+
+[node name="AudioExplotar" type="AudioStreamPlayer" parent="." index="4" unique_id=653647965]
+stream = ExtResource("9_6na2p")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

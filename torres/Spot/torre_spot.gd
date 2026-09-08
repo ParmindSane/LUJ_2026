@@ -29,6 +29,8 @@ func pulsado():
 	selected = true
 	if !is_instance_valid(torre):
 		pedirTorre.emit(self)
+		
+		$AudioPedir.play()
 	else:
 		vender.show()
 	
@@ -53,6 +55,8 @@ func colocarTorre(preTorre: Torre):
 	dineroTorre.emit(-torre.precioComprar)
 	vender.text = "Vender\n($ " + str(torre.precioVender) + ")"
 	
+	$AudioConstruir.play()
+	
 func venderTorre():
 	torre.queue_free()
 	vender.hide()
@@ -61,6 +65,8 @@ func venderTorre():
 	selected = false
 	
 	dineroTorre.emit(+torre.precioVender)
+	
+	$AudioVender.play()
 	
 
 func hoverIn():

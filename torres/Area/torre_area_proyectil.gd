@@ -33,29 +33,34 @@ func _physics_process(delta: float) -> void:
 		# Optional: rotate sprite toward target
 		rotation = direction.angle()
 	else:
-		# Delete projectile if target is destroyed or null
-		queue_free()
+		explotar()
 	
 	if exploted:
 		if pExploted == exploted:
-			queue_free()
+			explosion.monitoring = false
+			explosion.monitorable = false
 		
 		pExploted = exploted
 	
 
 func _on_timer_timeout():
-	explotar()
+	if !exploted:
+		explotar()
+	else:
+		queue_free()
 	
 func _on_area_entered(area):
 	explotar()
 	
 func explotar():
-	explosion.visible = true
-	explosion.monitoring = true
-	explosion.monitorable = true
-	$AnimatedSprite2D.play("explosion")
-	
-	exploted = true
+	if !exploted:
+		explosion.visible = true
+		explosion.monitoring = true
+		explosion.monitorable = true
+		$AnimatedSprite2D.play("explosion")
+		timer.start(0.25)
+		
+		exploted = true
 	
 
 func _on_explosion_area_entered(area):

@@ -14,6 +14,8 @@ var monedas_pCantidad: int
 var objetosDeJuego: Node
 var spawners: Array[Node]
 
+var musicaFondo: AudioStreamPlayer
+
 func _ready():
 	UI = $UI
 	vidas_cantidad = vidas_iniciales
@@ -30,6 +32,8 @@ func _ready():
 	for s in spots:
 		s.dineroTorre.connect(dineroTorre)
 	
+	musicaFondo = $Fondo/MusicaFondo
+	
 
 func _process(delta):
 	if vidas_pCantidad != vidas_cantidad || monedas_pCantidad != monedas_cantidad:
@@ -37,12 +41,14 @@ func _process(delta):
 		
 		if vidas_cantidad <= 0:
 			get_tree().paused = true
+			musicaFondo.stop()
 			UI.finDelNivel(false)
 		else:
 			var spawnersSinTerminar = spawners.filter(func(s): return s.terminado == false)
 			var enemigosVivos = get_tree().get_nodes_in_group("Enemigos")
 			if spawnersSinTerminar.is_empty() && enemigosVivos.is_empty():
 				UI.finDelNivel(true)
+				musicaFondo.stop()
 	
 	vidas_pCantidad = vidas_cantidad
 	monedas_pCantidad = monedas_cantidad

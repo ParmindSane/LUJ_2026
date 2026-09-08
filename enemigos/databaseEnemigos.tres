@@ -18,27 +18,34 @@
 
 [sub_resource type="Resource" id="Resource_7arfl"]
 script = ExtResource("1_a18re")
+vidaInicial = 5.0
 animaciones = ExtResource("2_mggim")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_qtvrj"]
 script = ExtResource("1_a18re")
 vidaInicial = 3.0
+velocidad = 1.2
 animaciones = ExtResource("3_2b0nb")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_n4rwq"]
 script = ExtResource("1_a18re")
+velocidad = 2.0
 animaciones = ExtResource("4_owpq8")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_3xlen"]
 script = ExtResource("1_a18re")
+velocidad = 1.8
+ataqueASoldado = 2.0
 animaciones = ExtResource("5_5htug")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_dy58s"]
 script = ExtResource("1_a18re")
+vidaInicial = 8.0
+ataqueASoldado = 2.0
 animaciones = ExtResource("6_n4rwq")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
@@ -57,12 +64,16 @@ metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_svygd"]
 script = ExtResource("1_a18re")
+velocidad = 0.8
+ataqueASoldado = 2.0
 aDistancia = true
 animaciones = ExtResource("9_jiuv6")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_tupwp"]
 script = ExtResource("1_a18re")
+ataqueASoldado = 2.0
+ataqueDelay = 2.0
 aDistancia = true
 animaciones = ExtResource("10_wme23")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
@@ -76,6 +87,8 @@ metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_2tmpy"]
 script = ExtResource("1_a18re")
+vidaInicial = 25.0
+velocidad = 0.8
 volador = true
 ignoraSoldados = true
 animaciones = ExtResource("12_7arfl")
@@ -83,6 +96,8 @@ metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_cu1ge"]
 script = ExtResource("1_a18re")
+vidaInicial = 8.0
+velocidad = 1.3
 volador = true
 ignoraSoldados = true
 animaciones = ExtResource("13_ytjd0")
@@ -90,6 +105,9 @@ metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 
 [sub_resource type="Resource" id="Resource_ytjd0"]
 script = ExtResource("1_a18re")
+vidaInicial = 150.0
+velocidad = 0.4
+ataqueASoldado = 4.0
 animaciones = ExtResource("14_3xlen")
 metadata/_custom_type_script = "uid://cwxdf836wr4fy"
 

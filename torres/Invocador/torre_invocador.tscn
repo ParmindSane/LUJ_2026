@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cecf3hxjpal8n" path="res://torres/torre.tscn" id="1_ry6bw"]
 [ext_resource type="Script" uid="uid://dumsep3ugrsrg" path="res://torres/Invocador/torre_invocador.gd" id="2_kgttl"]
 [ext_resource type="Texture2D" uid="uid://pohebfh4p3me" path="res://torres/Invocador/torre_invocador.png" id="3_42ihj"]
+[ext_resource type="AudioStream" uid="uid://bkian7611j1n2" path="res://menu/sound/buildings/barracs_howl.mp3" id="4_8hib2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_755fi"]
 animations = [{
@@ -18,6 +19,8 @@ animations = [{
 [node name="Invocador" unique_id=1565077132 instance=ExtResource("1_ry6bw")]
 script = ExtResource("2_kgttl")
 maxCantSoldados = 3
+precioComprar = 30
+precioVender = 12
 
 [node name="Timer" parent="." index="0" unique_id=706880896]
 one_shot = true
@@ -34,3 +37,6 @@ autoplay = "default"
 
 [node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
 position = Vector2(13, 14)
+
+[node name="AudioInvocar" type="AudioStreamPlayer" parent="." index="4" unique_id=1153396862]
+stream = ExtResource("4_8hib2")

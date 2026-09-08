@@ -7,6 +7,7 @@
 [ext_resource type="StyleBox" uid="uid://bwnp7civepwrt" path="res://niveles/assets/torreButtHover.stylebox" id="5_moemr"]
 [ext_resource type="Texture2D" uid="uid://bon72act0var2" path="res://menu/assets/exit_hover.png" id="6_yi8jt"]
 [ext_resource type="Texture2D" uid="uid://n4q884wjn0ui" path="res://menu/assets/exit.png" id="7_jtula"]
+[ext_resource type="AudioStream" uid="uid://cbnodsnc6t62v" path="res://menu/sound/music/Midnight Tale.mp3" id="8_jtula"]
 
 [node name="Mapa" type="Node2D" unique_id=742589701 node_paths=PackedStringArray("botones")]
 script = ExtResource("1_514df")
@@ -62,7 +63,8 @@ offset_bottom = 403.0
 theme = ExtResource("3_r5ogj")
 theme_override_styles/normal = ExtResource("4_moemr")
 theme_override_styles/hover = ExtResource("5_moemr")
-text = " Jugar nivel 4 "
+text = " Jugar nivel 4 
+(sin terminar)"
 
 [node name="Nivel5" type="Button" parent="." unique_id=250077404]
 offset_left = 809.0
@@ -72,7 +74,8 @@ offset_bottom = 385.0
 theme = ExtResource("3_r5ogj")
 theme_override_styles/normal = ExtResource("4_moemr")
 theme_override_styles/hover = ExtResource("5_moemr")
-text = " Jugar nivel 5 "
+text = " Jugar nivel 5 
+(sin terminar)"
 
 [node name="Exit" type="TextureButton" parent="." unique_id=153847045]
 custom_maximum_size = Vector2(180, 70)
@@ -81,3 +84,8 @@ offset_bottom = 130.0
 texture_normal = ExtResource("6_yi8jt")
 texture_hover = ExtResource("7_jtula")
 stretch_mode = 5
+
+[node name="Fondo" type="AudioStreamPlayer" parent="." unique_id=2038284244]
+stream = ExtResource("8_jtula")
+autoplay = true
+parameters/looping = true

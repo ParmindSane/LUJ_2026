@@ -36,6 +36,7 @@ func spawnProyectil():
 	
 	timer.start(delay)
 	sprites.play("ATACAR")
+	$AudioExplotar.play(0.7)
 	
 
 func _on_animated_sprite_2d_animation_finished():

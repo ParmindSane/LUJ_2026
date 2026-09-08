@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dlcd8ib04d35f" path="res://niveles/assets/nivel3.png" id="2_wwcbt"]
 [ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="3_sah5m"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="4_drvti"]
+[ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="5_drvti"]
 
 [sub_resource type="Curve2D" id="Curve2D_ahqp3"]
 _data = {
@@ -13,6 +14,40 @@ point_count = 12
 
 [sub_resource type="Resource" id="Resource_sah5m"]
 script = ExtResource("4_drvti")
+enemigo = 3
+delay = 20.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_drvti"]
+script = ExtResource("4_drvti")
+enemigo = 5
+delay = 3.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_x1jrk"]
+script = ExtResource("4_drvti")
+enemigo = 7
+cantidad = 3
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_frnpr"]
+script = ExtResource("4_drvti")
+enemigo = 10
+cantidad = 2
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_5exb8"]
+script = ExtResource("4_drvti")
+enemigo = 7
+cantidad = 3
+delay = 18.0
+monedas = 0
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [sub_resource type="Curve2D" id="Curve2D_frnpr"]
@@ -21,11 +56,55 @@ _data = {
 }
 point_count = 12
 
-[sub_resource type="Resource" id="Resource_drvti"]
+[sub_resource type="Resource" id="Resource_xu0qx"]
 script = ExtResource("4_drvti")
+enemigo = 4
+delay = 20.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_56xpi"]
+script = ExtResource("4_drvti")
+enemigo = 10
+cantidad = 2
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_jkim2"]
+script = ExtResource("4_drvti")
+enemigo = 6
+cantidad = 5
+delay = 19.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_p1rp6"]
+script = ExtResource("4_drvti")
+enemigo = 7
+cantidad = 3
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_g6sf5"]
+script = ExtResource("4_drvti")
+enemigo = 10
+cantidad = 2
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_uc4t2"]
+script = ExtResource("4_drvti")
+enemigo = 7
+cantidad = 3
+delay = 18.0
+monedas = 0
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [node name="Nivel3" unique_id=1112846435 instance=ExtResource("1_wwcbt")]
+monedas_iniciales = 120
 
 [node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
 texture = ExtResource("2_wwcbt")
@@ -35,17 +114,41 @@ curve = SubResource("Curve2D_ahqp3")
 
 [node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
 position = Vector2(648, -62)
-oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_sah5m")])
+oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_sah5m"), SubResource("Resource_drvti"), SubResource("Resource_x1jrk"), SubResource("Resource_frnpr"), SubResource("Resource_5exb8")])
 
 [node name="Path2D2" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="1" unique_id=1291610166]
 curve = SubResource("Curve2D_frnpr")
 
 [node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D2" index="0" unique_id=1134643131 instance=ExtResource("3_sah5m")]
 position = Vector2(648, -62)
-oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_drvti")])
+oleadas = Array[ExtResource("4_drvti")]([SubResource("Resource_xu0qx"), SubResource("Resource_56xpi"), SubResource("Resource_jkim2"), SubResource("Resource_p1rp6"), SubResource("Resource_g6sf5"), SubResource("Resource_uc4t2")])
 
 [node name="TorreSpot" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="0" unique_id=238956192]
 offset_left = 732.0
 offset_top = 315.0
 offset_right = 856.0
 offset_bottom = 439.0
+
+[node name="TorreSpot" parent="." index="3" unique_id=563097803 instance=ExtResource("5_drvti")]
+offset_left = 463.0
+offset_top = 47.0
+offset_right = 587.0
+offset_bottom = 171.0
+
+[node name="TorreSpot2" parent="." index="4" unique_id=830302865 instance=ExtResource("5_drvti")]
+offset_left = 518.0
+offset_top = 333.0
+offset_right = 642.0
+offset_bottom = 457.0
+
+[node name="TorreSpot3" parent="." index="5" unique_id=992493215 instance=ExtResource("5_drvti")]
+offset_left = 366.0
+offset_top = 207.0
+offset_right = 490.0
+offset_bottom = 331.0
+
+[node name="TorreSpot4" parent="." index="6" unique_id=199713460 instance=ExtResource("5_drvti")]
+offset_left = 343.0
+offset_top = 441.0
+offset_right = 467.0
+offset_bottom = 565.0

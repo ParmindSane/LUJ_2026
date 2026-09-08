@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://gjf3f83x0mbs" path="res://enemigos/assets/culto/culto_flecha.png" id="2_av7mg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qe4n8"]
-radius = 2.79
+radius = 16.03122
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ppt1s"]
 animations = [{
@@ -22,11 +22,12 @@ collision_layer = 4
 collision_mask = 768
 script = ExtResource("1_qgr8r")
 timer = NodePath("Timer")
-velocidad = 150.0
+velocidad = 1500.0
 duracion = 1.0
-damage = 1.0
+damage = 4.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1401261794]
+scale = Vector2(0.36000055, 0.36000055)
 shape = SubResource("CircleShape2D_qe4n8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1737302311]

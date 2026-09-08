@@ -43,6 +43,7 @@ func _ready():
 		torres_carteles[i].text = "($ " + str(t.precioComprar) + ")"
 	
 	buttSalir.pressed.connect(salir)
+	$Exit.pressed.connect(salir)
 	
 
 func _process(delta):
@@ -76,6 +77,8 @@ func _input(event: InputEvent) -> void:
 	
 
 func actualizarCarteles(vidas: int, coins: int):
+	if vidas < vidas_actuales:
+		vidas_cartel.get_child(0).play()
 	vidas_actuales = vidas
 	vidas_cartel.text = str(vidas)
 	
@@ -98,9 +101,12 @@ func finDelNivel(victoria: bool):
 	$GanarPerder.show()
 	if victoria:
 		$GanarPerder/Ganar.show()
+		$GanarPerder/Ganar/Audio.play()
 	else:
 		$GanarPerder/Perder.show()
+		$GanarPerder/Perder/Audio.play()
 	
 func salir():
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://menu/mapaDeNiveles.tscn")
 	

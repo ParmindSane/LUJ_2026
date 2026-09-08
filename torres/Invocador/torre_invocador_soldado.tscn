@@ -11,9 +11,9 @@ collision_layer = 2
 collision_mask = 256
 script = ExtResource("1_1le13")
 velocidad = 120.0
-ataque = 1.0
-ataqueDelay = 1.0
-vidaInicial = 5.0
+ataque = 3.0
+ataqueDelay = 0.5
+vidaInicial = 8.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=480820577]
 shape = SubResource("CircleShape2D_qe4n8")

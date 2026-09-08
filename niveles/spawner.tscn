@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://chufr8nhejn75"]
 
 [ext_resource type="Script" uid="uid://c48q46g1ou5o5" path="res://niveles/spawner.gd" id="1_jcnq2"]
+[ext_resource type="AudioStream" uid="uid://dypq1p3puei8" path="res://menu/sound/units/movement.mp3" id="2_jri6o"]
 
 [node name="Spawner" type="PathFollow2D" unique_id=1134643131 groups=["Spawner"]]
 rotates = false
@@ -12,3 +13,6 @@ one_shot = true
 
 [node name="TiempoEntreOleadas" type="Timer" parent="." unique_id=610222516]
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1902351464]
+stream = ExtResource("2_jri6o")

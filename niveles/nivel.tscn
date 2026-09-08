@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cf55mwny83pis"]
 
 [ext_resource type="Script" uid="uid://c1e60oew76vwm" path="res://niveles/nivel.gd" id="1_tagm8"]
+[ext_resource type="AudioStream" uid="uid://dxm4rjt0gd2qb" path="res://menu/sound/music/Kevin MacLeod - Master of the Feast.mp3" id="2_7mve8"]
 [ext_resource type="Script" uid="uid://i63m8dbkijro" path="res://niveles/nivel_interfaz.gd" id="2_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://bivh2mq7ytabq" path="res://niveles/assets/nivel1.png" id="2_ie5aq"]
 [ext_resource type="Texture2D" uid="uid://bcvnr5ldrmj84" path="res://niveles/assets/torrePanel.png" id="4_l25ip"]
@@ -12,8 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://b7gr0s0hlnewb" path="res://niveles/assets/derrota.png" id="8_qhy6q"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="8_r17jf"]
 [ext_resource type="Texture2D" uid="uid://6b8vaq4aggki" path="res://niveles/assets/barra.png" id="10_e7tdi"]
+[ext_resource type="AudioStream" uid="uid://81me7yxqt8wl" path="res://menu/sound/units/generic_thrust2.mp3" id="12_go451"]
+[ext_resource type="AudioStream" uid="uid://dww7msxa53t52" path="res://menu/sound/music/victory.mp3" id="13_f1dqh"]
 [ext_resource type="Texture2D" uid="uid://bon72act0var2" path="res://menu/assets/exit_hover.png" id="13_ie5aq"]
 [ext_resource type="Texture2D" uid="uid://n4q884wjn0ui" path="res://menu/assets/exit.png" id="14_7mve8"]
+[ext_resource type="AudioStream" uid="uid://cosvhmqkv7ad6" path="res://menu/sound/music/game over.mp3" id="15_go451"]
 [ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="104_g2l8i"]
 [ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="106_tagm8"]
 [ext_resource type="Texture2D" uid="uid://pohebfh4p3me" path="res://torres/Invocador/torre_invocador.png" id="108_p7u5q"]
@@ -47,6 +51,11 @@ monedas_iniciales = 10
 
 [node name="Fondo" type="CanvasLayer" parent="." unique_id=1662441244]
 layer = -1
+
+[node name="MusicaFondo" type="AudioStreamPlayer" parent="Fondo" unique_id=323247174]
+stream = ExtResource("2_7mve8")
+autoplay = true
+parameters/looping = true
 
 [node name="TextureRect" type="TextureRect" parent="Fondo" unique_id=1492440787]
 anchors_preset = 15
@@ -242,6 +251,10 @@ text = "X"
 label_settings = SubResource("LabelSettings_qe4n8")
 vertical_alignment = 1
 
+[node name="PerderVida" type="AudioStreamPlayer" parent="UI/Control/TextureRect/IndicadorVidas" unique_id=1903563466]
+stream = ExtResource("12_go451")
+parameters/looping = true
+
 [node name="IndicadorMonedas" type="Label" parent="UI/Control/TextureRect" unique_id=1804670638]
 layout_mode = 0
 offset_left = 280.0
@@ -263,15 +276,22 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Ganar" type="TextureRect" parent="UI/GanarPerder" unique_id=612233645]
+visible = false
 layout_mode = 2
 texture = ExtResource("7_yi00n")
 expand_mode = 1
+
+[node name="Audio" type="AudioStreamPlayer" parent="UI/GanarPerder/Ganar" unique_id=1038392491]
+stream = ExtResource("13_f1dqh")
 
 [node name="Perder" type="TextureRect" parent="UI/GanarPerder" unique_id=878778003]
 visible = false
 layout_mode = 2
 texture = ExtResource("8_qhy6q")
 expand_mode = 1
+
+[node name="Audio" type="AudioStreamPlayer" parent="UI/GanarPerder/Perder" unique_id=1440187279]
+stream = ExtResource("15_go451")
 
 [node name="Control" type="Control" parent="UI/GanarPerder" unique_id=383701571]
 layout_mode = 2
@@ -292,6 +312,14 @@ texture_normal = ExtResource("13_ie5aq")
 texture_hover = ExtResource("14_7mve8")
 stretch_mode = 5
 metadata/_edit_group_ = true
+
+[node name="Exit" type="TextureButton" parent="UI" unique_id=1155387266]
+custom_maximum_size = Vector2(180, 70)
+offset_right = 180.0
+offset_bottom = 70.0
+texture_normal = ExtResource("13_ie5aq")
+texture_hover = ExtResource("14_7mve8")
+stretch_mode = 5
 
 [node name="ObjetosDeJuego" type="CanvasLayer" parent="." unique_id=1021469761]
 process_mode = 1

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bd3dycevldviu" path="res://niveles/assets/nivel1day.png" id="2_eu3iu"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="2_w6qyd"]
 [ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="3_2iqk4"]
+[ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="5_i43ji"]
 
 [sub_resource type="Curve2D" id="Curve2D_2iqk4"]
 _data = {
@@ -13,6 +14,46 @@ point_count = 9
 
 [sub_resource type="Resource" id="Resource_2iqk4"]
 script = ExtResource("2_w6qyd")
+enemigo = 1
+delay = 20.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_eu3iu"]
+script = ExtResource("2_w6qyd")
+cantidad = 5
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_i43ji"]
+script = ExtResource("2_w6qyd")
+enemigo = 9
+cantidad = 4
+delay = 0.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_1oike"]
+script = ExtResource("2_w6qyd")
+enemigo = 1
+cantidad = 5
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_yi6tr"]
+script = ExtResource("2_w6qyd")
+enemigo = 9
+cantidad = 4
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_najtw"]
+script = ExtResource("2_w6qyd")
+enemigo = 10
+cantidad = 4
+monedas = 0
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [sub_resource type="Curve2D" id="Curve2D_eu3iu"]
@@ -21,11 +62,53 @@ _data = {
 }
 point_count = 9
 
-[sub_resource type="Resource" id="Resource_eu3iu"]
+[sub_resource type="Resource" id="Resource_adjju"]
 script = ExtResource("2_w6qyd")
+enemigo = 1
+delay = 20.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_uxua8"]
+script = ExtResource("2_w6qyd")
+cantidad = 5
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_c6ufc"]
+script = ExtResource("2_w6qyd")
+enemigo = 11
+cantidad = 4
+delay = 0.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_vdios"]
+script = ExtResource("2_w6qyd")
+enemigo = 1
+cantidad = 5
+delay = 1.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_j8syj"]
+script = ExtResource("2_w6qyd")
+enemigo = 11
+cantidad = 4
+delay = 25.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_qtvrj"]
+script = ExtResource("2_w6qyd")
+enemigo = 3
+cantidad = 20
+monedas = 0
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [node name="Nivel1" unique_id=1112846435 instance=ExtResource("1_d8x1h")]
+monedas_iniciales = 100
 
 [node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
 texture = ExtResource("2_eu3iu")
@@ -34,11 +117,23 @@ texture = ExtResource("2_eu3iu")
 curve = SubResource("Curve2D_2iqk4")
 
 [node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
-oleadas = Array[ExtResource("2_w6qyd")]([SubResource("Resource_2iqk4")])
+oleadas = Array[ExtResource("2_w6qyd")]([SubResource("Resource_2iqk4"), SubResource("Resource_eu3iu"), SubResource("Resource_i43ji"), SubResource("Resource_1oike"), SubResource("Resource_yi6tr"), SubResource("Resource_najtw")])
 
 [node name="Path2D2" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="1" unique_id=760333687]
 curve = SubResource("Curve2D_eu3iu")
 
 [node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D2" index="0" unique_id=1134643131 instance=ExtResource("3_2iqk4")]
 position = Vector2(586, 705)
-oleadas = Array[ExtResource("2_w6qyd")]([SubResource("Resource_eu3iu")])
+oleadas = Array[ExtResource("2_w6qyd")]([SubResource("Resource_adjju"), SubResource("Resource_uxua8"), SubResource("Resource_c6ufc"), SubResource("Resource_vdios"), SubResource("Resource_j8syj"), SubResource("Resource_qtvrj")])
+
+[node name="TorreSpot2" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="1" unique_id=238956192 instance=ExtResource("5_i43ji")]
+offset_left = 296.0
+offset_top = 182.0
+offset_right = 420.0
+offset_bottom = 306.0
+
+[node name="TorreSpot3" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="2" unique_id=822123100 instance=ExtResource("5_i43ji")]
+offset_left = 339.0
+offset_top = 401.0
+offset_right = 463.0
+offset_bottom = 525.0

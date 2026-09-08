@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://cf55mwny83pis" path="res://niveles/nivel.tscn" id="1_a1qd3"]
 [ext_resource type="Texture2D" uid="uid://duaisdu80c64r" path="res://niveles/assets/nivel2.png" id="2_buu7l"]
 [ext_resource type="Script" uid="uid://bpm3syve7qopj" path="res://niveles/oleada.gd" id="3_ucysf"]
+[ext_resource type="PackedScene" uid="uid://chufr8nhejn75" path="res://niveles/spawner.tscn" id="4_1yjlq"]
+[ext_resource type="PackedScene" uid="uid://bhuygcfsqsa0k" path="res://torres/Spot/torre_spot.tscn" id="4_y3dyb"]
 
 [sub_resource type="Curve2D" id="Curve2D_buu7l"]
 _data = {
@@ -12,22 +14,63 @@ point_count = 12
 
 [sub_resource type="Resource" id="Resource_y3dyb"]
 script = ExtResource("3_ucysf")
+delay = 21.0
+monedas = 0
+metadata/_custom_type_script = "uid://bpm3syve7qopj"
+
+[sub_resource type="Resource" id="Resource_i43ji"]
+script = ExtResource("3_ucysf")
+monedas = 0
 metadata/_custom_type_script = "uid://bpm3syve7qopj"
 
 [node name="Nivel2" unique_id=1112846435 instance=ExtResource("1_a1qd3")]
+monedas_iniciales = 85
 
 [node name="TextureRect" parent="Fondo" parent_id_path=PackedInt32Array(1662441244) index="0" unique_id=1492440787]
 texture = ExtResource("2_buu7l")
 
 [node name="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="0" unique_id=1211606735]
+position = Vector2(-2, -11)
 curve = SubResource("Curve2D_buu7l")
 
 [node name="Spawner" parent="ObjetosDeJuego/Enemigos/Path2D" index="0" unique_id=1342199954]
 position = Vector2(1214, 282)
-oleadas = Array[ExtResource("3_ucysf")]([SubResource("Resource_y3dyb")])
+oleadas = Array[ExtResource("3_ucysf")]([SubResource("Resource_y3dyb"), SubResource("Resource_i43ji")])
+
+[node name="Path2D2" type="Path2D" parent="ObjetosDeJuego/Enemigos" parent_id_path=PackedInt32Array(1030810102) index="1" unique_id=546776753]
+position = Vector2(-4, 14)
+curve = SubResource("Curve2D_buu7l")
+
+[node name="Spawner2" parent="ObjetosDeJuego/Enemigos/Path2D2" index="0" unique_id=1134643131 instance=ExtResource("4_1yjlq")]
+position = Vector2(1214, 282)
+oleadas = Array[ExtResource("3_ucysf")]([SubResource("Resource_y3dyb"), SubResource("Resource_i43ji")])
 
 [node name="TorreSpot" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="0" unique_id=238956192]
 offset_left = 850.0
 offset_top = 271.0
 offset_right = 974.0
 offset_bottom = 395.0
+
+[node name="TorreSpot2" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="1" unique_id=1375483786 instance=ExtResource("4_y3dyb")]
+offset_left = 344.0
+offset_top = 386.0
+offset_right = 468.0
+offset_bottom = 510.0
+
+[node name="TorreSpot3" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="2" unique_id=35355687 instance=ExtResource("4_y3dyb")]
+offset_left = 81.0
+offset_top = 224.0
+offset_right = 205.0
+offset_bottom = 348.0
+
+[node name="TorreSpot4" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="3" unique_id=576048615 instance=ExtResource("4_y3dyb")]
+offset_left = 552.0
+offset_top = 193.0
+offset_right = 676.0
+offset_bottom = 317.0
+
+[node name="TorreSpot5" parent="ObjetosDeJuego/SpotsParaTorres" parent_id_path=PackedInt32Array(686366816) index="4" unique_id=734268449 instance=ExtResource("4_y3dyb")]
+offset_left = 617.0
+offset_top = 386.0
+offset_right = 741.0
+offset_bottom = 510.0

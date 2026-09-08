@@ -36,7 +36,7 @@ func spawnProyectil():
 	
 	timer.start(delay)
 	sprites.play("ATACAR")
-	
+	$AudioDisparo.play()
 
 func _on_animated_sprite_2d_animation_finished():
 	sprites.play("IDLE")

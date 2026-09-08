@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cecf3hxjpal8n" path="res://torres/torre.tscn" id="1_gpp5w"]
 [ext_resource type="Script" uid="uid://btjro2nwc6e8w" path="res://torres/Proyectil/torre_proyectil.gd" id="2_32tw6"]
 [ext_resource type="Texture2D" uid="uid://crfl0j2fcl0cy" path="res://torres/Proyectil/assets/torre_proyectil.png" id="3_go2wq"]
+[ext_resource type="AudioStream" uid="uid://c51bsypfbn855" path="res://menu/sound/buildings/crossbow_shot.mp3" id="4_oxbqd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gpp5w"]
 radius = 120.0
@@ -29,6 +30,9 @@ animations = [{
 [node name="LanzaProyectil" unique_id=1565077132 instance=ExtResource("1_gpp5w")]
 collision_mask = 768
 script = ExtResource("2_32tw6")
+delay = 0.6
+precioComprar = 40
+precioVender = 15
 
 [node name="Timer" parent="." index="0" unique_id=706880896]
 one_shot = true
@@ -44,5 +48,8 @@ autoplay = "default"
 
 [node name="SpawnPoint" parent="." index="3" unique_id=1373959747]
 position = Vector2(16, -43)
+
+[node name="AudioDisparo" type="AudioStreamPlayer" parent="." index="4" unique_id=782577560]
+stream = ExtResource("4_oxbqd")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
